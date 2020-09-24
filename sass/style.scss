@@ -188,7 +188,7 @@ figure {
     float: left;
     width: 300px;
     position: fixed;
-    overflow-y: scroll;
+    overflow-y: hidden;
     z-index: 1001;
     background: $brand-gray;
     @include transition(.5s);
