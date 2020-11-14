@@ -69,8 +69,22 @@
                 <div class="text-center">
                     <div class="author-img" style="background-image: url(images/about.jpg);"></div>
                     <h1 id="colorlib-logo"><a href="index.html">Simeon Dimitrov</a></h1>
-                    <span class="position">20 years old <br><a href="https://en.wikipedia.org/wiki/Programmer">
-                            Programmer</a> from Bulgaria</span>
+                    <span class="position">
+                        <span id="years"></span> years old <br><a href="https://en.wikipedia.org/wiki/Programmer">
+                            Programmer</a> from Bulgaria
+                    </span>
+                    <script>
+                        function calculateAge(birthday) { // birthday is a date 
+                            var ageDifMs = Date.now() - birthday.getTime();
+                            var ageDate = new Date(ageDifMs); // miliseconds from epoch
+                            var age = Math.abs(ageDate.getUTCFullYear() - 1970);
+                            var ele = document.getElementById('years');
+                            ele.innerHTML += age;
+                            console.log(age);
+                        }
+                        var birthday = new Date("1999-11-07");
+                        calculateAge(birthday);
+                    </script>
                 </div>
                 <nav id="colorlib-main-menu" role="navigation" class="navbar">
                     <div id="navbar" class="collapse">
