@@ -1,0 +1,14 @@
+//Plugins
+@import "./plugins/bootstrap.min.scss";
+
+//Variables
+@import "./variables.scss";
+
+//Variables
+@import "./mixins.scss";
+
+//global
+@import "./global.scss";
+
+//Components
+@import "../components/**/**.scss";

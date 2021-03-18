@@ -1,0 +1,10 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: $footer-height;
+    color: rgb(70, 70, 70);
+    background-color: #8482ff;
+    border-top: 1px solid #9290f8;
+}
