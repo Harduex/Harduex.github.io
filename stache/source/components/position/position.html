@@ -1,0 +1,14 @@
+<li class="{{#if inverted}}timeline-inverted{{/if}}" >
+    {{#if icon}}
+    <div class="timeline-badge info"><img src="images/{{icon}}"></img></div>
+    {{/if}}
+    <div class="timeline-panel position">
+        <p>{{date}}</p>
+        <div class="timeline-heading">
+            <h4><a href="{{link}}" class="timeline-title text-primary">{{title}}</a></h4>
+        </div>
+        <div class="timeline-body">
+            <p>{{position}}</p>
+        </div>
+    </div>
+</li>

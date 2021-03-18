@@ -1,0 +1,15 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    &--top {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    &--bottom {
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+}

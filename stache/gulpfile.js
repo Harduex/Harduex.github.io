@@ -30,7 +30,8 @@ gulp.task('pages:compile', function () {
             root: 'source/pages/',
             layouts: 'source/layouts/',
             partials: 'source/components/',
-            data: 'source/data'
+            data: 'source/data',
+            helpers: 'source/components/'
         }))
         .pipe(gulp.dest('build'));
 });

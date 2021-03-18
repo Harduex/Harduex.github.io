@@ -1,0 +1,31 @@
+<div class="card">
+  <div class="card-header" id="{{id}}">
+    <h2 class="mb-0">
+      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-{{id}}"
+        aria-expanded="false" aria-controls="collapseTwo">
+        {{title}}
+      </button>
+    </h2>
+  </div>
+
+  <div id="collapse-{{id}}" class="collapse" aria-labelledby="{{id}}" data-parent="#accordionExample">
+    <div class="card-body">
+      <div class="row">
+        <div class="col-md-12">
+          {{#if description }}
+          <p>{{description}}</p>
+          {{/if}}
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <a href="{{link}}">{{{content}}}</a>
+        </div>
+        <div class="col-md-6">
+          <p>{{date}}</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

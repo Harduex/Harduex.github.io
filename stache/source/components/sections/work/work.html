@@ -1,51 +1,23 @@
-<section id="work" class="container">
-    <div class="colorlib-narrow-content">
-        <div class="row">
-            <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-                <h2 class="colorlib-heading">My Projects</h2>
-            </div>
+<section id="work" class="container work">
+
+    {{> section-info slug="Projects" content="Check out my Work"}}
+
+    <div class="row">
+        <div class="col-md-3 text-center">
+            {{> post title="Programming"
+            content="See my recent programming projects on <a href='https://github.com/Harduex'>Github</a>"
+            icon="" }}
         </div>
-        <div class="row row-pt-md">
-            <div class="col-md-4 text-center animate-box">
-                <div class="services color-1">
-                    <span class="icon">
-                        <i class="icon-pen2"></i>
-                    </span>
-                    <div class="desc">
-                        <h3>Programming</h3>
-                        <p>See my recent programming projects on <a href="https://github.com/Harduex">Github</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 text-center animate-box">
-                <div class="services color-2">
-                    <span class="icon">
-                        <i class="icon-globe-outline"></i>
-                    </span>
-                    <div class="desc">
-                        <h3>Music</h3>
-                        <p>Check out my songs on my <a href="https://www.youtube.com/Harduex">youtube</a> or <a
-                                href="https://soundcloud.com/harduex">Soundcloud</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 text-center animate-box">
-                <div class="services color-3">
-                    <span class="icon">
-                        <i class="icon-heart"></i>
-                    </span>
-                    <div class="desc">
-                        <h3>Art</h3>
-                        <p>See my visual art works on my <a href="https://instagram.com/harduex_art">Instagram</a></p>
-                    </div>
-                </div>
-                <br>
-                <br>
-            </div>
+        <div class="col-md-3 text-center">
+            {{> post title="Music"
+            content="Check out my songs on my <a href='https://www.youtube.com/Harduex'>youtube</a> or
+            <a href='https://soundcloud.com/harduex'>Soundcloud</a>"
+            icon="" }}
         </div>
-        <br>
-        <br>
-        <br>
+        <div class="col-md-3 text-center">
+            {{> post title="Design"
+            content="See my visual art works on my <a href='https://instagram.com/harduex_art'>Instagram</a>"
+            icon="" }}
+        </div>
     </div>
 </section>
