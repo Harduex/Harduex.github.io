@@ -1,0 +1,77 @@
+.skills-chart article.skills {
+    height: auto;
+}
+.skills-chart article.skills p {
+    z-index: 2;
+    color: #fff;
+    padding: 10px;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.skills-chart article.skills div span:nth-child(1) {
+    z-index: -2;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #fff;
+    height: 100%;
+    width: 100%;
+}
+.skills-chart article.skills div span:nth-child(2) {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #1e75f8;
+    height: 100%;
+}
+.skills-chart article.skills div:nth-child(1) span:nth-child(2) {
+    animation-delay: 0;
+}
+.skills-chart article.skills div:nth-child(2) span:nth-child(2) {
+    animation-delay: 0.10s;
+}
+.skills-chart article.skills div:nth-child(3) span:nth-child(2) {
+    animation-delay: 0.20s;
+}
+.skills-chart article.skills div:nth-child(4) span:nth-child(2) {
+    animation-delay: 0.30s;
+}
+.skills-chart article.skills div:nth-child(5) span:nth-child(2) {
+    animation-delay: 0.40s;
+}
+.skills-chart article.skills div:nth-child(6) span:nth-child(2) {
+    animation-delay: 0.40s;
+}
+.skills-chart article.skills div:nth-child(7) span:nth-child(2) {
+    animation-delay: 0.60s;
+}
+.skills-chart article.skills div:nth-child(8) span:nth-child(2) {
+    animation-delay: 0.70s;
+}
+.skills-chart article.skills div:nth-child(9) span:nth-child(2) {
+    animation-delay: 0.80s;
+}
+.skills-chart article.skills div:nth-child(10) span:nth-child(2) {
+    animation-delay: 0.90s;
+}
+
+.skills.animate {
+    animation: skills 2.25s cubic-bezier(0.17, 0.67, 0, 1);
+}
+@keyframes skills {
+    0% {
+        left: -100%;
+        opacity: 0;
+    }
+    100% {
+        left: 0;
+        opacity: 1;
+    }
+}

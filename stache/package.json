@@ -4,7 +4,7 @@
   "description": "component based frontend framework",
   "main": "Server.js",
   "scripts": {
-    "start": "npx gulp && node Server.js & npx gulp watch"
+    "start": "gulp && node Server.js & gulp watch"
   },
   "keywords": [
     "stache",

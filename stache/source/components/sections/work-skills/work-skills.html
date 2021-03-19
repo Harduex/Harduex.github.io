@@ -1,6 +1,6 @@
-<section id="skills" class="container skills">
+<section id="skills" class="container skills-section">
     {{> section-info slug="My Specialty" content="My Professional Skills"}}
-    <div class="row">
+    <!-- <div class="row">
         <div class="col-md-6">
             <div class="progress-wrap">
                 <h3>Html</h3>
@@ -155,5 +155,19 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
+
+    {{# skills-chart }}
+        {{> skill skill="HTML" percents="95" }}
+        {{> skill skill="CSS" percents="90" }}
+        {{> skill skill="blank" percents="80" }}
+        {{> skill skill="blank" percents="70" }}
+        {{> skill skill="blank" percents="60" }}
+        {{> skill skill="blank" percents="50" }}
+        {{> skill skill="blank" percents="55" }}
+        {{> skill skill="blank" percents="45" }}
+        {{> skill skill="blank" percents="60" }}
+        {{> skill skill="blank" percents="30" }}
+    {{/ skills-chart }}
+
 </section>
