@@ -75,10 +75,6 @@ body {
   opacity: 1;
 }
 
-.nav-item + .nav-item {
-  margin-left: 1rem;
-}
-
 .cover {
   height: 500px;
 }
