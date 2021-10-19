@@ -188,7 +188,7 @@ footer a:not(.nav-link) {
 .toast-container {
   position: fixed;
   right: 20px;
-  top: 88px;
+  top: 20px;
 }
 
 .toast:not(.showing):not(.show) {
