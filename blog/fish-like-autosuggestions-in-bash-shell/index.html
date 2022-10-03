@@ -11,7 +11,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Favorite gnome extensions that every Ubuntu user must try</title>
+    <title>Fish-like autosuggestions in bash shell</title>
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -34,100 +34,48 @@
         }
     </style>
 
-    <link rel="canonical" href="https://harduex.com/blog/personal-top-gnome-extensions/" />
+    <link rel="canonical" href="https://harduex.com/blog/fish-like-autosuggestions-in-bash-shell/" />
     <meta name="referrer" content="no-referrer-when-downgrade" />
     
     <meta property="og:site_name" content="Harduex" />
     <meta property="og:type" content="article" />
-    <meta property="og:title" content="Favorite gnome extensions that every Ubuntu user must try" />
-    <meta property="og:description" content="1. Another Window Session Manager
+    <meta property="og:title" content="Fish-like autosuggestions in bash shell" />
+    <meta property="og:description" content="In my previous post I introduced you to fish shell. I suggest you to read it before continue here, especially the part about autosuggestions.
 
-
-
-
-
-
-Close and save open windows. And restore them.
-
-
-2. Clipboard Indicator
-
-
-
-
-
-Clipboard Manager extension for Gnome-Shell - Adds a clipboard indicator to the top panel, and caches clipboard history.
-
-
-3. CPU Power Manager
-
-
-
-
-
-Manage your CPU&#x27;s frequency scaling driver.
-
-
-4. Status Area Horizontal Spacing
-
-
-
-
-
-Reduce" />
-    <meta property="og:url" content="https://harduex.com/blog/personal-top-gnome-extensions/" />
-    <meta property="og:image" content="https://images.unsplash.com/photo-1629654291663-b91ad427698f?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDF8fHVidW50dXxlbnwwfHx8fDE2NjIzNzQxMDU&amp;ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;w&#x3D;2000" />
-    <meta property="article:published_time" content="2022-09-05T11:14:59.000Z" />
-    <meta property="article:modified_time" content="2022-09-11T19:19:26.000Z" />
-    <meta property="article:tag" content="programming" />
-    <meta property="article:tag" content="tech" />
-    <meta property="article:tag" content="Ubuntu" />
+If you prefer to use bash and have the same features like autosuggestions, here is a detailed guide how to set it up. In this post" />
+    <meta property="og:url" content="https://harduex.com/blog/fish-like-autosuggestions-in-bash-shell/" />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1629654297299-c8506221ca97?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDF8fGJhc2h8ZW58MHx8fHwxNjY0Nzk4MDEw&amp;ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;w&#x3D;2000" />
+    <meta property="article:published_time" content="2022-10-03T15:30:59.000Z" />
+    <meta property="article:modified_time" content="2022-10-03T15:36:56.000Z" />
+    <meta property="article:tag" content="backend" />
+    <meta property="article:tag" content="configuration" />
     <meta property="article:tag" content="extensions" />
+    <meta property="article:tag" content="how to" />
+    <meta property="article:tag" content="interesting" />
+    <meta property="article:tag" content="programming" />
+    <meta property="article:tag" content="projects" />
+    <meta property="article:tag" content="sh" />
+    <meta property="article:tag" content="setup" />
+    <meta property="article:tag" content="shell" />
+    <meta property="article:tag" content="step by step" />
+    <meta property="article:tag" content="tips" />
+    <meta property="article:tag" content="tools" />
+    <meta property="article:tag" content="tricks" />
+    <meta property="article:tag" content="Ubuntu" />
+    <meta property="article:tag" content="unix" />
     
     <meta property="article:publisher" content="https://www.facebook.com/Delight11" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Favorite gnome extensions that every Ubuntu user must try" />
-    <meta name="twitter:description" content="1. Another Window Session Manager
+    <meta name="twitter:title" content="Fish-like autosuggestions in bash shell" />
+    <meta name="twitter:description" content="In my previous post I introduced you to fish shell. I suggest you to read it before continue here, especially the part about autosuggestions.
 
-
-
-
-
-
-Close and save open windows. And restore them.
-
-
-2. Clipboard Indicator
-
-
-
-
-
-Clipboard Manager extension for Gnome-Shell - Adds a clipboard indicator to the top panel, and caches clipboard history.
-
-
-3. CPU Power Manager
-
-
-
-
-
-Manage your CPU&#x27;s frequency scaling driver.
-
-
-4. Status Area Horizontal Spacing
-
-
-
-
-
-Reduce" />
-    <meta name="twitter:url" content="https://harduex.com/blog/personal-top-gnome-extensions/" />
-    <meta name="twitter:image" content="https://images.unsplash.com/photo-1629654291663-b91ad427698f?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDF8fHVidW50dXxlbnwwfHx8fDE2NjIzNzQxMDU&amp;ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;w&#x3D;2000" />
+If you prefer to use bash and have the same features like autosuggestions, here is a detailed guide how to set it up. In this post" />
+    <meta name="twitter:url" content="https://harduex.com/blog/fish-like-autosuggestions-in-bash-shell/" />
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1629654297299-c8506221ca97?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDF8fGJhc2h8ZW58MHx8fHwxNjY0Nzk4MDEw&amp;ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;w&#x3D;2000" />
     <meta name="twitter:label1" content="Written by" />
     <meta name="twitter:data1" content="🌿 𝖘𝖎𝖒𝖊𝖔𝖓 🌿" />
     <meta name="twitter:label2" content="Filed under" />
-    <meta name="twitter:data2" content="programming, tech, Ubuntu, extensions" />
+    <meta name="twitter:data2" content="backend, configuration, extensions, how to, interesting, programming, projects, sh, setup, shell, step by step, tips, tools, tricks, Ubuntu, unix" />
     <meta name="twitter:site" content="@twitter.com" />
     <meta property="og:image:width" content="2000" />
     <meta property="og:image:height" content="1500" />
@@ -161,18 +109,18 @@ Reduce" />
             "https://harduex.com/"
         ]
     },
-    "headline": "Favorite gnome extensions that every Ubuntu user must try",
-    "url": "https://harduex.com/blog/personal-top-gnome-extensions/",
-    "datePublished": "2022-09-05T11:14:59.000Z",
-    "dateModified": "2022-09-11T19:19:26.000Z",
+    "headline": "Fish-like autosuggestions in bash shell",
+    "url": "https://harduex.com/blog/fish-like-autosuggestions-in-bash-shell/",
+    "datePublished": "2022-10-03T15:30:59.000Z",
+    "dateModified": "2022-10-03T15:36:56.000Z",
     "image": {
         "@type": "ImageObject",
-        "url": "https://images.unsplash.com/photo-1629654291663-b91ad427698f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDF8fHVidW50dXxlbnwwfHx8fDE2NjIzNzQxMDU&ixlib=rb-1.2.1&q=80&w=2000",
+        "url": "https://images.unsplash.com/photo-1629654297299-c8506221ca97?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDF8fGJhc2h8ZW58MHx8fHwxNjY0Nzk4MDEw&ixlib=rb-1.2.1&q=80&w=2000",
         "width": 2000,
         "height": 1500
     },
-    "keywords": "programming, tech, Ubuntu, extensions",
-    "description": "1. Another Window Session Manager\n\n\n\n\n\n\nClose and save open windows. And restore them.\n\n\n2. Clipboard Indicator\n\n\n\n\n\nClipboard Manager extension for Gnome-Shell - Adds a clipboard indicator to the top panel, and caches clipboard history.\n\n\n3. CPU Power Manager\n\n\n\n\n\nManage your CPU&#x27;s frequency scaling driver.\n\n\n4. Status Area Horizontal Spacing\n\n\n\n\n\nReduce the horizontal spacing between icons in the top-right status area.\n\n\n5. Recent Items\n\n\n\n\n\nAdds an icon for recently used items at the top pane",
+    "keywords": "backend, configuration, extensions, how to, interesting, programming, projects, sh, setup, shell, step by step, tips, tools, tricks, Ubuntu, unix",
+    "description": "In my previous post I introduced you to fish shell. I suggest you to read it before continue here, especially the part about autosuggestions.\n\nIf you prefer to use bash and have the same features like autosuggestions, here is a detailed guide how to set it up. In this post I will show you how to install and configure fish-like autosuggestions in bash itself in Ubuntu Linux.\n\n\n\n\nLets begin!\n\n\n\n\nInstallation of Ble.sh\n\nBash Line Editor is a full-featured line editor written in pure Bash! Syntax hi",
     "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "https://harduex.com/blog/"
@@ -285,11 +233,11 @@ Reduce" />
         <article class="post min-w-0 flex-auto">
                 <header class="post-header mb-6">
     <div class="text-xs mb-3 flex items-center">
-    <span class="w-2 h-2 rounded-full bg-primary inline-block mr-2" style="background-color:#24cc46"></span>
-    <a href="https://harduex.com/blog/tag/programming/" class="uppercase tracking-wide relative z-3 text-gray-500">programming</a>
+    <span class="w-2 h-2 rounded-full bg-primary inline-block mr-2" ></span>
+    <a href="https://harduex.com/blog/tag/backend/" class="uppercase tracking-wide relative z-3 text-gray-500">backend</a>
 </div>
 
-    <h1 class="post-title text-4xl md:text-42 text text-title">Favorite gnome extensions that every Ubuntu user must try</h1>
+    <h1 class="post-title text-4xl md:text-42 text text-title">Fish-like autosuggestions in bash shell</h1>
     
 </header>
                 <div class="hh flex items-center relative z-4 flex-auto overflow-hidden">
@@ -309,7 +257,7 @@ Reduce" />
 
     <div class="hh-right flex-auto overflow-hidden text-sm">
         <div class="noWrapWithEllipsis text-gray-500">
-            <time class="datetime capitalize" datetime="2022-09-05">Published 5 Sep 2022</time>
+            <time class="datetime capitalize" datetime="2022-10-03">Published 3 Oct 2022</time>
             <span class="mx-1 bull"></span>
             <span class="readingTime cursor-default" title="2 min read">2 min read</span>
         </div>
@@ -324,56 +272,79 @@ Reduce" />
 
                 <figure class="post-image mt-8 mx-auto max-w-screen-xl">
         <img class="post-img w-full max-auto"
-            srcset="https://images.unsplash.com/photo-1629654291663-b91ad427698f?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDF8fHVidW50dXxlbnwwfHx8fDE2NjIzNzQxMDU&amp;ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;w&#x3D;2000 300w,
-                    https://images.unsplash.com/photo-1629654291663-b91ad427698f?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDF8fHVidW50dXxlbnwwfHx8fDE2NjIzNzQxMDU&amp;ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;w&#x3D;2000 600w,
-                    https://images.unsplash.com/photo-1629654291663-b91ad427698f?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDF8fHVidW50dXxlbnwwfHx8fDE2NjIzNzQxMDU&amp;ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;w&#x3D;2000 1000w,
-                    https://images.unsplash.com/photo-1629654291663-b91ad427698f?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDF8fHVidW50dXxlbnwwfHx8fDE2NjIzNzQxMDU&amp;ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;w&#x3D;2000 2000w"
+            srcset="https://images.unsplash.com/photo-1629654297299-c8506221ca97?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDF8fGJhc2h8ZW58MHx8fHwxNjY0Nzk4MDEw&amp;ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;w&#x3D;2000 300w,
+                    https://images.unsplash.com/photo-1629654297299-c8506221ca97?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDF8fGJhc2h8ZW58MHx8fHwxNjY0Nzk4MDEw&amp;ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;w&#x3D;2000 600w,
+                    https://images.unsplash.com/photo-1629654297299-c8506221ca97?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDF8fGJhc2h8ZW58MHx8fHwxNjY0Nzk4MDEw&amp;ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;w&#x3D;2000 1000w,
+                    https://images.unsplash.com/photo-1629654297299-c8506221ca97?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDF8fGJhc2h8ZW58MHx8fHwxNjY0Nzk4MDEw&amp;ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;w&#x3D;2000 2000w"
             sizes="(max-width: 400px) 300px,(max-width: 730px) 600px, (max-width: 1600px) 100vw"
-            src="https://images.unsplash.com/photo-1629654291663-b91ad427698f?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDF8fHVidW50dXxlbnwwfHx8fDE2NjIzNzQxMDU&amp;ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;w&#x3D;2000"
-            alt="Favorite gnome extensions that every Ubuntu user must try"
+            src="https://images.unsplash.com/photo-1629654297299-c8506221ca97?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDF8fGJhc2h8ZW58MHx8fHwxNjY0Nzk4MDEw&amp;ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;w&#x3D;2000"
+            alt="Fish-like autosuggestions in bash shell"
         />
         <figcaption class="post-figcaption text-left italic text-base py-2 px-3 mt-0 text-black" style="background-color:#e2e2e2">Photo by <a href="https://unsplash.com/@6heinz3r?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit">Gabriel Heinzer</a> / <a href="https://unsplash.com/?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit">Unsplash</a></figcaption>
     </figure>
 
             <div class="post-body-wrap relative lg:flex">
     <div id="post-body" class="post-body min-w-0 js-post-content font-sans text-lg">
-        <!--kg-card-begin: markdown--><p><strong>1.</strong> <strong><a href="https://extensions.gnome.org/extension/4709/another-window-session-manager/">Another Window Session Manager<br>
-</a></strong><br>
-<img src="https://harduex.com/blog/content/images/2022/09/screenshot_4709_o9Ck9Rf.png" alt="screenshot_4709_o9Ck9Rf" loading="lazy"></p>
-<p>Close and save open windows. And restore them.</p>
-<!--kg-card-end: markdown--><!--kg-card-begin: markdown--><p><strong>2.</strong> <strong><a href="https://extensions.gnome.org/extension/779/clipboard-indicator/">Clipboard Indicator<br>
-</a></strong><br>
-<img src="https://harduex.com/blog/content/images/2022/09/screenshot_779_z38Ay1y-1.png" alt="screenshot_779_z38Ay1y-1" loading="lazy"><br>
-Clipboard Manager extension for Gnome-Shell - Adds a clipboard indicator to the top panel, and caches clipboard history.</p>
-<!--kg-card-end: markdown--><!--kg-card-begin: markdown--><p><strong>3.</strong> <strong><a href="https://extensions.gnome.org/extension/945/cpu-power-manager/">CPU Power Manager<br>
-</a></strong><br>
-<img src="https://harduex.com/blog/content/images/2022/09/screenshot_945.png" alt="screenshot_945" loading="lazy"><br>
-Manage your CPU's frequency scaling driver.</p>
-<!--kg-card-end: markdown--><!--kg-card-begin: markdown--><p><strong>4.</strong> <strong><a href="https://extensions.gnome.org/extension/355/status-area-horizontal-spacing/">Status Area Horizontal Spacing<br>
-</a></strong><br>
-<img src="https://harduex.com/blog/content/images/2022/09/screenshot_355_1-1.png" alt="screenshot_355_1-1" loading="lazy"><br>
-Reduce the horizontal spacing between icons in the top-right status area.</p>
-<!--kg-card-end: markdown--><!--kg-card-begin: markdown--><p><strong>5.</strong> <strong><a href="https://extensions.gnome.org/extension/72/recent-items/">Recent Items<br>
-</a></strong><br>
-<img src="https://harduex.com/blog/content/images/2022/09/screenshot_72_2.jpg" alt="screenshot_72_2" loading="lazy"><br>
-Adds an icon for recently used items at the top panel</p>
-<!--kg-card-end: markdown--><!--kg-card-begin: markdown--><p><strong>6.</strong> <strong><a href="https://extensions.gnome.org/extension/1720/weeks-start-on-monday-again/">Weeks Start on Monday Again...<br>
-</a></strong><br>
-<img src="https://harduex.com/blog/content/images/2022/09/screenshot_1720.png" alt="screenshot_1720" loading="lazy"><br>
-... or maybe not, and that's why the start day is configurable in the preferences.</p>
-<!--kg-card-end: markdown--><!--kg-card-begin: markdown--><p><strong>7.</strong> <strong><a href="https://extensions.gnome.org/extension/1460/vitals/">Vitals<br>
-</a></strong><br>
-<img src="https://harduex.com/blog/content/images/2022/09/screenshot_1460_QK8EEza.gif" alt="screenshot_1460_QK8EEza" loading="lazy"><br>
-A glimpse into your computer's temperature, voltage, fan speed, memory usage, processor load, system resources, network speed and storage stats. This is a one stop shop to monitor all of your vital sensors.</p>
-<!--kg-card-end: markdown--><!--kg-card-begin: markdown--><p><strong>8.</strong> <strong><a href="https://extensions.gnome.org/extension/3952/workspace-indicator/">Workspace indicator<br>
-</a></strong><br>
-<img src="https://harduex.com/blog/content/images/2022/09/screenshot_3952.png" alt="screenshot_3952" loading="lazy"><br>
-Workspace indicator shows the amount of opened workspaces and highlights the current one using unicode characters.</p>
-<p>You can use it as an indicator only but widget is clickable. Left button click: move to left, right click: move right. Middle click calls overview.</p>
-<!--kg-card-end: markdown--><p></p>
+        <p>In my <a href="https://harduex.com/blog/how-to-install-and-setup-fish-shell-with-default-bash-styles/">previous post</a> I introduced you to <a href="https://fishshell.com/">fish shell</a>. I suggest you to read it before continue here, especially the part about autosuggestions.</p><p>If you prefer to use bash and have the same features like autosuggestions, here is a detailed guide how to set it up. In this post I will show you how to <strong>install</strong> and <strong>configure</strong> fish-like autosuggestions in bash itself in <strong>Ubuntu Linux</strong>.</p><p></p><h2 id="lets-begin">Lets begin!</h2><p></p><h3 id="installation-of-blesh">Installation of <a href="https://github.com/akinomyoga/ble.sh">Ble.sh</a> </h3><blockquote>Bash Line Editor is a full-featured line editor written in pure Bash! Syntax highlighting, auto suggestions, vim modes, etc. are available in Bash interactive sessions!</blockquote><p><a href="https://github.com/akinomyoga/ble.sh">Here</a> you can find more ways for installation, but I think the easiest one is by		<strong>Downloading the nightly build with <code><a href="https://www.cyberciti.biz/faq/how-to-install-curl-command-on-a-ubuntu-linux/">curl</a></code></strong></p><pre><code>$ curl -L https://github.com/akinomyoga/ble.sh/releases/download/nightly/ble-nightly.tar.xz | tar xJf -
+$ mkdir -p ~/.local/share/blesh
+$ mv -f ble-nightly*/* ~/.local/share/blesh/
+$ echo 'source ~/.local/share/blesh/ble.sh' &gt;&gt; ~/.bashrc
+$ source ~/.bashrc</code></pre><p></p><h3 id="configuration">Configuration</h3><p>Here, some of the settings for <code>~/.blerc</code> are picked up. You can find useful settings also in <a href="https://github.com/akinomyoga/ble.sh/wiki/Q&amp;A">Q&amp;A</a>, <a href="https://github.com/akinomyoga/ble.sh/wiki/Recipes">Recipes</a> and <a href="https://github.com/akinomyoga/blesh-contrib"><code>contrib</code> repository</a>. The complete list of setting items can be found in the template <a href="https://github.com/akinomyoga/ble.sh/blob/master/blerc"><code>blerc</code></a>. For detailed explanations please refer to <a href="https://github.com/akinomyoga/ble.sh/wiki">Manual</a>.</p><p>To disable some of the settings use:</p><pre><code>$ nano ~/.blerc</code></pre><p>Here you can add your custom styles:</p><pre><code># custom styles
+ble-face -s syntax_default fg=253
+ble-face -s auto_complete fg=242,bg=none
+ble-face -s filename_directory underline,fg=252
+ble-face -s command_builtin fg=144
+ble-face -s command_file fg=144
+ble-face -s command_function fg=144
+ble-face -s command_alias fg=144
+ble-face -s syntax_error fg=1,bg=none
+ble-face -s argument_option fg=253
+ble-face -s filename_url fg=253
+ble-face -s syntax_delimiter fg=73</code></pre><p>To check current configuration run <code>$ ble-face</code> and <code>$ ble-color-show</code> to see all colors.</p><p>Also, if you want to disable a specific feature or add more customizations, add one or more of this lines in your <code>~/.blerc</code>:</p><pre><code># Disable syntax highlighting
+bleopt highlight_syntax=
+
+# Disable highlighting based on filenames
+bleopt highlight_filename=
+
+# Disable highlighting based on variable types
+bleopt highlight_variable=
+
+# Disable auto-complete (Note: auto-complete is enabled by default in bash-4.0+)
+bleopt complete_auto_complete=
+# Tip: you may instead specify the delay of auto-complete in millisecond
+bleopt complete_auto_delay=300
+
+# Disable auto-complete based on the command history
+bleopt complete_auto_history=
+
+# Disable ambiguous completion
+bleopt complete_ambiguous=
+
+# Disable menu-complete by TAB
+bleopt complete_menu_complete=
+
+# Disable menu filtering (Note: auto-complete is enabled by default in bash-4.0+)
+bleopt complete_menu_filter=
+
+# Disable EOF marker like "[ble: EOF]"
+bleopt prompt_eol_mark=''
+# Tip: you may instead specify another string:
+bleopt prompt_eol_mark='⏎'
+
+# Disable error exit marker like "[ble: exit %d]"
+bleopt exec_errexit_mark=
+# Tip: you may instead specify another string:
+bleopt exec_errexit_mark=$'\e[91m[error %d]\e[m'
+
+# Disable elapsed-time marker like "[ble: elapsed 1.203s (CPU 0.4%)]"
+bleopt exec_elapsed_mark=
+# Tip: you may instead specify another string
+bleopt exec_elapsed_mark=$'\e[94m[%ss (%s %%)]\e[m'
+# Tip: you may instead change the threshold of showing the mark
+bleopt exec_elapsed_enabled='sys+usr&gt;=10*60*1000' # e.g. ten minutes for total CPU usage</code></pre><p>Check more of these templates <a href="https://github.com/akinomyoga/ble.sh">here</a>.</p><p>Finally set <strong>bash</strong> as default shell if you're currently using other:<br><code>$ chsh -s $(which bash)</code></p><p><strong><strong>You must log out and log back in to see this change.</strong></strong></p><h3 id="and-youre-done">And you're done!</h3>
 
         <div class="post-tags my-8 buttons justify-center lg:justify-start">
-            <a href="/blog/tag/programming/" title="programming" class="button is-black is-outlined is-small uppercase">programming</a><a href="/blog/tag/tech/" title="tech" class="button is-black is-outlined is-small uppercase">tech</a><a href="/blog/tag/ubuntu/" title="Ubuntu" class="button is-black is-outlined is-small uppercase">Ubuntu</a><a href="/blog/tag/extensions/" title="extensions" class="button is-black is-outlined is-small uppercase">extensions</a>
+            <a href="/blog/tag/backend/" title="backend" class="button is-black is-outlined is-small uppercase">backend</a><a href="/blog/tag/configuration/" title="configuration" class="button is-black is-outlined is-small uppercase">configuration</a><a href="/blog/tag/extensions/" title="extensions" class="button is-black is-outlined is-small uppercase">extensions</a><a href="/blog/tag/how-to/" title="how to" class="button is-black is-outlined is-small uppercase">how to</a><a href="/blog/tag/interesting/" title="interesting" class="button is-black is-outlined is-small uppercase">interesting</a><a href="/blog/tag/programming/" title="programming" class="button is-black is-outlined is-small uppercase">programming</a><a href="/blog/tag/projects/" title="projects" class="button is-black is-outlined is-small uppercase">projects</a><a href="/blog/tag/sh/" title="sh" class="button is-black is-outlined is-small uppercase">sh</a><a href="/blog/tag/setup/" title="setup" class="button is-black is-outlined is-small uppercase">setup</a><a href="/blog/tag/shell/" title="shell" class="button is-black is-outlined is-small uppercase">shell</a><a href="/blog/tag/step-by-step/" title="step by step" class="button is-black is-outlined is-small uppercase">step by step</a><a href="/blog/tag/tips/" title="tips" class="button is-black is-outlined is-small uppercase">tips</a><a href="/blog/tag/tools/" title="tools" class="button is-black is-outlined is-small uppercase">tools</a><a href="/blog/tag/tricks/" title="tricks" class="button is-black is-outlined is-small uppercase">tricks</a><a href="/blog/tag/ubuntu/" title="Ubuntu" class="button is-black is-outlined is-small uppercase">Ubuntu</a><a href="/blog/tag/unix/" title="unix" class="button is-black is-outlined is-small uppercase">unix</a>
         </div>
 
     </div>
@@ -382,42 +353,42 @@ Workspace indicator shows the amount of opened workspaces and highlights the cur
     <div class="js-share post-share-inner pt-9 sticky top-16 text-center">
         <span class="uppercase text-xs tracking-wider mb-3 inline-block lg:hidden">Share this article:</span>
         <div class="buttons items-start justify-center lg:flex-col lg:justify-start">
-            <a href="https://www.facebook.com/sharer/sharer.php?u=https://harduex.com/blog/personal-top-gnome-extensions/"
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://harduex.com/blog/fish-like-autosuggestions-in-bash-shell/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Share on Facebook"
                 class="button is-circle text-xs is-black opacity-20 hover:opacity-40">
                 <svg class="icon"><use xlink:href="#icon-facebook"></use></svg>
             </a>
-            <a href="https://twitter.com/share?text=Favorite%20gnome%20extensions%20that%20every%20Ubuntu%20user%20must%20try&amp;url=https://harduex.com/blog/personal-top-gnome-extensions/"
+            <a href="https://twitter.com/share?text=Fish-like%20autosuggestions%20in%20bash%20shell&amp;url=https://harduex.com/blog/fish-like-autosuggestions-in-bash-shell/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Share on Twitter"
                 class="button is-circle text-xs is-black opacity-20 hover:opacity-40">
                 <svg class="icon"><use xlink:href="#icon-twitter"></use></svg>
             </a>
-            <a href="https://www.reddit.com/submit?url=https://harduex.com/blog/personal-top-gnome-extensions/&amp;title=Favorite%20gnome%20extensions%20that%20every%20Ubuntu%20user%20must%20try"
+            <a href="https://www.reddit.com/submit?url=https://harduex.com/blog/fish-like-autosuggestions-in-bash-shell/&amp;title=Fish-like%20autosuggestions%20in%20bash%20shell"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Share on Reddit"
                 class="button is-circle text-xs is-black opacity-20 hover:opacity-40">
                 <svg class="icon"><use xlink:href="#icon-reddit"></use></svg>
             </a>
-            <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://harduex.com/blog/personal-top-gnome-extensions/&amp;title=Favorite%20gnome%20extensions%20that%20every%20Ubuntu%20user%20must%20try"
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://harduex.com/blog/fish-like-autosuggestions-in-bash-shell/&amp;title=Fish-like%20autosuggestions%20in%20bash%20shell"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Share on Linkedin"
                 class="button is-circle text-xs is-black opacity-20 hover:opacity-40">
                 <svg class="icon"><use xlink:href="#icon-linkedin"></use></svg>
             </a>
-            <a href="https://pinterest.com/pin/create/button/?url=http%3A%2F%2Flocalhost%3A2368%2Fblog%2Fpersonal-top-gnome-extensions%2F"
+            <a href="https://pinterest.com/pin/create/button/?url=http%3A%2F%2Flocalhost%3A2368%2Fblog%2Ffish-like-autosuggestions-in-bash-shell%2F"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Share on Pinterest"
                 class="button is-circle text-xs is-black opacity-20 hover:opacity-40">
                 <svg class="icon"><use xlink:href="#icon-pinterest"></use></svg>
             </a>
-            <a href="whatsapp://send?text=https://harduex.com/blog/personal-top-gnome-extensions/"
+            <a href="whatsapp://send?text=https://harduex.com/blog/fish-like-autosuggestions-in-bash-shell/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Share on WhatSapp"
@@ -458,35 +429,22 @@ Workspace indicator shows the amount of opened workspaces and highlights the cur
 </div>
     <div class="flex prev-next mb-8">
     <div class="w-1/2 pr-4">
-        <a href="/blog/welcome/" class="prev-next-link flex items-center">
+        <a href="/blog/how-to-install-and-setup-fish-shell-with-default-bash-styles/" class="prev-next-link flex items-center">
             <img class="hidden h-16 w-16 flex-none object-cover rounded-full blur-up lazyload mr-4 md:block"
                 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                data-src="https://images.unsplash.com/photo-1543332164-6e82f355badc?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDd8fHdlbGNvbWV8ZW58MHx8fHwxNjYyMzA5ODc5&amp;ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;w&#x3D;2000"
+                data-src="/blog/content/images/size/w300/2022/09/fish.png"
                 height="64"
                 width="64"
-                alt="Welcome!">
+                alt="How to install and setup fish shell with default bash styles (minimal setup)">
 
             <div class="prev-next-span">
                 <span class="block text-sm mb-1 text-gray-500">Prev article</span>
-                <h3 class="prev-next-title text-title text-base hover:text-primary leading-tight lineClamp-2 md:text-lg">Welcome!</h3>
+                <h3 class="prev-next-title text-title text-base hover:text-primary leading-tight lineClamp-2 md:text-lg">How to install and setup fish shell with default bash styles (minimal setup)</h3>
             </div>
         </a>
     </div>
 
     <div class="w-1/2 pl-4">
-        <a href="/blog/why-you-have-to-switch-to-brave-browser/" class="prev-next-right flex items-center justify-end">
-            <div class="text-right">
-                <span class="block text-sm mb-1 text-gray-500">Next article</span>
-                <h3 class="prev-next-title text-title text-base hover:text-primary leading-tight lineClamp-2 flex-grow md:text-lg">Why you have to switch to Brave browser?</h3>
-            </div>
-
-            <img class="hidden h-16 w-16 flex-none object-cover rounded-full blur-up lazyload ml-4 md:block"
-                src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                data-src="https://images.unsplash.com/photo-1655196601100-8bfb26cf99e9?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDJ8fGJyYXZlJTIwYnJvd3NlcnxlbnwwfHx8fDE2NjIzODA0NjM&amp;ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;w&#x3D;2000"
-                height="64"
-                width="64"
-                alt="Why you have to switch to Brave browser?">
-        </a>
     </div>
 </div>
     </div>        </article>
@@ -495,24 +453,6 @@ Workspace indicator shows the amount of opened workspaces and highlights the cur
             <div class="mb-10">
     <h3 class="uppercase mb-5 border-b pb-2 font-bold text-sm">Latest Posts</h3>
 
-    <div class="sidebar-post mb-4">
-        <a href="https://harduex.com/blog/fish-like-autosuggestions-in-bash-shell/" class="flex items-center">
-            <figure class="h-20 w-28 relative mr-4 flex-none bg-gray-100 rounded overflow-hidden img-hover">
-                <img class="image-inset absolute img-hover-here blur-up lazyload"
-                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                    data-src="https://images.unsplash.com/photo-1629654297299-c8506221ca97?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDF8fGJhc2h8ZW58MHx8fHwxNjY0Nzk4MDEw&amp;ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;w&#x3D;2000"
-                    width="112"
-                    height="80"
-                    alt="Fish-like autosuggestions in bash shell"
-                />
-            </figure>
-
-            <div class="py-2">
-                <h3 class="text-base text-title lineClamp-2 leading-tight hover:text-primary">Fish-like autosuggestions in bash shell</h3>
-                <div class="text-sm text-gray-500 mt-1"><time class="datetime" datetime=" 2022-10-03 ">3 October 2022</time></div>
-            </div>
-        </a>
-    </div>
     <div class="sidebar-post mb-4">
         <a href="https://harduex.com/blog/how-to-install-and-setup-fish-shell-with-default-bash-styles/" class="flex items-center">
             <figure class="h-20 w-28 relative mr-4 flex-none bg-gray-100 rounded overflow-hidden img-hover">
@@ -549,7 +489,7 @@ Workspace indicator shows the amount of opened workspaces and highlights the cur
             </div>
         </a>
     </div>
-    <div class="sidebar-post ">
+    <div class="sidebar-post mb-4">
         <a href="https://harduex.com/blog/interesting-projects-and-tools-discovered-on-github-part-1/" class="flex items-center">
             <figure class="h-20 w-28 relative mr-4 flex-none bg-gray-100 rounded overflow-hidden img-hover">
                 <img class="image-inset absolute img-hover-here blur-up lazyload"
@@ -564,6 +504,24 @@ Workspace indicator shows the amount of opened workspaces and highlights the cur
             <div class="py-2">
                 <h3 class="text-base text-title lineClamp-2 leading-tight hover:text-primary">Interesting projects and tools, discovered on Github - Part 1</h3>
                 <div class="text-sm text-gray-500 mt-1"><time class="datetime" datetime=" 2022-09-27 ">27 September 2022</time></div>
+            </div>
+        </a>
+    </div>
+    <div class="sidebar-post ">
+        <a href="https://harduex.com/blog/why-walking-on-treadmill-on-full-incline-is-better-than-running/" class="flex items-center">
+            <figure class="h-20 w-28 relative mr-4 flex-none bg-gray-100 rounded overflow-hidden img-hover">
+                <img class="image-inset absolute img-hover-here blur-up lazyload"
+                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="https://images.unsplash.com/photo-1633394782240-f81aba3f850d?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDN8fHRyZWFkbWlsbHxlbnwwfHx8fDE2NjMwMTA1MjQ&amp;ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;w&#x3D;2000"
+                    width="112"
+                    height="80"
+                    alt="Why walking on treadmill on full incline is better than running"
+                />
+            </figure>
+
+            <div class="py-2">
+                <h3 class="text-base text-title lineClamp-2 leading-tight hover:text-primary">Why walking on treadmill on full incline is better than running</h3>
+                <div class="text-sm text-gray-500 mt-1"><time class="datetime" datetime=" 2022-09-12 ">12 September 2022</time></div>
             </div>
         </a>
     </div>
@@ -662,33 +620,6 @@ Workspace indicator shows the amount of opened workspaces and highlights the cur
     </div>
 </article>            <article class="post-box relative overflow-hidden ">
     <figure class="post-box-image relative mb-4 overflow-hidden h-40 bg-gray-150 rounded">
-        <a href="/blog/fish-like-autosuggestions-in-bash-shell/" class="img-hover">
-            <img class="image-inset absolute img-hover-here blur-up lazyload"
-                src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                data-srcset="https://images.unsplash.com/photo-1629654297299-c8506221ca97?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDF8fGJhc2h8ZW58MHx8fHwxNjY0Nzk4MDEw&amp;ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;w&#x3D;2000 100w,https://images.unsplash.com/photo-1629654297299-c8506221ca97?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDF8fGJhc2h8ZW58MHx8fHwxNjY0Nzk4MDEw&amp;ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;w&#x3D;2000 300w,https://images.unsplash.com/photo-1629654297299-c8506221ca97?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDF8fGJhc2h8ZW58MHx8fHwxNjY0Nzk4MDEw&amp;ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;w&#x3D;2000 600w"
-                data-sizes="auto"
-                width="350"
-                height="160"
-                alt="Fish-like autosuggestions in bash shell"/>
-        </a>
-    </figure>
-
-    <div class="post-box-body">
-        <div class="text-xs mb-3 flex items-center">
-    <span class="w-2 h-2 rounded-full bg-primary inline-block mr-2" ></span>
-    <a href="https://harduex.com/blog/tag/backend/" class="uppercase tracking-wide relative z-3 text-gray-500">backend</a>
-</div>
-
-        <h2 class="post-box-title text-title hover:text-primary mb-3 leading-tight text-xl">
-            <a href="/blog/fish-like-autosuggestions-in-bash-shell/" class="block">Fish-like autosuggestions in bash shell</a>
-        </h2>
-
-        
-
-        <div class="text-sm text-gray-500"><time class="datetime" datetime=" 2022-10-03 ">3 October 2022</time></div>
-    </div>
-</article>            <article class="post-box relative overflow-hidden ">
-    <figure class="post-box-image relative mb-4 overflow-hidden h-40 bg-gray-150 rounded">
         <a href="/blog/privacy-respecting-hackable-metasearch-engine-searx/" class="img-hover">
             <img class="image-inset absolute img-hover-here blur-up lazyload"
                 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
@@ -740,6 +671,33 @@ Workspace indicator shows the amount of opened workspaces and highlights the cur
         
 
         <div class="text-sm text-gray-500"><time class="datetime" datetime=" 2022-09-27 ">27 September 2022</time></div>
+    </div>
+</article>            <article class="post-box relative overflow-hidden ">
+    <figure class="post-box-image relative mb-4 overflow-hidden h-40 bg-gray-150 rounded">
+        <a href="/blog/15-must-have-visual-studio-code-extensions/" class="img-hover">
+            <img class="image-inset absolute img-hover-here blur-up lazyload"
+                src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                data-srcset="https://images.unsplash.com/photo-1607799131608-9a22dd60e25e?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDEwfHx2aXN1YWwlMjBzdHVkaW8lMjBjb2RlfGVufDB8fHx8MTY2MjkyOTg5MQ&amp;ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;w&#x3D;2000 100w,https://images.unsplash.com/photo-1607799131608-9a22dd60e25e?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDEwfHx2aXN1YWwlMjBzdHVkaW8lMjBjb2RlfGVufDB8fHx8MTY2MjkyOTg5MQ&amp;ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;w&#x3D;2000 300w,https://images.unsplash.com/photo-1607799131608-9a22dd60e25e?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDEwfHx2aXN1YWwlMjBzdHVkaW8lMjBjb2RlfGVufDB8fHx8MTY2MjkyOTg5MQ&amp;ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;w&#x3D;2000 600w"
+                data-sizes="auto"
+                width="350"
+                height="160"
+                alt="15 must-have Visual Studio Code extensions"/>
+        </a>
+    </figure>
+
+    <div class="post-box-body">
+        <div class="text-xs mb-3 flex items-center">
+    <span class="w-2 h-2 rounded-full bg-primary inline-block mr-2" style="background-color:#24cc46"></span>
+    <a href="https://harduex.com/blog/tag/programming/" class="uppercase tracking-wide relative z-3 text-gray-500">programming</a>
+</div>
+
+        <h2 class="post-box-title text-title hover:text-primary mb-3 leading-tight text-xl">
+            <a href="/blog/15-must-have-visual-studio-code-extensions/" class="block">15 must-have Visual Studio Code extensions</a>
+        </h2>
+
+        
+
+        <div class="text-sm text-gray-500"><time class="datetime" datetime=" 2022-09-12 ">12 September 2022</time></div>
     </div>
 </article>        </div>
     </div>
