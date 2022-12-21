@@ -7,6 +7,27 @@
     <loc>https://harduex.com/blog/</loc>
   </url>
   <url>
+    <loc>https://harduex.com/blog/become-a-google-search-expert-with-these-advanced-techniques/</loc>
+  </url>
+  <url>
+    <loc>https://harduex.com/blog/tag/exploration/</loc>
+  </url>
+  <url>
+    <loc>https://harduex.com/blog/how-big-companies-creates-and-uses-shadow-profiles-to-know-everything-about-you/</loc>
+  </url>
+  <url>
+    <loc>https://harduex.com/blog/tag/cyber-security/</loc>
+  </url>
+  <url>
+    <loc>https://harduex.com/blog/npm-tools-manage-nodejs-projects/</loc>
+  </url>
+  <url>
+    <loc>https://harduex.com/blog/tag/backend/</loc>
+  </url>
+  <url>
+    <loc>https://harduex.com/blog/how-to-get-network-requests-with-chrome-devtools-and-postman/</loc>
+  </url>
+  <url>
     <loc>https://harduex.com/blog/favorite-stretching-exercises/</loc>
   </url>
   <url>
@@ -28,16 +49,10 @@
     <loc>https://harduex.com/blog/fish-like-autosuggestions-in-bash-shell/</loc>
   </url>
   <url>
-    <loc>https://harduex.com/blog/tag/backend/</loc>
-  </url>
-  <url>
     <loc>https://harduex.com/blog/how-to-install-and-setup-fish-shell-with-default-bash-styles/</loc>
   </url>
   <url>
     <loc>https://harduex.com/blog/privacy-respecting-hackable-metasearch-engine-searx/</loc>
-  </url>
-  <url>
-    <loc>https://harduex.com/blog/tag/cyber-security/</loc>
   </url>
   <url>
     <loc>https://harduex.com/blog/interesting-projects-and-tools-discovered-on-github-part-1/</loc>
@@ -47,6 +62,9 @@
   </url>
   <url>
     <loc>https://harduex.com/blog/why-walking-on-treadmill-on-full-incline-is-better-than-running/</loc>
+  </url>
+  <url>
+    <loc>https://harduex.com/blog/author/user/</loc>
   </url>
   <url>
     <loc>https://harduex.com/blog/15-must-have-visual-studio-code-extensions/</loc>
@@ -61,58 +79,97 @@
     <loc>https://harduex.com/blog/6-pack-abs-in-6-weeks-with-weider-training-program/</loc>
   </url>
   <url>
-    <loc>https://harduex.com/blog/the-power-of-yerba-mate/</loc>
-  </url>
-  <url>
-    <loc>https://harduex.com/blog/tag/energy/</loc>
-  </url>
-  <url>
-    <loc>https://harduex.com/blog/author/user/</loc>
-  </url>
-  <url>
-    <loc>https://harduex.com/blog/natures-best-remedies-for-everyday-stress/</loc>
-  </url>
-  <url>
-    <loc>https://harduex.com/blog/tag/nature/</loc>
-  </url>
-  <url>
-    <loc>https://harduex.com/blog/why-you-have-to-switch-to-brave-browser/</loc>
-  </url>
-  <url>
-    <loc>https://harduex.com/blog/tag/tech/</loc>
-  </url>
-  <url>
-    <loc>https://harduex.com/blog/personal-top-gnome-extensions/</loc>
-  </url>
-  <url>
     <loc>https://harduex.com/blog/page/2/</loc>
   </url>
   <url>
     <loc>https://harduex.com/blog/welcome/</loc>
   </url>
   <url>
-    <loc>https://harduex.com/blog/tag/health/</loc>
-  </url>
-  <url>
-    <loc>https://harduex.com/blog/tag/lifestyle/</loc>
-  </url>
-  <url>
     <loc>https://harduex.com/blog/tag/tips/</loc>
   </url>
   <url>
-    <loc>https://harduex.com/blog/tag/power/</loc>
+    <loc>https://harduex.com/blog/tag/tech/</loc>
   </url>
   <url>
-    <loc>https://harduex.com/blog/tag/gains/</loc>
-  </url>
-  <url>
-    <loc>https://harduex.com/blog/tag/extensions/</loc>
+    <loc>https://harduex.com/blog/tag/health/</loc>
   </url>
   <url>
     <loc>https://harduex.com/blog/tag/web/</loc>
   </url>
   <url>
+    <loc>https://harduex.com/blog/tag/lifestyle/</loc>
+  </url>
+  <url>
+    <loc>https://harduex.com/blog/tag/energy/</loc>
+  </url>
+  <url>
+    <loc>https://harduex.com/blog/tag/tools/</loc>
+  </url>
+  <url>
+    <loc>https://harduex.com/blog/tag/interesting/</loc>
+  </url>
+  <url>
+    <loc>https://harduex.com/blog/tag/extensions/</loc>
+  </url>
+  <url>
+    <loc>https://harduex.com/blog/tag/engines/</loc>
+  </url>
+  <url>
+    <loc>https://harduex.com/blog/tag/how-to/</loc>
+  </url>
+  <url>
+    <loc>https://harduex.com/blog/tag/privacy/</loc>
+  </url>
+  <url>
+    <loc>https://harduex.com/blog/tag/tricks/</loc>
+  </url>
+  <url>
+    <loc>https://harduex.com/blog/tag/advanced-search/</loc>
+  </url>
+  <url>
+    <loc>https://harduex.com/blog/tag/internet/</loc>
+  </url>
+  <url>
+    <loc>https://harduex.com/blog/why-you-have-to-switch-to-brave-browser/</loc>
+  </url>
+  <url>
+    <loc>https://harduex.com/blog/tag/configuration/</loc>
+  </url>
+  <url>
+    <loc>https://harduex.com/blog/tag/frontend/</loc>
+  </url>
+  <url>
+    <loc>https://harduex.com/blog/tag/github/</loc>
+  </url>
+  <url>
+    <loc>https://harduex.com/blog/tag/scripting/</loc>
+  </url>
+  <url>
+    <loc>https://harduex.com/blog/tag/setup/</loc>
+  </url>
+  <url>
+    <loc>https://harduex.com/blog/tag/shell/</loc>
+  </url>
+  <url>
+    <loc>https://harduex.com/blog/tag/sh/</loc>
+  </url>
+  <url>
+    <loc>https://harduex.com/blog/tag/npm/</loc>
+  </url>
+  <url>
+    <loc>https://harduex.com/blog/tag/node-js/</loc>
+  </url>
+  <url>
+    <loc>https://harduex.com/blog/tag/step-by-step/</loc>
+  </url>
+  <url>
+    <loc>https://harduex.com/blog/tag/tutorial/</loc>
+  </url>
+  <url>
     <loc>https://harduex.com/blog/tag/calmness/</loc>
+  </url>
+  <url>
+    <loc>https://harduex.com/blog/tag/gains/</loc>
   </url>
   <url>
     <loc>https://harduex.com/blog/tag/meditation/</loc>
@@ -127,34 +184,13 @@
     <loc>https://harduex.com/blog/tag/training/</loc>
   </url>
   <url>
+    <loc>https://harduex.com/blog/the-power-of-yerba-mate/</loc>
+  </url>
+  <url>
     <loc>https://harduex.com/blog/tag/cardio/</loc>
   </url>
   <url>
-    <loc>https://harduex.com/blog/tag/step-by-step/</loc>
-  </url>
-  <url>
-    <loc>https://harduex.com/blog/tag/configuration/</loc>
-  </url>
-  <url>
-    <loc>https://harduex.com/blog/tag/how-to/</loc>
-  </url>
-  <url>
-    <loc>https://harduex.com/blog/tag/interesting/</loc>
-  </url>
-  <url>
-    <loc>https://harduex.com/blog/tag/sh/</loc>
-  </url>
-  <url>
-    <loc>https://harduex.com/blog/tag/setup/</loc>
-  </url>
-  <url>
-    <loc>https://harduex.com/blog/tag/shell/</loc>
-  </url>
-  <url>
-    <loc>https://harduex.com/blog/tag/tools/</loc>
-  </url>
-  <url>
-    <loc>https://harduex.com/blog/tag/tricks/</loc>
+    <loc>https://harduex.com/blog/tag/power/</loc>
   </url>
   <url>
     <loc>https://harduex.com/blog/tag/ubuntu/</loc>
@@ -163,40 +199,16 @@
     <loc>https://harduex.com/blog/tag/unix/</loc>
   </url>
   <url>
-    <loc>https://harduex.com/blog/tag/exploration/</loc>
-  </url>
-  <url>
     <loc>https://harduex.com/blog/tag/terminal/</loc>
-  </url>
-  <url>
-    <loc>https://harduex.com/blog/tag/scripting/</loc>
-  </url>
-  <url>
-    <loc>https://harduex.com/blog/tag/tutorial/</loc>
   </url>
   <url>
     <loc>https://harduex.com/blog/tag/aggregators/</loc>
   </url>
   <url>
-    <loc>https://harduex.com/blog/tag/privacy/</loc>
-  </url>
-  <url>
-    <loc>https://harduex.com/blog/tag/engines/</loc>
-  </url>
-  <url>
-    <loc>https://harduex.com/blog/tag/github/</loc>
-  </url>
-  <url>
     <loc>https://harduex.com/blog/tag/creativity/</loc>
   </url>
   <url>
-    <loc>https://harduex.com/blog/tag/frontend/</loc>
-  </url>
-  <url>
     <loc>https://harduex.com/blog/tag/graphical-design/</loc>
-  </url>
-  <url>
-    <loc>https://harduex.com/blog/tag/herbs/</loc>
   </url>
   <url>
     <loc>https://harduex.com/blog/author/user/rss/</loc>
@@ -205,6 +217,18 @@
     <loc>https://harduex.com/blog/author/user/page/2/</loc>
   </url>
   <url>
+    <loc>https://harduex.com/blog/personal-top-gnome-extensions/</loc>
+  </url>
+  <url>
+    <loc>https://harduex.com/blog/natures-best-remedies-for-everyday-stress/</loc>
+  </url>
+  <url>
+    <loc>https://harduex.com/blog/tag/nature/</loc>
+  </url>
+  <url>
     <loc>https://harduex.com/blog/tag/news/</loc>
+  </url>
+  <url>
+    <loc>https://harduex.com/blog/tag/herbs/</loc>
   </url>
 </urlset>
