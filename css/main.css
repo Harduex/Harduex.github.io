@@ -194,3 +194,7 @@ footer a:not(.nav-link) {
 .toast:not(.showing):not(.show) {
   display: none !important;
 }
+
+.bg-dark-secondary {
+  background-color: #2b2b2b;
+}
