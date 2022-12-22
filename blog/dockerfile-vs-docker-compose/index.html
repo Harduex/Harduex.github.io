@@ -11,7 +11,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>The power of Yerba Mate</title>
+    <title>Dockerfile vs docker-compose.yml: Understanding the Differences</title>
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -34,48 +34,48 @@
         }
     </style>
 
-    <link rel="canonical" href="https://harduex.com/blog/the-power-of-yerba-mate/" />
+    <meta name="description" content="Docker is a powerful tool for packaging and deploying applications. Learn the differences between the Dockerfile and docker-compose.yml" />
+    <link rel="canonical" href="https://harduex.com/blog/dockerfile-vs-docker-compose/" />
     <meta name="referrer" content="no-referrer-when-downgrade" />
     
     <meta property="og:site_name" content="Harduex blog" />
     <meta property="og:type" content="article" />
-    <meta property="og:title" content="The power of Yerba Mate" />
-    <meta property="og:description" content="“Yerba Mate has all the characteristics of tea and coffee and none of their negative properties… it is the most refreshing drink without leaving any unpleasant effects.&quot;
-
-– „Through South America&#x60;s Southland”, Rev. Dr. J. A. Zahm, C.S.C, Ph.D.
-
-Yerba mate is one of the most useful" />
-    <meta property="og:url" content="https://harduex.com/blog/the-power-of-yerba-mate/" />
-    <meta property="og:image" content="https://images.unsplash.com/photo-1444157545135-c045be691b05?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDEwfHx5ZXJiYSUyMG1hdGV8ZW58MHx8fHwxNjYyNjQ3MTYz&amp;ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;w&#x3D;2000" />
-    <meta property="article:published_time" content="2022-09-08T14:34:47.000Z" />
-    <meta property="article:modified_time" content="2022-09-08T14:34:47.000Z" />
-    <meta property="article:tag" content="energy" />
-    <meta property="article:tag" content="morning" />
-    <meta property="article:tag" content="power" />
-    <meta property="article:tag" content="Herbs" />
-    <meta property="article:tag" content="Nature" />
-    <meta property="article:tag" content="Health" />
-    <meta property="article:tag" content="Lifestyle" />
-    <meta property="article:tag" content="Meditation" />
-    <meta property="article:tag" content="Calmness" />
+    <meta property="og:title" content="Dockerfile vs docker-compose.yml: Understanding the Differences" />
+    <meta property="og:description" content="Docker is a powerful tool for packaging and deploying applications. Learn the differences between the Dockerfile and docker-compose.yml" />
+    <meta property="og:url" content="https://harduex.com/blog/dockerfile-vs-docker-compose/" />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1646627927863-19874c27316b?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDd8fGRvY2tlcnxlbnwwfHx8fDE2NzE3MDg2Njk&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000" />
+    <meta property="article:published_time" content="2022-12-22T11:41:06.000Z" />
+    <meta property="article:modified_time" content="2022-12-22T11:41:06.000Z" />
+    <meta property="article:tag" content="Infrastructure" />
+    <meta property="article:tag" content="backend" />
+    <meta property="article:tag" content="DevOps" />
+    <meta property="article:tag" content="development" />
+    <meta property="article:tag" content="deployment" />
+    <meta property="article:tag" content="configuration" />
+    <meta property="article:tag" content="engines" />
+    <meta property="article:tag" content="programming" />
+    <meta property="article:tag" content="projects" />
+    <meta property="article:tag" content="tech" />
+    <meta property="article:tag" content="terminal" />
+    <meta property="article:tag" content="tips" />
+    <meta property="article:tag" content="tools" />
+    <meta property="article:tag" content="tutorial" />
+    <meta property="article:tag" content="web" />
+    <meta property="article:tag" content="Ubuntu" />
     
     <meta property="article:publisher" content="https://www.facebook.com/Delight11" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="The power of Yerba Mate" />
-    <meta name="twitter:description" content="“Yerba Mate has all the characteristics of tea and coffee and none of their negative properties… it is the most refreshing drink without leaving any unpleasant effects.&quot;
-
-– „Through South America&#x60;s Southland”, Rev. Dr. J. A. Zahm, C.S.C, Ph.D.
-
-Yerba mate is one of the most useful" />
-    <meta name="twitter:url" content="https://harduex.com/blog/the-power-of-yerba-mate/" />
-    <meta name="twitter:image" content="https://images.unsplash.com/photo-1444157545135-c045be691b05?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDEwfHx5ZXJiYSUyMG1hdGV8ZW58MHx8fHwxNjYyNjQ3MTYz&amp;ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;w&#x3D;2000" />
+    <meta name="twitter:title" content="Dockerfile vs docker-compose.yml: Understanding the Differences" />
+    <meta name="twitter:description" content="Docker is a powerful tool for packaging and deploying applications. Learn the differences between the Dockerfile and docker-compose.yml" />
+    <meta name="twitter:url" content="https://harduex.com/blog/dockerfile-vs-docker-compose/" />
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1646627927863-19874c27316b?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDd8fGRvY2tlcnxlbnwwfHx8fDE2NzE3MDg2Njk&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000" />
     <meta name="twitter:label1" content="Written by" />
     <meta name="twitter:data1" content="🌿 𝖘𝖎𝖒𝖊𝖔𝖓 🌿" />
     <meta name="twitter:label2" content="Filed under" />
-    <meta name="twitter:data2" content="energy, morning, power, Herbs, Nature, Health, Lifestyle, Meditation, Calmness" />
+    <meta name="twitter:data2" content="Infrastructure, backend, DevOps, development, deployment, configuration, engines, programming, projects, tech, terminal, tips, tools, tutorial, web, Ubuntu" />
     <meta name="twitter:site" content="@twitter.com" />
     <meta property="og:image:width" content="2000" />
-    <meta property="og:image:height" content="1328" />
+    <meta property="og:image:height" content="1250" />
     
     <script type="application/ld+json">
 {
@@ -106,18 +106,18 @@ Yerba mate is one of the most useful" />
             "https://harduex.com/"
         ]
     },
-    "headline": "The power of Yerba Mate",
-    "url": "https://harduex.com/blog/the-power-of-yerba-mate/",
-    "datePublished": "2022-09-08T14:34:47.000Z",
-    "dateModified": "2022-09-08T14:34:47.000Z",
+    "headline": "Dockerfile vs docker-compose.yml: Understanding the Differences",
+    "url": "https://harduex.com/blog/dockerfile-vs-docker-compose/",
+    "datePublished": "2022-12-22T11:41:06.000Z",
+    "dateModified": "2022-12-22T11:41:06.000Z",
     "image": {
         "@type": "ImageObject",
-        "url": "https://images.unsplash.com/photo-1444157545135-c045be691b05?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDEwfHx5ZXJiYSUyMG1hdGV8ZW58MHx8fHwxNjYyNjQ3MTYz&ixlib=rb-1.2.1&q=80&w=2000",
+        "url": "https://images.unsplash.com/photo-1646627927863-19874c27316b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDd8fGRvY2tlcnxlbnwwfHx8fDE2NzE3MDg2Njk&ixlib=rb-4.0.3&q=80&w=2000",
         "width": 2000,
-        "height": 1328
+        "height": 1250
     },
-    "keywords": "energy, morning, power, Herbs, Nature, Health, Lifestyle, Meditation, Calmness",
-    "description": "“Yerba Mate has all the characteristics of tea and coffee and none of their negative properties… it is the most refreshing drink without leaving any unpleasant effects.&quot;\n\n– „Through South America&#x60;s Southland”, Rev. Dr. J. A. Zahm, C.S.C, Ph.D.\n\nYerba mate is one of the most useful types of tea that is little known. It is prepared from the leaves of a tree species that grows in the tropical forests of South America. It has a strong energizing effect and can replace coffee in the morning as a heal",
+    "keywords": "Infrastructure, backend, DevOps, development, deployment, configuration, engines, programming, projects, tech, terminal, tips, tools, tutorial, web, Ubuntu",
+    "description": "Docker is a tool that helps you package and deploy applications easily. It uses two main files to manage Docker containers: the Dockerfile and the docker-compose.yml. These files are both important, but they serve different purposes.\n\n\nLet&#x27;s start with the Dockerfile\n\nThink of it as a set of instructions for building a Docker image. A Docker image is like a blueprint for a container, which is an isolated environment that runs your application. You can think of a Dockerfile as a recipe for making",
     "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "https://harduex.com/blog/"
@@ -231,10 +231,10 @@ Yerba mate is one of the most useful" />
                 <header class="post-header mb-6">
     <div class="text-xs mb-3 flex items-center">
     <span class="w-2 h-2 rounded-full bg-primary inline-block mr-2" ></span>
-    <a href="https://harduex.com/blog/tag/energy/" class="uppercase tracking-wide relative z-3 text-gray-500">energy</a>
+    <a href="https://harduex.com/blog/tag/infrastructure/" class="uppercase tracking-wide relative z-3 text-gray-500">Infrastructure</a>
 </div>
 
-    <h1 class="post-title text-4xl md:text-42 text text-title">The power of Yerba Mate</h1>
+    <h1 class="post-title text-4xl md:text-42 text text-title">Dockerfile vs docker-compose.yml: Understanding the Differences</h1>
     
 </header>
                 <div class="hh flex items-center relative z-4 flex-auto overflow-hidden">
@@ -254,9 +254,9 @@ Yerba mate is one of the most useful" />
 
     <div class="hh-right flex-auto overflow-hidden text-sm">
         <div class="noWrapWithEllipsis text-gray-500">
-            <time class="datetime capitalize" datetime="2022-09-08">Published 8 Sep 2022</time>
+            <time class="datetime capitalize" datetime="2022-12-22">Published 22 Dec 2022</time>
             <span class="mx-1 bull"></span>
-            <span class="readingTime cursor-default" title="4 min read">4 min read</span>
+            <span class="readingTime cursor-default" title="2 min read">2 min read</span>
         </div>
 
         <div class="hh-author-name noWrapWithEllipsis font-medium text-gray-900">
@@ -269,23 +269,41 @@ Yerba mate is one of the most useful" />
 
                 <figure class="post-image mt-8 mx-auto max-w-screen-xl">
         <img class="post-img w-full max-auto"
-            srcset="https://images.unsplash.com/photo-1444157545135-c045be691b05?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDEwfHx5ZXJiYSUyMG1hdGV8ZW58MHx8fHwxNjYyNjQ3MTYz&amp;ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;w&#x3D;2000 300w,
-                    https://images.unsplash.com/photo-1444157545135-c045be691b05?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDEwfHx5ZXJiYSUyMG1hdGV8ZW58MHx8fHwxNjYyNjQ3MTYz&amp;ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;w&#x3D;2000 600w,
-                    https://images.unsplash.com/photo-1444157545135-c045be691b05?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDEwfHx5ZXJiYSUyMG1hdGV8ZW58MHx8fHwxNjYyNjQ3MTYz&amp;ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;w&#x3D;2000 1000w,
-                    https://images.unsplash.com/photo-1444157545135-c045be691b05?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDEwfHx5ZXJiYSUyMG1hdGV8ZW58MHx8fHwxNjYyNjQ3MTYz&amp;ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;w&#x3D;2000 2000w"
+            srcset="https://images.unsplash.com/photo-1646627927863-19874c27316b?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDd8fGRvY2tlcnxlbnwwfHx8fDE2NzE3MDg2Njk&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 300w,
+                    https://images.unsplash.com/photo-1646627927863-19874c27316b?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDd8fGRvY2tlcnxlbnwwfHx8fDE2NzE3MDg2Njk&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 600w,
+                    https://images.unsplash.com/photo-1646627927863-19874c27316b?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDd8fGRvY2tlcnxlbnwwfHx8fDE2NzE3MDg2Njk&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 1000w,
+                    https://images.unsplash.com/photo-1646627927863-19874c27316b?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDd8fGRvY2tlcnxlbnwwfHx8fDE2NzE3MDg2Njk&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 2000w"
             sizes="(max-width: 400px) 300px,(max-width: 730px) 600px, (max-width: 1600px) 100vw"
-            src="https://images.unsplash.com/photo-1444157545135-c045be691b05?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDEwfHx5ZXJiYSUyMG1hdGV8ZW58MHx8fHwxNjYyNjQ3MTYz&amp;ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;w&#x3D;2000"
-            alt="The power of Yerba Mate"
+            src="https://images.unsplash.com/photo-1646627927863-19874c27316b?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDd8fGRvY2tlcnxlbnwwfHx8fDE2NzE3MDg2Njk&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000"
+            alt="Dockerfile vs docker-compose.yml: Understanding the Differences"
         />
-        <figcaption class="post-figcaption text-left italic text-base py-2 px-3 mt-0 text-black" style="background-color:#e2e2e2">Photo by <a href="https://unsplash.com/@davideragusa?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit">davide ragusa</a> / <a href="https://unsplash.com/?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit">Unsplash</a></figcaption>
+        <figcaption class="post-figcaption text-left italic text-base py-2 px-3 mt-0 text-black" style="background-color:#e2e2e2">Photo by <a href="https://unsplash.com/@rubaitulazad?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit">Rubaitul Azad</a> / <a href="https://unsplash.com/?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit">Unsplash</a></figcaption>
     </figure>
 
             <div class="post-body-wrap relative lg:flex">
     <div id="post-body" class="post-body min-w-0 js-post-content font-sans text-lg">
-        <blockquote>“Yerba Mate has all the characteristics of tea and coffee and none of their negative properties… it is the most refreshing drink without leaving any unpleasant effects."</blockquote><p>– „Through South America`s Southland”, Rev. Dr. J. A. Zahm, C.S.C, Ph.D.</p><p><strong>Yerba mate</strong> is one of the most useful types of tea that is little known. It is prepared from the leaves of a tree species that grows in the tropical forests of South America. It has a strong energizing effect and can replace coffee in the morning as a healthy alternative.</p><p>Yerba Mate has a particularly strong, earthy and actually very complex flavor that can hardly be compared to other types of tea. It is popular in Brazil, Paraguay, Argentina. It is a source of valuable and powerful antioxidants, B vitamins, vitamin C, zinc, potassium, manganese.</p><p><strong>Why is yerba mate tea so beneficial?</strong></p><p>Gives a lot of energy and tastes great!</p><p>Yerba mate is a healthy start to the day. It gives just as much energy as coffee, but is a healthier alternative. Yerba mate also contains <a href="https://en.wikipedia.org/wiki/Caffeine">caffeine</a>, notably less than the amount in coffee, but after consuming yerba mate, the effects of caffeine are not the same as with a cup of coffee. This is because of the amount of fiber and antioxidants in this tea, which help prevent caffeine from causing such a sudden impact on the nervous system.</p><p>Thanks to the unique combination of active ingredients, Yerba Mate has the ability to simultaneously stimulate and relax the body and clarify the mind. Of the six most common stimulants: guarana, coffee, cocoa, cola and tea, it is characterized by the most balanced, toning and nourishing action. Compared to coffee, Mate is distinguished by a delicate and significantly longer-lasting effect that lasts throughout the day.</p><p></p><figure class="kg-card kg-embed-card"><iframe width="200" height="113" src="https://www.youtube.com/embed/vA6HIKYkxaE?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="How To Prepare Yerba Mate"></iframe></figure><p></p><h3 id="how-to-prepare-it-and-everything-you-need-to-start">How to Prepare it and Everything You Need to Start</h3><p></p><p><strong>Preparation of water for Mate</strong></p><p>I recommend using good, low mineralized spring water. Most mineral waters have a high mineralization, respectively a specific added taste from the contained ingredients. If you have the opportunity to prepare Mate with spring mountain water, there is no better approach than this. Tap water is not preferable due to the high content of heavy metals (chlorine, fluorine, etc.). Water with such a content poured into the <a href="https://www.merriam-webster.com/dictionary/calabaza#:~:text=Definition%20of%20calabaza,West%20Indies%20and%20tropical%20America">calabaza</a> "kills" Mate and neutralizes its beneficial qualities and ingredients.</p><p>Regardless of what and how you preheat, it should be kept in mind that the appropriate water temperature is between 60° and 80°. The lower one would not be able to sufficiently reveal the strength and potential of Mate, and the warmer one will burn it with the first pour. Different Mate brands tolerate different temperatures as well. Your personal preferences also matter, some materos prefer a cooler Mate, similar in temperature even to terrere, while others drink it almost hot. Experiment and find your temperature and Mate experience.</p><p></p><p><strong>Step 1</strong>: Fill the calabaza with yerba mate about ½ to ¾ of its volume. The smaller fractions (gaucho) fill about ½, while the classic Argentine and even Paraguayan with sprigs, about ⅔ or ¾. The idea is that the leaf-only fractions swell more after being poured, unlike those with twig content. The knowledge of exactly how much yerba mate to fill the gourd with will crystallize over time, as mate experience is gained.</p><p><strong>Step 2</strong>: Cover with the palm of your hand and turn the calabaza upside down. We intensively shake the full calabaza up and down vertically.</p><p><strong>The goal is</strong>: </p><ul><li>To create a space to place the <a href="https://en.wikipedia.org/wiki/Bombilla">bombilla</a>.</li><li>Mate to be structured as a natural filter, separating the smaller and powdery fractions to the lower palm (towards the throat). In this way, returning the calabaza to it's starting position, the larger particles remain on its underside (the bottom), preventing the subsequent clogging of the bombilla;</li><li>Through the palms, to feel the rhythm of the yerba in the body.</li></ul><p><strong>Step 3</strong>: We return the calabaza to the starting position (with the neck up), simultaneously building Mate at a 45° slope to the axis of the calabaza and creating the so-called Mate mountain. The space opposite it, ¼ to ½ of the volume of the calabaza, we leave empty, in it we will pour the water for Mate. During this preparation, as well as during the subsequent infusions, it is important to preserve the structure of the Mate mountain;</p><p><strong>Step 4</strong>: Pour water at room temperature on the wall opposite to Mate Mountain until ⅓ to ⅔ of the free volume is occupied. </p><p><strong>The idea is</strong>:</p><ul><li>Do not "burn" and scald the yerba already with the first watering, in case we pour directly with the warm water;</li><li>To preserve all the nutritional and beneficial ingredients, preventing at the same time the excessive release of tannins;</li><li>To prepare and gradually temper Mate.</li></ul><p>We wait 1-2 minutes for the room temperature water to be absorbed and top up with the previously prepared 60° - 80° water. We fill so that the yerba with the water occupies about ⅘ or ⅚ of the volume of the calabaza. We run the water down the calabaza wall, not directly onto the foliage, so that it seeps into the yerba from the bottom up.</p><p><strong>Step 5</strong>: We place the bombilla perpendicular to the Mate mountain, pre-blocking its tip with a thumb, preventing it from clogging and entering air. The best, from the point of view of preserving the structure of Mate and filtering it, is the bombilla to be "punched" under the Mate mountain, starting from the opposite wall. Nevertheless, in case it is necessary, do not hesitate to move the bombilla or compact the yerba with it. Remember, however, that this is done only by the person making the Mate.</p><p>The method described above is traditional for placing a bombilla. However, depending on its type and filter, we could position it below or above the mountain.</p><p><strong>Happy drinking!</strong></p><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://images.unsplash.com/photo-1547645838-1fac391be287?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=MnwxMTc3M3wwfDF8c2VhcmNofDI2fHx5ZXJiYSUyMG1hdGV8ZW58MHx8fHwxNjYyNjQ3MTYz&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=2000" class="kg-image" alt loading="lazy" width="4000" height="6000" srcset="https://images.unsplash.com/photo-1547645838-1fac391be287?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=MnwxMTc3M3wwfDF8c2VhcmNofDI2fHx5ZXJiYSUyMG1hdGV8ZW58MHx8fHwxNjYyNjQ3MTYz&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=600 600w, https://images.unsplash.com/photo-1547645838-1fac391be287?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=MnwxMTc3M3wwfDF8c2VhcmNofDI2fHx5ZXJiYSUyMG1hdGV8ZW58MHx8fHwxNjYyNjQ3MTYz&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1000 1000w, https://images.unsplash.com/photo-1547645838-1fac391be287?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=MnwxMTc3M3wwfDF8c2VhcmNofDI2fHx5ZXJiYSUyMG1hdGV8ZW58MHx8fHwxNjYyNjQ3MTYz&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1600 1600w, https://images.unsplash.com/photo-1547645838-1fac391be287?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=MnwxMTc3M3wwfDF8c2VhcmNofDI2fHx5ZXJiYSUyMG1hdGV8ZW58MHx8fHwxNjYyNjQ3MTYz&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=2400 2400w" sizes="(min-width: 720px) 720px"><figcaption>Photo by <a href="https://unsplash.com/@marcoperretta?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit">Marco Perretta</a> / <a href="https://unsplash.com/?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit">Unsplash</a></figcaption></figure>
+        <p><a href="https://www.docker.com/"><strong>Docker</strong></a> is a tool that helps you package and deploy applications easily. It uses two main files to manage Docker containers: the <strong>Dockerfile</strong> and the <strong>docker-compose.yml</strong>. These files are both important, but they serve different purposes.</p><h3 id="lets-start-with-the-dockerfile">Let's start with the Dockerfile</h3><p>Think of it as a set of instructions for building a Docker image. A Docker image is like a blueprint for a container, which is an isolated environment that runs your application. You can think of a Dockerfile as a recipe for making a Docker image. It tells Docker what base image to use (e.g., Ubuntu), what dependencies to install (e.g., Apache, PHP), and any additional configuration or setup that needs to be done (e.g., copying files, setting environment variables).</p><p>Here's an example of a simple Dockerfile:</p><pre><code class="language-Dockerfile">FROM ubuntu:20.04
+
+RUN apt-get update &amp;&amp; apt-get install -y apache2
+
+COPY index.html /var/www/html/
+
+EXPOSE 80
+
+CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]</code></pre><p>This Dockerfile uses the Ubuntu 20.04 base image and installs Apache. It then copies an HTML file (index.html) to the Apache web root directory and exposes port 80. Finally, it starts Apache in the foreground.</p><h3 id="now-lets-talk-about-the-docker-composeyml-file">Now let's talk about the docker-compose.yml file</h3><p>This file is used to define and run multi-container Docker applications. A multi-container Docker application is a group of interconnected containers that work together to run a complete application.</p><p>Here's an example of a docker-compose.yml file:</p><pre><code class="language-yaml">version: '3'
+services:
+  web:
+    build: .
+    ports:
+      - "80:80"
+  db:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: my_database</code></pre><p>This docker-compose.yml file defines two services: "web" and "db". The "web" service uses the Docker image built from the current directory (using the instructions in the Dockerfile) and exposes port 80. The "db" service uses the MySQL 5.7 image and sets some environment variables.</p><p>To summarize, the <strong>Dockerfile</strong> is used to <strong>build a single Docker image</strong>, while the <strong>docker-compose.yml</strong> is used to <strong>define and run multi-container Docker applications</strong>. They are both useful in different ways and can help you take full advantage of Docker's containerization capabilities.</p><h3 id="keep-the-containers-up-and-running">Keep the containers up and running!</h3><!--kg-card-begin: html--><iframe src="https://giphy.com/embed/6AFldi5xJQYIo" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><!--kg-card-end: html-->
 
         <div class="post-tags my-8 buttons justify-center lg:justify-start">
-            <a href="/blog/tag/energy/" title="energy" class="button is-black is-outlined is-small uppercase">energy</a><a href="/blog/tag/morning/" title="morning" class="button is-black is-outlined is-small uppercase">morning</a><a href="/blog/tag/power/" title="power" class="button is-black is-outlined is-small uppercase">power</a><a href="/blog/tag/herbs/" title="Herbs" class="button is-black is-outlined is-small uppercase">Herbs</a><a href="/blog/tag/nature/" title="Nature" class="button is-black is-outlined is-small uppercase">Nature</a><a href="/blog/tag/health/" title="Health" class="button is-black is-outlined is-small uppercase">Health</a><a href="/blog/tag/lifestyle/" title="Lifestyle" class="button is-black is-outlined is-small uppercase">Lifestyle</a><a href="/blog/tag/meditation/" title="Meditation" class="button is-black is-outlined is-small uppercase">Meditation</a><a href="/blog/tag/calmness/" title="Calmness" class="button is-black is-outlined is-small uppercase">Calmness</a>
+            <a href="/blog/tag/infrastructure/" title="Infrastructure" class="button is-black is-outlined is-small uppercase">Infrastructure</a><a href="/blog/tag/backend/" title="backend" class="button is-black is-outlined is-small uppercase">backend</a><a href="/blog/tag/devops/" title="DevOps" class="button is-black is-outlined is-small uppercase">DevOps</a><a href="/blog/tag/development/" title="development" class="button is-black is-outlined is-small uppercase">development</a><a href="/blog/tag/deployment/" title="deployment" class="button is-black is-outlined is-small uppercase">deployment</a><a href="/blog/tag/configuration/" title="configuration" class="button is-black is-outlined is-small uppercase">configuration</a><a href="/blog/tag/engines/" title="engines" class="button is-black is-outlined is-small uppercase">engines</a><a href="/blog/tag/programming/" title="programming" class="button is-black is-outlined is-small uppercase">programming</a><a href="/blog/tag/projects/" title="projects" class="button is-black is-outlined is-small uppercase">projects</a><a href="/blog/tag/tech/" title="tech" class="button is-black is-outlined is-small uppercase">tech</a><a href="/blog/tag/terminal/" title="terminal" class="button is-black is-outlined is-small uppercase">terminal</a><a href="/blog/tag/tips/" title="tips" class="button is-black is-outlined is-small uppercase">tips</a><a href="/blog/tag/tools/" title="tools" class="button is-black is-outlined is-small uppercase">tools</a><a href="/blog/tag/tutorial/" title="tutorial" class="button is-black is-outlined is-small uppercase">tutorial</a><a href="/blog/tag/web/" title="web" class="button is-black is-outlined is-small uppercase">web</a><a href="/blog/tag/ubuntu/" title="Ubuntu" class="button is-black is-outlined is-small uppercase">Ubuntu</a>
         </div>
 
     </div>
@@ -294,42 +312,42 @@ Yerba mate is one of the most useful" />
     <div class="js-share post-share-inner pt-9 sticky top-16 text-center">
         <span class="uppercase text-xs tracking-wider mb-3 inline-block lg:hidden">Share this article:</span>
         <div class="buttons items-start justify-center lg:flex-col lg:justify-start">
-            <a href="https://www.facebook.com/sharer/sharer.php?u=https://harduex.com/blog/the-power-of-yerba-mate/"
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://harduex.com/blog/dockerfile-vs-docker-compose/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Share on Facebook"
                 class="button is-circle text-xs is-black opacity-20 hover:opacity-40">
                 <svg class="icon"><use xlink:href="#icon-facebook"></use></svg>
             </a>
-            <a href="https://twitter.com/share?text=The%20power%20of%20Yerba%20Mate&amp;url=https://harduex.com/blog/the-power-of-yerba-mate/"
+            <a href="https://twitter.com/share?text=Dockerfile%20vs%20docker-compose.yml%3A%20Understanding%20the%20Differences&amp;url=https://harduex.com/blog/dockerfile-vs-docker-compose/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Share on Twitter"
                 class="button is-circle text-xs is-black opacity-20 hover:opacity-40">
                 <svg class="icon"><use xlink:href="#icon-twitter"></use></svg>
             </a>
-            <a href="https://www.reddit.com/submit?url=https://harduex.com/blog/the-power-of-yerba-mate/&amp;title=The%20power%20of%20Yerba%20Mate"
+            <a href="https://www.reddit.com/submit?url=https://harduex.com/blog/dockerfile-vs-docker-compose/&amp;title=Dockerfile%20vs%20docker-compose.yml%3A%20Understanding%20the%20Differences"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Share on Reddit"
                 class="button is-circle text-xs is-black opacity-20 hover:opacity-40">
                 <svg class="icon"><use xlink:href="#icon-reddit"></use></svg>
             </a>
-            <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://harduex.com/blog/the-power-of-yerba-mate/&amp;title=The%20power%20of%20Yerba%20Mate"
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://harduex.com/blog/dockerfile-vs-docker-compose/&amp;title=Dockerfile%20vs%20docker-compose.yml%3A%20Understanding%20the%20Differences"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Share on Linkedin"
                 class="button is-circle text-xs is-black opacity-20 hover:opacity-40">
                 <svg class="icon"><use xlink:href="#icon-linkedin"></use></svg>
             </a>
-            <a href="https://pinterest.com/pin/create/button/?url=http%3A%2F%2Fsimdrive.asuscomm.com%3A2368%2Fblog%2Fthe-power-of-yerba-mate%2F"
+            <a href="https://pinterest.com/pin/create/button/?url=http%3A%2F%2Fsimdrive.asuscomm.com%3A2368%2Fblog%2Fdockerfile-vs-docker-compose%2F"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Share on Pinterest"
                 class="button is-circle text-xs is-black opacity-20 hover:opacity-40">
                 <svg class="icon"><use xlink:href="#icon-pinterest"></use></svg>
             </a>
-            <a href="whatsapp://send?text=https://harduex.com/blog/the-power-of-yerba-mate/"
+            <a href="whatsapp://send?text=https://harduex.com/blog/dockerfile-vs-docker-compose/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Share on WhatSapp"
@@ -370,35 +388,22 @@ Yerba mate is one of the most useful" />
 </div>
     <div class="flex prev-next mb-8">
     <div class="w-1/2 pr-4">
-        <a href="/blog/natures-best-remedies-for-everyday-stress/" class="prev-next-link flex items-center">
+        <a href="/blog/become-a-google-search-expert-with-these-advanced-techniques/" class="prev-next-link flex items-center">
             <img class="hidden h-16 w-16 flex-none object-cover rounded-full blur-up lazyload mr-4 md:block"
                 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                data-src="https://images.unsplash.com/photo-1571934811356-5cc061b6821f?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDd8fHRlYXxlbnwwfHx8fDE2NjI1ODQ4MzI&amp;ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;w&#x3D;2000"
+                data-src="https://images.unsplash.com/photo-1638136264464-2711f0078d1e?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDIwfHxnb29nbGV8ZW58MHx8fHwxNjcxNjQ0OTcz&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000"
                 height="64"
                 width="64"
-                alt="Nature&#x27;s best remedies for everyday stress">
+                alt="Become a Google Search Expert Using Google Dorks">
 
             <div class="prev-next-span">
                 <span class="block text-sm mb-1 text-gray-500">Prev article</span>
-                <h3 class="prev-next-title text-title text-base hover:text-primary leading-tight lineClamp-2 md:text-lg">Nature&#x27;s best remedies for everyday stress</h3>
+                <h3 class="prev-next-title text-title text-base hover:text-primary leading-tight lineClamp-2 md:text-lg">Become a Google Search Expert Using Google Dorks</h3>
             </div>
         </a>
     </div>
 
     <div class="w-1/2 pl-4">
-        <a href="/blog/6-pack-abs-in-6-weeks-with-weider-training-program/" class="prev-next-right flex items-center justify-end">
-            <div class="text-right">
-                <span class="block text-sm mb-1 text-gray-500">Next article</span>
-                <h3 class="prev-next-title text-title text-base hover:text-primary leading-tight lineClamp-2 flex-grow md:text-lg">6 pack abs in 6 weeks with Weider training program</h3>
-            </div>
-
-            <img class="hidden h-16 w-16 flex-none object-cover rounded-full blur-up lazyload ml-4 md:block"
-                src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                data-src="https://images.unsplash.com/photo-1577221084712-45b0445d2b00?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDF8fDYlMjBwYWNrfGVufDB8fHx8MTY2MjY2Mzk1MA&amp;ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;w&#x3D;2000"
-                height="64"
-                width="64"
-                alt="6 pack abs in 6 weeks with Weider training program">
-        </a>
     </div>
 </div>
     </div>        </article>
@@ -407,24 +412,6 @@ Yerba mate is one of the most useful" />
             <div class="mb-10">
     <h3 class="uppercase mb-5 border-b pb-2 font-bold text-sm">Latest Posts</h3>
 
-    <div class="sidebar-post mb-4">
-        <a href="https://harduex.com/blog/dockerfile-vs-docker-compose/" class="flex items-center">
-            <figure class="h-20 w-28 relative mr-4 flex-none bg-gray-100 rounded overflow-hidden img-hover">
-                <img class="image-inset absolute img-hover-here blur-up lazyload"
-                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                    data-src="https://images.unsplash.com/photo-1646627927863-19874c27316b?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDd8fGRvY2tlcnxlbnwwfHx8fDE2NzE3MDg2Njk&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000"
-                    width="112"
-                    height="80"
-                    alt="Dockerfile vs docker-compose.yml: Understanding the Differences"
-                />
-            </figure>
-
-            <div class="py-2">
-                <h3 class="text-base text-title lineClamp-2 leading-tight hover:text-primary">Dockerfile vs docker-compose.yml: Understanding the Differences</h3>
-                <div class="text-sm text-gray-500 mt-1"><time class="datetime" datetime=" 2022-12-22 ">22 December 2022</time></div>
-            </div>
-        </a>
-    </div>
     <div class="sidebar-post mb-4">
         <a href="https://harduex.com/blog/become-a-google-search-expert-with-these-advanced-techniques/" class="flex items-center">
             <figure class="h-20 w-28 relative mr-4 flex-none bg-gray-100 rounded overflow-hidden img-hover">
@@ -461,7 +448,7 @@ Yerba mate is one of the most useful" />
             </div>
         </a>
     </div>
-    <div class="sidebar-post ">
+    <div class="sidebar-post mb-4">
         <a href="https://harduex.com/blog/npm-tools-manage-nodejs-projects/" class="flex items-center">
             <figure class="h-20 w-28 relative mr-4 flex-none bg-gray-100 rounded overflow-hidden img-hover">
                 <img class="image-inset absolute img-hover-here blur-up lazyload"
@@ -475,6 +462,24 @@ Yerba mate is one of the most useful" />
 
             <div class="py-2">
                 <h3 class="text-base text-title lineClamp-2 leading-tight hover:text-primary">10 Great npm and Node.js tools to manage your projects better</h3>
+                <div class="text-sm text-gray-500 mt-1"><time class="datetime" datetime=" 2022-12-19 ">19 December 2022</time></div>
+            </div>
+        </a>
+    </div>
+    <div class="sidebar-post ">
+        <a href="https://harduex.com/blog/how-to-get-network-requests-with-chrome-devtools-and-postman/" class="flex items-center">
+            <figure class="h-20 w-28 relative mr-4 flex-none bg-gray-100 rounded overflow-hidden img-hover">
+                <img class="image-inset absolute img-hover-here blur-up lazyload"
+                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="https://images.unsplash.com/photo-1617042375876-a13e36732a04?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDI1fHxjb2RlfGVufDB8fHx8MTY3MTQ2NTY4MA&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000"
+                    width="112"
+                    height="80"
+                    alt="How To Get Any Network Request with Chrome DevTools and Postman"
+                />
+            </figure>
+
+            <div class="py-2">
+                <h3 class="text-base text-title lineClamp-2 leading-tight hover:text-primary">How To Get Any Network Request with Chrome DevTools and Postman</h3>
                 <div class="text-sm text-gray-500 mt-1"><time class="datetime" datetime=" 2022-12-19 ">19 December 2022</time></div>
             </div>
         </a>
@@ -547,111 +552,111 @@ Yerba mate is one of the most useful" />
         <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
             <article class="post-box relative overflow-hidden ">
     <figure class="post-box-image relative mb-4 overflow-hidden h-40 bg-gray-150 rounded">
-        <a href="/blog/favorite-stretching-exercises/" class="img-hover">
+        <a href="/blog/how-to-install-and-setup-fish-shell-with-default-bash-styles/" class="img-hover">
             <img class="image-inset absolute img-hover-here blur-up lazyload"
                 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                data-srcset="https://images.unsplash.com/photo-1571566882372-1598d88abd90?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDZ8fHN0cmV0Y2hpbmd8ZW58MHx8fHwxNjcwMjcwNDIx&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 100w,https://images.unsplash.com/photo-1571566882372-1598d88abd90?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDZ8fHN0cmV0Y2hpbmd8ZW58MHx8fHwxNjcwMjcwNDIx&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 300w,https://images.unsplash.com/photo-1571566882372-1598d88abd90?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDZ8fHN0cmV0Y2hpbmd8ZW58MHx8fHwxNjcwMjcwNDIx&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 600w"
+                data-srcset="/blog/content/images/size/w100/2022/09/fish.png 100w,/blog/content/images/size/w300/2022/09/fish.png 300w,/blog/content/images/size/w600/2022/09/fish.png 600w"
                 data-sizes="auto"
                 width="350"
                 height="160"
-                alt="A stretch a day keeps a doctor away!"/>
+                alt="How to install and setup fish shell with default bash styles (minimal setup)"/>
         </a>
     </figure>
 
     <div class="post-box-body">
         <div class="text-xs mb-3 flex items-center">
     <span class="w-2 h-2 rounded-full bg-primary inline-block mr-2" ></span>
-    <a href="https://harduex.com/blog/tag/calisthenics/" class="uppercase tracking-wide relative z-3 text-gray-500">calisthenics</a>
+    <a href="https://harduex.com/blog/tag/backend/" class="uppercase tracking-wide relative z-3 text-gray-500">backend</a>
 </div>
 
         <h2 class="post-box-title text-title hover:text-primary mb-3 leading-tight text-xl">
-            <a href="/blog/favorite-stretching-exercises/" class="block">A stretch a day keeps a doctor away!</a>
+            <a href="/blog/how-to-install-and-setup-fish-shell-with-default-bash-styles/" class="block">How to install and setup fish shell with default bash styles (minimal setup)</a>
         </h2>
 
         
 
-        <div class="text-sm text-gray-500"><time class="datetime" datetime=" 2022-12-05 ">5 December 2022</time></div>
+        <div class="text-sm text-gray-500"><time class="datetime" datetime=" 2022-09-30 ">30 September 2022</time></div>
     </div>
 </article>            <article class="post-box relative overflow-hidden ">
     <figure class="post-box-image relative mb-4 overflow-hidden h-40 bg-gray-150 rounded">
-        <a href="/blog/minimalist-workout-plan/" class="img-hover">
+        <a href="/blog/npm-tools-manage-nodejs-projects/" class="img-hover">
             <img class="image-inset absolute img-hover-here blur-up lazyload"
                 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                data-srcset="https://images.unsplash.com/photo-1597347316205-36f6c451902a?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDR8fHB1bGwlMjB1cHN8ZW58MHx8fHwxNjY3ODMzODI5&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 100w,https://images.unsplash.com/photo-1597347316205-36f6c451902a?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDR8fHB1bGwlMjB1cHN8ZW58MHx8fHwxNjY3ODMzODI5&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 300w,https://images.unsplash.com/photo-1597347316205-36f6c451902a?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDR8fHB1bGwlMjB1cHN8ZW58MHx8fHwxNjY3ODMzODI5&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 600w"
+                data-srcset="https://images.unsplash.com/photo-1543966888-7c1dc482a810?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDF8fG5wbXxlbnwwfHx8fDE2NzE0NjY0OTE&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 100w,https://images.unsplash.com/photo-1543966888-7c1dc482a810?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDF8fG5wbXxlbnwwfHx8fDE2NzE0NjY0OTE&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 300w,https://images.unsplash.com/photo-1543966888-7c1dc482a810?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDF8fG5wbXxlbnwwfHx8fDE2NzE0NjY0OTE&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 600w"
                 data-sizes="auto"
                 width="350"
                 height="160"
-                alt="Minimalist - 3 days a week workout plan - from mid to advanced (variation 1)"/>
-        </a>
-    </figure>
-
-    <div class="post-box-body">
-        <div class="text-xs mb-3 flex items-center">
-    <span class="w-2 h-2 rounded-full bg-primary inline-block mr-2" style="background-color:#2db92f"></span>
-    <a href="https://harduex.com/blog/tag/workout/" class="uppercase tracking-wide relative z-3 text-gray-500">Workout</a>
-</div>
-
-        <h2 class="post-box-title text-title hover:text-primary mb-3 leading-tight text-xl">
-            <a href="/blog/minimalist-workout-plan/" class="block">Minimalist - 3 days a week workout plan - from mid to advanced (variation 1)</a>
-        </h2>
-
-        
-
-        <div class="text-sm text-gray-500"><time class="datetime" datetime=" 2022-11-07 ">7 November 2022</time></div>
-    </div>
-</article>            <article class="post-box relative overflow-hidden ">
-    <figure class="post-box-image relative mb-4 overflow-hidden h-40 bg-gray-150 rounded">
-        <a href="/blog/heart-rate-during-exercise/" class="img-hover">
-            <img class="image-inset absolute img-hover-here blur-up lazyload"
-                src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                data-srcset="https://images.unsplash.com/photo-1523394643039-a2770cf4a2a0?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDN8fGhlYXJ0JTIwcmF0ZXxlbnwwfHx8fDE2Njc3MzE1NTE&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 100w,https://images.unsplash.com/photo-1523394643039-a2770cf4a2a0?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDN8fGhlYXJ0JTIwcmF0ZXxlbnwwfHx8fDE2Njc3MzE1NTE&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 300w,https://images.unsplash.com/photo-1523394643039-a2770cf4a2a0?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDN8fGhlYXJ0JTIwcmF0ZXxlbnwwfHx8fDE2Njc3MzE1NTE&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 600w"
-                data-sizes="auto"
-                width="350"
-                height="160"
-                alt="How to know if your over-training? What should be your Heart Rate during exercise?"/>
+                alt="10 Great npm and Node.js tools to manage your projects better"/>
         </a>
     </figure>
 
     <div class="post-box-body">
         <div class="text-xs mb-3 flex items-center">
     <span class="w-2 h-2 rounded-full bg-primary inline-block mr-2" ></span>
-    <a href="https://harduex.com/blog/tag/gym/" class="uppercase tracking-wide relative z-3 text-gray-500">gym</a>
+    <a href="https://harduex.com/blog/tag/backend/" class="uppercase tracking-wide relative z-3 text-gray-500">backend</a>
 </div>
 
         <h2 class="post-box-title text-title hover:text-primary mb-3 leading-tight text-xl">
-            <a href="/blog/heart-rate-during-exercise/" class="block">How to know if your over-training? What should be your Heart Rate during exercise?</a>
+            <a href="/blog/npm-tools-manage-nodejs-projects/" class="block">10 Great npm and Node.js tools to manage your projects better</a>
         </h2>
 
         
 
-        <div class="text-sm text-gray-500"><time class="datetime" datetime=" 2022-11-06 ">6 November 2022</time></div>
+        <div class="text-sm text-gray-500"><time class="datetime" datetime=" 2022-12-19 ">19 December 2022</time></div>
     </div>
 </article>            <article class="post-box relative overflow-hidden ">
     <figure class="post-box-image relative mb-4 overflow-hidden h-40 bg-gray-150 rounded">
-        <a href="/blog/why-walking-on-treadmill-on-full-incline-is-better-than-running/" class="img-hover">
+        <a href="/blog/fish-like-autosuggestions-in-bash-shell/" class="img-hover">
             <img class="image-inset absolute img-hover-here blur-up lazyload"
                 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                data-srcset="https://images.unsplash.com/photo-1633394782240-f81aba3f850d?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDN8fHRyZWFkbWlsbHxlbnwwfHx8fDE2NjMwMTA1MjQ&amp;ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;w&#x3D;2000 100w,https://images.unsplash.com/photo-1633394782240-f81aba3f850d?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDN8fHRyZWFkbWlsbHxlbnwwfHx8fDE2NjMwMTA1MjQ&amp;ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;w&#x3D;2000 300w,https://images.unsplash.com/photo-1633394782240-f81aba3f850d?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDN8fHRyZWFkbWlsbHxlbnwwfHx8fDE2NjMwMTA1MjQ&amp;ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;w&#x3D;2000 600w"
+                data-srcset="https://images.unsplash.com/photo-1629654297299-c8506221ca97?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDF8fGJhc2h8ZW58MHx8fHwxNjY0Nzk4MDEw&amp;ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;w&#x3D;2000 100w,https://images.unsplash.com/photo-1629654297299-c8506221ca97?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDF8fGJhc2h8ZW58MHx8fHwxNjY0Nzk4MDEw&amp;ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;w&#x3D;2000 300w,https://images.unsplash.com/photo-1629654297299-c8506221ca97?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDF8fGJhc2h8ZW58MHx8fHwxNjY0Nzk4MDEw&amp;ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;w&#x3D;2000 600w"
                 data-sizes="auto"
                 width="350"
                 height="160"
-                alt="Why walking on treadmill on full incline is better than running"/>
+                alt="Fish-like autosuggestions in bash shell"/>
         </a>
     </figure>
 
     <div class="post-box-body">
         <div class="text-xs mb-3 flex items-center">
-    <span class="w-2 h-2 rounded-full bg-primary inline-block mr-2" style="background-color:#2db92f"></span>
-    <a href="https://harduex.com/blog/tag/workout/" class="uppercase tracking-wide relative z-3 text-gray-500">Workout</a>
+    <span class="w-2 h-2 rounded-full bg-primary inline-block mr-2" ></span>
+    <a href="https://harduex.com/blog/tag/backend/" class="uppercase tracking-wide relative z-3 text-gray-500">backend</a>
 </div>
 
         <h2 class="post-box-title text-title hover:text-primary mb-3 leading-tight text-xl">
-            <a href="/blog/why-walking-on-treadmill-on-full-incline-is-better-than-running/" class="block">Why walking on treadmill on full incline is better than running</a>
+            <a href="/blog/fish-like-autosuggestions-in-bash-shell/" class="block">Fish-like autosuggestions in bash shell</a>
         </h2>
 
         
 
-        <div class="text-sm text-gray-500"><time class="datetime" datetime=" 2022-09-12 ">12 September 2022</time></div>
+        <div class="text-sm text-gray-500"><time class="datetime" datetime=" 2022-10-03 ">3 October 2022</time></div>
+    </div>
+</article>            <article class="post-box relative overflow-hidden ">
+    <figure class="post-box-image relative mb-4 overflow-hidden h-40 bg-gray-150 rounded">
+        <a href="/blog/become-a-google-search-expert-with-these-advanced-techniques/" class="img-hover">
+            <img class="image-inset absolute img-hover-here blur-up lazyload"
+                src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                data-srcset="https://images.unsplash.com/photo-1638136264464-2711f0078d1e?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDIwfHxnb29nbGV8ZW58MHx8fHwxNjcxNjQ0OTcz&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 100w,https://images.unsplash.com/photo-1638136264464-2711f0078d1e?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDIwfHxnb29nbGV8ZW58MHx8fHwxNjcxNjQ0OTcz&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 300w,https://images.unsplash.com/photo-1638136264464-2711f0078d1e?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDIwfHxnb29nbGV8ZW58MHx8fHwxNjcxNjQ0OTcz&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 600w"
+                data-sizes="auto"
+                width="350"
+                height="160"
+                alt="Become a Google Search Expert Using Google Dorks"/>
+        </a>
+    </figure>
+
+    <div class="post-box-body">
+        <div class="text-xs mb-3 flex items-center">
+    <span class="w-2 h-2 rounded-full bg-primary inline-block mr-2" ></span>
+    <a href="https://harduex.com/blog/tag/exploration/" class="uppercase tracking-wide relative z-3 text-gray-500">exploration</a>
+</div>
+
+        <h2 class="post-box-title text-title hover:text-primary mb-3 leading-tight text-xl">
+            <a href="/blog/become-a-google-search-expert-with-these-advanced-techniques/" class="block">Become a Google Search Expert Using Google Dorks</a>
+        </h2>
+
+        
+
+        <div class="text-sm text-gray-500"><time class="datetime" datetime=" 2022-12-21 ">21 December 2022</time></div>
     </div>
 </article>        </div>
     </div>
