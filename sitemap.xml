@@ -7,6 +7,12 @@
     <loc>https://harduex.com/blog/</loc>
   </url>
   <url>
+    <loc>https://harduex.com/blog/dockerfile-vs-docker-compose/</loc>
+  </url>
+  <url>
+    <loc>https://harduex.com/blog/tag/infrastructure/</loc>
+  </url>
+  <url>
     <loc>https://harduex.com/blog/become-a-google-search-expert-with-these-advanced-techniques/</loc>
   </url>
   <url>
@@ -61,10 +67,10 @@
     <loc>https://harduex.com/blog/tag/projects/</loc>
   </url>
   <url>
-    <loc>https://harduex.com/blog/why-walking-on-treadmill-on-full-incline-is-better-than-running/</loc>
+    <loc>https://harduex.com/blog/author/user/</loc>
   </url>
   <url>
-    <loc>https://harduex.com/blog/author/user/</loc>
+    <loc>https://harduex.com/blog/why-walking-on-treadmill-on-full-incline-is-better-than-running/</loc>
   </url>
   <url>
     <loc>https://harduex.com/blog/15-must-have-visual-studio-code-extensions/</loc>
@@ -74,9 +80,6 @@
   </url>
   <url>
     <loc>https://harduex.com/blog/why-resistance-bands-are-better-that-weights/</loc>
-  </url>
-  <url>
-    <loc>https://harduex.com/blog/6-pack-abs-in-6-weeks-with-weider-training-program/</loc>
   </url>
   <url>
     <loc>https://harduex.com/blog/page/2/</loc>
@@ -91,10 +94,10 @@
     <loc>https://harduex.com/blog/tag/tech/</loc>
   </url>
   <url>
-    <loc>https://harduex.com/blog/tag/health/</loc>
+    <loc>https://harduex.com/blog/tag/web/</loc>
   </url>
   <url>
-    <loc>https://harduex.com/blog/tag/web/</loc>
+    <loc>https://harduex.com/blog/tag/health/</loc>
   </url>
   <url>
     <loc>https://harduex.com/blog/tag/lifestyle/</loc>
@@ -106,16 +109,34 @@
     <loc>https://harduex.com/blog/tag/tools/</loc>
   </url>
   <url>
-    <loc>https://harduex.com/blog/tag/interesting/</loc>
+    <loc>https://harduex.com/blog/tag/devops/</loc>
   </url>
   <url>
-    <loc>https://harduex.com/blog/tag/extensions/</loc>
+    <loc>https://harduex.com/blog/tag/development/</loc>
+  </url>
+  <url>
+    <loc>https://harduex.com/blog/tag/deployment/</loc>
+  </url>
+  <url>
+    <loc>https://harduex.com/blog/tag/configuration/</loc>
   </url>
   <url>
     <loc>https://harduex.com/blog/tag/engines/</loc>
   </url>
   <url>
+    <loc>https://harduex.com/blog/tag/terminal/</loc>
+  </url>
+  <url>
+    <loc>https://harduex.com/blog/tag/tutorial/</loc>
+  </url>
+  <url>
+    <loc>https://harduex.com/blog/tag/ubuntu/</loc>
+  </url>
+  <url>
     <loc>https://harduex.com/blog/tag/how-to/</loc>
+  </url>
+  <url>
+    <loc>https://harduex.com/blog/tag/interesting/</loc>
   </url>
   <url>
     <loc>https://harduex.com/blog/tag/privacy/</loc>
@@ -133,7 +154,7 @@
     <loc>https://harduex.com/blog/why-you-have-to-switch-to-brave-browser/</loc>
   </url>
   <url>
-    <loc>https://harduex.com/blog/tag/configuration/</loc>
+    <loc>https://harduex.com/blog/tag/extensions/</loc>
   </url>
   <url>
     <loc>https://harduex.com/blog/tag/frontend/</loc>
@@ -163,9 +184,6 @@
     <loc>https://harduex.com/blog/tag/step-by-step/</loc>
   </url>
   <url>
-    <loc>https://harduex.com/blog/tag/tutorial/</loc>
-  </url>
-  <url>
     <loc>https://harduex.com/blog/tag/calmness/</loc>
   </url>
   <url>
@@ -193,13 +211,10 @@
     <loc>https://harduex.com/blog/tag/power/</loc>
   </url>
   <url>
-    <loc>https://harduex.com/blog/tag/ubuntu/</loc>
+    <loc>https://harduex.com/blog/6-pack-abs-in-6-weeks-with-weider-training-program/</loc>
   </url>
   <url>
     <loc>https://harduex.com/blog/tag/unix/</loc>
-  </url>
-  <url>
-    <loc>https://harduex.com/blog/tag/terminal/</loc>
   </url>
   <url>
     <loc>https://harduex.com/blog/tag/aggregators/</loc>
