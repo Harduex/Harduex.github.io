@@ -62,7 +62,7 @@
   </noscript>
 </head>
 
-<body class="bg-dark-secondary" id="top">
+<body id="top">
   <header class="d-print-none fixed-top bg-dark shadow p-1">
     <div class="container text-center text-lg-left">
       <div class="clearfix">
@@ -112,15 +112,14 @@
     </div>
   </header>
 
-
   <div class="page-content">
     <div class="container pt-5 pb-5">
       <div class="resume-container">
-        <div class="shadow-1-strong bg-dark my-5" id="intro">
-          <div class="bg-primary text-dark">
+        <div class="shadow-1-strong my-5 popping-section" id="intro">
+          <div class="text-dark">
             <div class="cover bg-image">
-              <img src="images/header-background.jpg" alt="header background" />
-              <div class="mask" style="background-color: rgba(0, 0, 0, 0.7); backdrop-filter: blur(2px)">
+              <!-- <img src="images/header-background.jpg" alt="header" /> -->
+              <div class="mask">
                 <div class="text-center p-5">
                   <div class="avatar p-1">
                     <img class="img-thumbnail shadow-2-strong" src="images/avatar.png" width="160" height="160"
@@ -168,8 +167,8 @@
           </div>
         </div>
 
-        <div class="shadow-1-strong bg-dark my-5 p-5" id="about">
-          <div class="about-section">
+        <div class="shadow-1-strong my-5 p-5 popping-section mask" id="about">
+          <div class="about-section ">
             <div class="row">
               <div class="col-md-6">
                 <h2 class="h2 fw-dark mb-4">About Me</h2>
@@ -231,7 +230,7 @@
             </div>
           </div>
         </div>
-        <div class="shadow-1-strong bg-dark my-5 p-5" id="skills">
+        <div class="shadow-1-strong my-5 p-5 popping-section mask" id="skills">
           <div class="skills-section">
             <h2 class="h2 fw-dark mb-4">Professional Skills</h2>
             <div class="row">
@@ -534,7 +533,7 @@
             </div>
           </div>
         </div>
-        <div class="shadow-1-strong bg-dark my-5 p-5" id="experience">
+        <div class="shadow-1-strong my-5 p-5 popping-section mask" id="experience">
           <div class="work-experience-section">
             <h2 class="h2 fw-dark mb-4">Work Experience</h2>
             <div class="timeline">
@@ -602,7 +601,7 @@
             </div>
           </div>
         </div>
-        <div class="shadow-1-strong bg-dark my-5 p-5" id="education">
+        <div class="shadow-1-strong my-5 p-5 popping-section mask" id="education">
           <div class="education-section">
 
             <h2 class="h2 fw-dark mb-4">Education</h2>
@@ -652,7 +651,7 @@
             </div>
           </div>
         </div>
-        <div class="shadow-1-strong bg-dark my-5 p-5 d-print-none" id="portfolio">
+        <div class="shadow-1-strong my-5 p-5 popping-section mask d-print-none" id="portfolio">
           <div class="portfolio-section">
             <h2 class="h2 fw-dark mb-4">Portfolio</h2>
 
@@ -710,7 +709,7 @@
 
           </div>
         </div>
-        <div class="shadow-1-strong bg-dark my-5 p-5" id="personal-skills">
+        <div class="shadow-1-strong my-5 p-5 popping-section mask" id="personal-skills">
           <div class="reference-section">
             <h2 class="h2 fw-dark mb-4">Personal Skills</h2>
             <div class="row pb-2 pt-3">
@@ -768,7 +767,7 @@
             </div>
           </div>
         </div>
-        <div class="shadow-1-strong bg-dark my-5 p-5" id="contact">
+        <div class="shadow-1-strong my-5 p-5 popping-section mask" id="contact">
           <div class="contant-section">
 
             <div class="toast-container">
@@ -822,6 +821,7 @@
       </div>
     </div>
   </div>
+
   <footer class="pt-4 pb-4 text-muted text-center d-print-none">
     <div class="container">
       <div class="my-3">
@@ -856,6 +856,9 @@
       </div>
     </div>
   </footer>
+
+  <div id="particles-js"></div>
+
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
@@ -868,6 +871,7 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
   <script src="scripts/mdb.min.js?ver=1.2.1"></script>
   <script src="scripts/aos.js?ver=1.2.1"></script>
+  <script src="scripts/particles.min.js"></script>
   <script src="scripts/main.js?ver=1.2.1"></script>
 </body>
 

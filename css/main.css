@@ -86,7 +86,8 @@ body {
 .cover > img {
   -o-object-fit: cover;
   object-fit: cover;
-  width: auto;
+  width: 100%;
+  opacity: 0.4;
 }
 
 .progress-bar {
@@ -195,6 +196,21 @@ footer a:not(.nav-link) {
   display: none !important;
 }
 
-.bg-dark-secondary {
-  background-color: #2b2b2b;
+
+#particles-js {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.mask {
+  background-color: rgba(43, 43, 43, 0.7);
+  backdrop-filter: blur(2px);
+}
+
+.popping-section {
+  position: relative;
+  z-index: 1;
 }
