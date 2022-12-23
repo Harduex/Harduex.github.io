@@ -25,6 +25,9 @@ window.addEventListener("load", function () {
   calculateAge(birthday);
   calculateYear();
 
+  particlesJS.load('particles-js', 'assets/particles.json', function() {
+  });
+
   emailjs.init("user_PrPI8a8v730dTh7Csb0Bd");
 
   function sendEmail(e) {
