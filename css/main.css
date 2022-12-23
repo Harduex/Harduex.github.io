@@ -196,7 +196,6 @@ footer a:not(.nav-link) {
   display: none !important;
 }
 
-
 #particles-js {
   height: 100%;
   width: 100%;
@@ -213,4 +212,34 @@ footer a:not(.nav-link) {
 .popping-section {
   position: relative;
   z-index: 1;
+}
+
+.navbar {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.bg-dark-blue {
+  /* background-color: rgba(16, 18, 25, 0.9); */
+
+  background-size: 300% 300%;
+  background-image: linear-gradient(
+    -45deg,
+    rgba(0, 18, 25, 0.9) 0%,
+    rgba(15, 18, 25, 0.9) 50%,
+    rgba(174, 232, 246, 0.1) 100%
+  );
+  animation: AnimateBG 20s ease infinite;
+}
+
+@keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
