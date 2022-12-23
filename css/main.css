@@ -219,16 +219,6 @@ footer a:not(.nav-link) {
   box-shadow: none;
 }
 
-.btn-primary-darker {
-  background-color: rgba(174, 232, 246, 0.7);
-  color: #ffffff;
-}
-
-.btn-primary-darker:hover{
-  background-color: rgba(174, 232, 246, 0.5);
-  color: #ffffff;
-}
-
 .bg-dark-blue {
   background-size: 300% 300%;
   background-image: linear-gradient(
