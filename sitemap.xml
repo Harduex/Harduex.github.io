@@ -7,6 +7,12 @@
     <loc>https://harduex.com/blog/</loc>
   </url>
   <url>
+    <loc>https://harduex.com/blog/the-power-of-cold-showers/</loc>
+  </url>
+  <url>
+    <loc>https://harduex.com/blog/tag/health/</loc>
+  </url>
+  <url>
     <loc>https://harduex.com/blog/dockerfile-vs-docker-compose/</loc>
   </url>
   <url>
@@ -34,22 +40,22 @@
     <loc>https://harduex.com/blog/how-to-get-network-requests-with-chrome-devtools-and-postman/</loc>
   </url>
   <url>
-    <loc>https://harduex.com/blog/favorite-stretching-exercises/</loc>
-  </url>
-  <url>
     <loc>https://harduex.com/blog/tag/calisthenics/</loc>
   </url>
   <url>
-    <loc>https://harduex.com/blog/minimalist-workout-plan/</loc>
+    <loc>https://harduex.com/blog/favorite-stretching-exercises/</loc>
   </url>
   <url>
     <loc>https://harduex.com/blog/tag/workout/</loc>
   </url>
   <url>
-    <loc>https://harduex.com/blog/heart-rate-during-exercise/</loc>
+    <loc>https://harduex.com/blog/minimalist-workout-plan/</loc>
   </url>
   <url>
     <loc>https://harduex.com/blog/tag/gym/</loc>
+  </url>
+  <url>
+    <loc>https://harduex.com/blog/heart-rate-during-exercise/</loc>
   </url>
   <url>
     <loc>https://harduex.com/blog/fish-like-autosuggestions-in-bash-shell/</loc>
@@ -58,16 +64,16 @@
     <loc>https://harduex.com/blog/how-to-install-and-setup-fish-shell-with-default-bash-styles/</loc>
   </url>
   <url>
-    <loc>https://harduex.com/blog/privacy-respecting-hackable-metasearch-engine-searx/</loc>
+    <loc>https://harduex.com/blog/author/user/</loc>
   </url>
   <url>
-    <loc>https://harduex.com/blog/interesting-projects-and-tools-discovered-on-github-part-1/</loc>
+    <loc>https://harduex.com/blog/privacy-respecting-hackable-metasearch-engine-searx/</loc>
   </url>
   <url>
     <loc>https://harduex.com/blog/tag/projects/</loc>
   </url>
   <url>
-    <loc>https://harduex.com/blog/author/user/</loc>
+    <loc>https://harduex.com/blog/interesting-projects-and-tools-discovered-on-github-part-1/</loc>
   </url>
   <url>
     <loc>https://harduex.com/blog/why-walking-on-treadmill-on-full-incline-is-better-than-running/</loc>
@@ -76,13 +82,10 @@
     <loc>https://harduex.com/blog/15-must-have-visual-studio-code-extensions/</loc>
   </url>
   <url>
-    <loc>https://harduex.com/blog/tag/programming/</loc>
-  </url>
-  <url>
-    <loc>https://harduex.com/blog/why-resistance-bands-are-better-that-weights/</loc>
-  </url>
-  <url>
     <loc>https://harduex.com/blog/page/2/</loc>
+  </url>
+  <url>
+    <loc>https://harduex.com/blog/tag/programming/</loc>
   </url>
   <url>
     <loc>https://harduex.com/blog/welcome/</loc>
@@ -91,13 +94,10 @@
     <loc>https://harduex.com/blog/tag/tips/</loc>
   </url>
   <url>
-    <loc>https://harduex.com/blog/tag/tech/</loc>
-  </url>
-  <url>
     <loc>https://harduex.com/blog/tag/web/</loc>
   </url>
   <url>
-    <loc>https://harduex.com/blog/tag/health/</loc>
+    <loc>https://harduex.com/blog/tag/tech/</loc>
   </url>
   <url>
     <loc>https://harduex.com/blog/tag/lifestyle/</loc>
@@ -107,6 +107,42 @@
   </url>
   <url>
     <loc>https://harduex.com/blog/tag/tools/</loc>
+  </url>
+  <url>
+    <loc>https://harduex.com/blog/tag/power/</loc>
+  </url>
+  <url>
+    <loc>https://harduex.com/blog/tag/calmness/</loc>
+  </url>
+  <url>
+    <loc>https://harduex.com/blog/tag/cardio/</loc>
+  </url>
+  <url>
+    <loc>https://harduex.com/blog/tag/meditation/</loc>
+  </url>
+  <url>
+    <loc>https://harduex.com/blog/tag/morning/</loc>
+  </url>
+  <url>
+    <loc>https://harduex.com/blog/tag/nature/</loc>
+  </url>
+  <url>
+    <loc>https://harduex.com/blog/tag/strength/</loc>
+  </url>
+  <url>
+    <loc>https://harduex.com/blog/tag/tutorial/</loc>
+  </url>
+  <url>
+    <loc>https://harduex.com/blog/why-resistance-bands-are-better-that-weights/</loc>
+  </url>
+  <url>
+    <loc>https://harduex.com/blog/6-pack-abs-in-6-weeks-with-weider-training-program/</loc>
+  </url>
+  <url>
+    <loc>https://harduex.com/blog/the-power-of-yerba-mate/</loc>
+  </url>
+  <url>
+    <loc>https://harduex.com/blog/natures-best-remedies-for-everyday-stress/</loc>
   </url>
   <url>
     <loc>https://harduex.com/blog/tag/devops/</loc>
@@ -125,9 +161,6 @@
   </url>
   <url>
     <loc>https://harduex.com/blog/tag/terminal/</loc>
-  </url>
-  <url>
-    <loc>https://harduex.com/blog/tag/tutorial/</loc>
   </url>
   <url>
     <loc>https://harduex.com/blog/tag/ubuntu/</loc>
@@ -184,37 +217,19 @@
     <loc>https://harduex.com/blog/tag/step-by-step/</loc>
   </url>
   <url>
-    <loc>https://harduex.com/blog/tag/calmness/</loc>
-  </url>
-  <url>
     <loc>https://harduex.com/blog/tag/gains/</loc>
-  </url>
-  <url>
-    <loc>https://harduex.com/blog/tag/meditation/</loc>
-  </url>
-  <url>
-    <loc>https://harduex.com/blog/tag/morning/</loc>
-  </url>
-  <url>
-    <loc>https://harduex.com/blog/tag/strength/</loc>
   </url>
   <url>
     <loc>https://harduex.com/blog/tag/training/</loc>
   </url>
   <url>
-    <loc>https://harduex.com/blog/the-power-of-yerba-mate/</loc>
-  </url>
-  <url>
-    <loc>https://harduex.com/blog/tag/cardio/</loc>
-  </url>
-  <url>
-    <loc>https://harduex.com/blog/tag/power/</loc>
-  </url>
-  <url>
-    <loc>https://harduex.com/blog/6-pack-abs-in-6-weeks-with-weider-training-program/</loc>
-  </url>
-  <url>
     <loc>https://harduex.com/blog/tag/unix/</loc>
+  </url>
+  <url>
+    <loc>https://harduex.com/blog/author/user/rss/</loc>
+  </url>
+  <url>
+    <loc>https://harduex.com/blog/author/user/page/2/</loc>
   </url>
   <url>
     <loc>https://harduex.com/blog/tag/aggregators/</loc>
@@ -226,19 +241,7 @@
     <loc>https://harduex.com/blog/tag/graphical-design/</loc>
   </url>
   <url>
-    <loc>https://harduex.com/blog/author/user/rss/</loc>
-  </url>
-  <url>
-    <loc>https://harduex.com/blog/author/user/page/2/</loc>
-  </url>
-  <url>
     <loc>https://harduex.com/blog/personal-top-gnome-extensions/</loc>
-  </url>
-  <url>
-    <loc>https://harduex.com/blog/natures-best-remedies-for-everyday-stress/</loc>
-  </url>
-  <url>
-    <loc>https://harduex.com/blog/tag/nature/</loc>
   </url>
   <url>
     <loc>https://harduex.com/blog/tag/news/</loc>
