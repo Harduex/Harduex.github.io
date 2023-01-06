@@ -219,7 +219,7 @@ footer a:not(.nav-link) {
   box-shadow: none;
 }
 
-.bg-dark-blue {
+.bg-dark-blue-animated {
   background-size: 300% 300%;
   background-image: linear-gradient(
     -45deg,
@@ -228,6 +228,10 @@ footer a:not(.nav-link) {
     rgba(174, 232, 246, 0.1) 100%
   );
   animation: AnimateBG 20s ease infinite;
+}
+
+.bg-dark-blue {
+  background-color: #23282C;
 }
 
 @keyframes AnimateBG {
