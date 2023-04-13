@@ -34,32 +34,51 @@
         }
     </style>
 
+    <meta name="description" content="apt-clone is a simple command-line tool that lets you create state files of all installed packages for your Debian/Ubuntu systems, making it easy to restore on freshly installed systems or into a directory. Learn how to use apt-clone to backup and restore your system with ease." />
     <link rel="canonical" href="https://harduex.com/blog/effortlessly-backup-and-restore-your-ubuntu-debian-systems-with-apt-clone-tool/" />
     <meta name="referrer" content="no-referrer-when-downgrade" />
     
     <meta property="og:site_name" content="Harduex blog" />
     <meta property="og:type" content="article" />
     <meta property="og:title" content="Effortlessly Backup and Restore Your Ubuntu/Debian Systems with apt-clone tool" />
-    <meta property="og:description" content="Are you looking for an easy and reliable way to backup and restore packages on your Debian/Ubuntu systems? If yes, then apt-clone is the perfect tool for you!
-
-apt-clone is a simple command-line tool that lets you create &quot;state&quot; files of all installed packages for your Debian/Ubuntu systems." />
+    <meta property="og:description" content="apt-clone is a simple command-line tool that lets you create state files of all installed packages for your Debian/Ubuntu systems, making it easy to restore on freshly installed systems or into a directory. Learn how to use apt-clone to backup and restore your system with ease." />
     <meta property="og:url" content="https://harduex.com/blog/effortlessly-backup-and-restore-your-ubuntu-debian-systems-with-apt-clone-tool/" />
-    <meta property="og:image" content="https://harduex.com/blog/content/images/2022/09/127803601_1503249616512201_5626115478960307765_n--3--3.png" />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1589532768434-a92c95dad7cb?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDZ8fGJhY2t1cHxlbnwwfHx8fDE2ODEzODE3ODM&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000" />
     <meta property="article:published_time" content="2023-04-13T10:23:17.000Z" />
-    <meta property="article:modified_time" content="2023-04-13T10:23:17.000Z" />
+    <meta property="article:modified_time" content="2023-04-13T10:32:18.000Z" />
+    <meta property="article:tag" content="tools" />
+    <meta property="article:tag" content="Ubuntu" />
+    <meta property="article:tag" content="backend" />
+    <meta property="article:tag" content="configuration" />
+    <meta property="article:tag" content="DevOps" />
+    <meta property="article:tag" content="how to" />
+    <meta property="article:tag" content="interesting" />
+    <meta property="article:tag" content="Infrastructure" />
+    <meta property="article:tag" content="programming" />
+    <meta property="article:tag" content="projects" />
+    <meta property="article:tag" content="scripting" />
+    <meta property="article:tag" content="setup" />
+    <meta property="article:tag" content="sh" />
+    <meta property="article:tag" content="shell" />
+    <meta property="article:tag" content="step by step" />
+    <meta property="article:tag" content="tech" />
+    <meta property="article:tag" content="terminal" />
+    <meta property="article:tag" content="tips" />
+    <meta property="article:tag" content="tutorial" />
+    
     <meta property="article:publisher" content="https://www.facebook.com/Delight11" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Effortlessly Backup and Restore Your Ubuntu/Debian Systems with apt-clone tool" />
-    <meta name="twitter:description" content="Are you looking for an easy and reliable way to backup and restore packages on your Debian/Ubuntu systems? If yes, then apt-clone is the perfect tool for you!
-
-apt-clone is a simple command-line tool that lets you create &quot;state&quot; files of all installed packages for your Debian/Ubuntu systems." />
+    <meta name="twitter:description" content="apt-clone is a simple command-line tool that lets you create state files of all installed packages for your Debian/Ubuntu systems, making it easy to restore on freshly installed systems or into a directory. Learn how to use apt-clone to backup and restore your system with ease." />
     <meta name="twitter:url" content="https://harduex.com/blog/effortlessly-backup-and-restore-your-ubuntu-debian-systems-with-apt-clone-tool/" />
-    <meta name="twitter:image" content="https://harduex.com/blog/content/images/2022/09/127803601_1503249616512201_5626115478960307765_n--3--2.png" />
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1589532768434-a92c95dad7cb?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDZ8fGJhY2t1cHxlbnwwfHx8fDE2ODEzODE3ODM&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000" />
     <meta name="twitter:label1" content="Written by" />
     <meta name="twitter:data1" content="🌿 𝖘𝖎𝖒𝖊𝖔𝖓 🌿" />
+    <meta name="twitter:label2" content="Filed under" />
+    <meta name="twitter:data2" content="tools, Ubuntu, backend, configuration, DevOps, how to, interesting, Infrastructure, programming, projects, scripting, setup, sh, shell, step by step, tech, terminal, tips, tutorial" />
     <meta name="twitter:site" content="@twitter.com" />
-    <meta property="og:image:width" content="1800" />
-    <meta property="og:image:height" content="540" />
+    <meta property="og:image:width" content="2000" />
+    <meta property="og:image:height" content="1333" />
     
     <script type="application/ld+json">
 {
@@ -91,8 +110,15 @@ apt-clone is a simple command-line tool that lets you create &quot;state&quot; f
     "headline": "Effortlessly Backup and Restore Your Ubuntu/Debian Systems with apt-clone tool",
     "url": "https://harduex.com/blog/effortlessly-backup-and-restore-your-ubuntu-debian-systems-with-apt-clone-tool/",
     "datePublished": "2023-04-13T10:23:17.000Z",
-    "dateModified": "2023-04-13T10:23:17.000Z",
-    "description": "Are you looking for an easy and reliable way to backup and restore packages on your Debian/Ubuntu systems? If yes, then apt-clone is the perfect tool for you!\n\napt-clone is a simple command-line tool that lets you create &quot;state&quot; files of all installed packages for your Debian/Ubuntu systems. These state files can be restored on freshly installed systems or into a directory, making it easy to get your system up and running again after a crash or other emergency.\n\nThere are several use cases for a",
+    "dateModified": "2023-04-13T10:32:18.000Z",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://images.unsplash.com/photo-1589532768434-a92c95dad7cb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDZ8fGJhY2t1cHxlbnwwfHx8fDE2ODEzODE3ODM&ixlib=rb-4.0.3&q=80&w=2000",
+        "width": 2000,
+        "height": 1333
+    },
+    "keywords": "tools, Ubuntu, backend, configuration, DevOps, how to, interesting, Infrastructure, programming, projects, scripting, setup, sh, shell, step by step, tech, terminal, tips, tutorial",
+    "description": "apt-clone is a simple command-line tool that lets you create state files of all installed packages for your Debian/Ubuntu systems, making it easy to restore on freshly installed systems or into a directory. Learn how to use apt-clone to backup and restore your system with ease.",
     "mainEntityOfPage": "https://harduex.com/blog/effortlessly-backup-and-restore-your-ubuntu-debian-systems-with-apt-clone-tool/"
 }
     </script>
@@ -202,11 +228,14 @@ apt-clone is a simple command-line tool that lets you create &quot;state&quot; f
 
 <div class="container mx-auto flex flex-col lg:flex-row my-10">
         <article class="post min-w-0 flex-auto">
-                <div class="lg:pl-20">
                 <header class="post-header mb-6">
-    
+    <div class="text-xs mb-3 flex items-center">
+    <span class="w-2 h-2 rounded-full bg-primary inline-block mr-2" ></span>
+    <a href="https://harduex.com/blog/tag/tools/" class="uppercase tracking-wide relative z-3 text-gray-500">tools</a>
+</div>
+
     <h1 class="post-title text-4xl md:text-42 text text-title">Effortlessly Backup and Restore Your Ubuntu/Debian Systems with apt-clone tool</h1>
-    
+    <p class="post-excerpt text-xl mt-5 text-gray-500">apt-clone is a simple command-line tool that lets you create state files of all installed packages for your Debian/Ubuntu systems, making it easy to restore on freshly installed systems or into a directory. Learn how to use apt-clone to backup and restore your system with ease.</p>
 </header>
                 <div class="hh flex items-center relative z-4 flex-auto overflow-hidden">
     <ul class="hh-author flex flex-wrap flex-none mr-3">
@@ -237,14 +266,27 @@ apt-clone is a simple command-line tool that lets you create &quot;state&quot; f
     </div>
 </div>
 
-                </div>
 
-            
+                <figure class="post-image mt-8 mx-auto max-w-screen-xl">
+        <img class="post-img w-full max-auto"
+            srcset="https://images.unsplash.com/photo-1589532768434-a92c95dad7cb?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDZ8fGJhY2t1cHxlbnwwfHx8fDE2ODEzODE3ODM&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;300 300w,
+                    https://images.unsplash.com/photo-1589532768434-a92c95dad7cb?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDZ8fGJhY2t1cHxlbnwwfHx8fDE2ODEzODE3ODM&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;600 600w,
+                    https://images.unsplash.com/photo-1589532768434-a92c95dad7cb?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDZ8fGJhY2t1cHxlbnwwfHx8fDE2ODEzODE3ODM&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;1000 1000w,
+                    https://images.unsplash.com/photo-1589532768434-a92c95dad7cb?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDZ8fGJhY2t1cHxlbnwwfHx8fDE2ODEzODE3ODM&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 2000w"
+            sizes="(max-width: 400px) 300px,(max-width: 730px) 600px, (max-width: 1600px) 100vw"
+            src="https://images.unsplash.com/photo-1589532768434-a92c95dad7cb?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDZ8fGJhY2t1cHxlbnwwfHx8fDE2ODEzODE3ODM&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000"
+            alt="Effortlessly Backup and Restore Your Ubuntu/Debian Systems with apt-clone tool"
+        />
+        <figcaption class="post-figcaption text-left italic text-base py-2 px-3 mt-0 text-black" style="background-color:#e2e2e2">Photo by <a href="https://unsplash.com/@markuswinkler?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit">Markus Winkler</a> / <a href="https://unsplash.com/?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit">Unsplash</a></figcaption>
+    </figure>
+
             <div class="post-body-wrap relative lg:flex">
     <div id="post-body" class="post-body min-w-0 js-post-content font-sans text-lg">
         <h2 id="are-you-looking-for-an-easy-and-reliable-way-to-backup-and-restore-packages-on-your-debianubuntu-systems-if-yes-then-apt-clone-is-the-perfect-tool-for-you">Are you looking for an easy and reliable way to backup and restore packages on your Debian/Ubuntu systems? If yes, then apt-clone is the perfect tool for you!</h2><p><a href="https://github.com/mvo5/apt-clone?ref=simdrive.asuscomm.com">apt-clone</a> is a simple command-line tool that lets you create "state" files of all installed packages for your Debian/Ubuntu systems. These state files can be restored on freshly installed systems or into a directory, making it easy to get your system up and running again after a crash or other emergency.</p><p>There are several use cases for <code>apt-clone</code>, including cloning a server's package selection and restoring it on a fallback system, or backing up your system state to be able to restore it on other machine.</p><h3 id="to-create-a-clone-simply-run-the-command">To create a clone, simply run the command:</h3><p><code><strong>$ sudo apt-clone clone ~/myhost</strong></code></p><p>This will create an <code>~/myhost.apt-clone.tar.gz</code> file that contains a state of all the packages installed on your system.</p><h3 id="to-get-more-information-about-the-clone-run">To get more information about the clone, run:</h3><p><code><strong>$ apt-clone info ~/myhost.apt-clone.tar.gz</strong></code></p><p>This will give you details about the <strong>hostname</strong>, <strong>architecture</strong>, <strong>distribution</strong>, and <strong>more</strong>.</p><h3 id="to-restore-the-clone-run">To restore the clone, run:</h3><p><code><strong>$ sudo apt-clone restore ~/myhost.apt-clone.tar.gz</strong></code></p><p>This will <strong>install</strong> or <strong>remove</strong> packages based on the state in the archive, so be careful and make sure you understand what will be changed before restoring. If you want to debootstrap the clone into a specific directory, you can use the <code>--destination</code> option.</p><p>In conclusion, <code>apt-clone</code> is a powerful and simple tool that makes it easy to backup and restore your Debian or Ubuntu systems. Give it a try and never worry about losing your system packages.</p><h3 id="apt-clone-github"><a href="https://github.com/mvo5/apt-clone?ref=simdrive.asuscomm.com"><a href="https://github.com/mvo5/apt-clone?ref=simdrive.asuscomm.com">apt-clone</a> Github</a></h3>
 
-        
+        <div class="post-tags my-8 buttons justify-center lg:justify-start">
+            <a href="/blog/tag/tools/" title="tools" class="button is-black is-outlined is-small uppercase">tools</a><a href="/blog/tag/ubuntu/" title="Ubuntu" class="button is-black is-outlined is-small uppercase">Ubuntu</a><a href="/blog/tag/backend/" title="backend" class="button is-black is-outlined is-small uppercase">backend</a><a href="/blog/tag/configuration/" title="configuration" class="button is-black is-outlined is-small uppercase">configuration</a><a href="/blog/tag/devops/" title="DevOps" class="button is-black is-outlined is-small uppercase">DevOps</a><a href="/blog/tag/how-to/" title="how to" class="button is-black is-outlined is-small uppercase">how to</a><a href="/blog/tag/interesting/" title="interesting" class="button is-black is-outlined is-small uppercase">interesting</a><a href="/blog/tag/infrastructure/" title="Infrastructure" class="button is-black is-outlined is-small uppercase">Infrastructure</a><a href="/blog/tag/programming/" title="programming" class="button is-black is-outlined is-small uppercase">programming</a><a href="/blog/tag/projects/" title="projects" class="button is-black is-outlined is-small uppercase">projects</a><a href="/blog/tag/scripting/" title="scripting" class="button is-black is-outlined is-small uppercase">scripting</a><a href="/blog/tag/setup/" title="setup" class="button is-black is-outlined is-small uppercase">setup</a><a href="/blog/tag/sh/" title="sh" class="button is-black is-outlined is-small uppercase">sh</a><a href="/blog/tag/shell/" title="shell" class="button is-black is-outlined is-small uppercase">shell</a><a href="/blog/tag/step-by-step/" title="step by step" class="button is-black is-outlined is-small uppercase">step by step</a><a href="/blog/tag/tech/" title="tech" class="button is-black is-outlined is-small uppercase">tech</a><a href="/blog/tag/terminal/" title="terminal" class="button is-black is-outlined is-small uppercase">terminal</a><a href="/blog/tag/tips/" title="tips" class="button is-black is-outlined is-small uppercase">tips</a><a href="/blog/tag/tutorial/" title="tutorial" class="button is-black is-outlined is-small uppercase">tutorial</a>
+        </div>
 
     </div>
 
@@ -426,18 +468,22 @@ apt-clone is a simple command-line tool that lets you create &quot;state&quot; f
     <div class="buttons">
         <a href="/blog/tag/programming/" class="button is-primary text-sm capitalize" style="background:#24cc46">
             <span>programming</span>
-            <span class="ml-2 text-white text-opacity-80">(12)</span>
+            <span class="ml-2 text-white text-opacity-80">(13)</span>
         </a>
         <a href="/blog/tag/tips/" class="button is-primary text-sm capitalize" >
             <span>tips</span>
-            <span class="ml-2 text-white text-opacity-80">(12)</span>
+            <span class="ml-2 text-white text-opacity-80">(13)</span>
         </a>
         <a href="/blog/tag/tech/" class="button is-primary text-sm capitalize" style="background:#cc6300">
             <span>tech</span>
-            <span class="ml-2 text-white text-opacity-80">(11)</span>
+            <span class="ml-2 text-white text-opacity-80">(12)</span>
         </a>
         <a href="/blog/tag/health/" class="button is-primary text-sm capitalize" style="background:#2ee916">
             <span>Health</span>
+            <span class="ml-2 text-white text-opacity-80">(10)</span>
+        </a>
+        <a href="/blog/tag/backend/" class="button is-primary text-sm capitalize" style="background:#ee1111">
+            <span>backend</span>
             <span class="ml-2 text-white text-opacity-80">(10)</span>
         </a>
         <a href="/blog/tag/web/" class="button is-primary text-sm capitalize" style="background:#1080c6">
@@ -452,30 +498,144 @@ apt-clone is a simple command-line tool that lets you create &quot;state&quot; f
             <span>energy</span>
             <span class="ml-2 text-white text-opacity-80">(9)</span>
         </a>
-        <a href="/blog/tag/backend/" class="button is-primary text-sm capitalize" style="background:#ee1111">
-            <span>backend</span>
-            <span class="ml-2 text-white text-opacity-80">(9)</span>
-        </a>
         <a href="/blog/tag/interesting/" class="button is-primary text-sm capitalize" >
             <span>interesting</span>
+            <span class="ml-2 text-white text-opacity-80">(9)</span>
+        </a>
+        <a href="/blog/tag/projects/" class="button is-primary text-sm capitalize" >
+            <span>projects</span>
+            <span class="ml-2 text-white text-opacity-80">(8)</span>
+        </a>
+        <a href="/blog/tag/tools/" class="button is-primary text-sm capitalize" >
+            <span>tools</span>
             <span class="ml-2 text-white text-opacity-80">(8)</span>
         </a>
         <a href="/blog/tag/gym/" class="button is-primary text-sm capitalize" >
             <span>gym</span>
             <span class="ml-2 text-white text-opacity-80">(7)</span>
         </a>
-        <a href="/blog/tag/tricks/" class="button is-primary text-sm capitalize" >
-            <span>tricks</span>
-            <span class="ml-2 text-white text-opacity-80">(7)</span>
-        </a>
-        <a href="/blog/tag/projects/" class="button is-primary text-sm capitalize" >
-            <span>projects</span>
-            <span class="ml-2 text-white text-opacity-80">(7)</span>
-        </a>
     </div>
 </div>
 </div>
 </aside></div>
+
+
+<section class="post-related bg-gray-150 py-10">
+    <div class="container mx-auto">
+        <h2 class="post-related-title text-title text-26 mb-8">Related Articles</h2>
+
+        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+            <article class="post-box relative overflow-hidden ">
+    <figure class="post-box-image relative mb-4 overflow-hidden h-40 bg-gray-150 rounded">
+        <a href="/blog/etc-hosts-file/" class="img-hover">
+            <img class="image-inset absolute img-hover-here blur-up lazyload"
+                src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                data-srcset="https://images.unsplash.com/photo-1598520106864-72ed7919100b?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDF8fC5jb218ZW58MHx8fHwxNjcyMTU5Njc1&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;100 100w,https://images.unsplash.com/photo-1598520106864-72ed7919100b?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDF8fC5jb218ZW58MHx8fHwxNjcyMTU5Njc1&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;300 300w,https://images.unsplash.com/photo-1598520106864-72ed7919100b?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDF8fC5jb218ZW58MHx8fHwxNjcyMTU5Njc1&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;600 600w"
+                data-sizes="auto"
+                width="350"
+                height="160"
+                alt="What is the /etc/hosts file?"/>
+        </a>
+    </figure>
+
+    <div class="post-box-body">
+        <div class="text-xs mb-3 flex items-center">
+    <span class="w-2 h-2 rounded-full bg-primary inline-block mr-2" ></span>
+    <a href="https://harduex.com/blog/tag/network/" class="uppercase tracking-wide relative z-3 text-gray-500">network</a>
+</div>
+
+        <h2 class="post-box-title text-title hover:text-primary mb-3 leading-tight text-xl">
+            <a href="/blog/etc-hosts-file/" class="block">What is the /etc/hosts file?</a>
+        </h2>
+
+        
+
+        <div class="text-sm text-gray-500"><time class="datetime" datetime=" 2022-12-27 ">27 December 2022</time></div>
+    </div>
+</article>            <article class="post-box relative overflow-hidden ">
+    <figure class="post-box-image relative mb-4 overflow-hidden h-40 bg-gray-150 rounded">
+        <a href="/blog/how-to-install-and-setup-fish-shell-with-default-bash-styles/" class="img-hover">
+            <img class="image-inset absolute img-hover-here blur-up lazyload"
+                src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                data-srcset="/blog/content/images/size/w100/2022/09/fish.png 100w,/blog/content/images/size/w300/2022/09/fish.png 300w,/blog/content/images/size/w600/2022/09/fish.png 600w"
+                data-sizes="auto"
+                width="350"
+                height="160"
+                alt="How to install and setup fish shell with default bash styles (minimal setup)"/>
+        </a>
+    </figure>
+
+    <div class="post-box-body">
+        <div class="text-xs mb-3 flex items-center">
+    <span class="w-2 h-2 rounded-full bg-primary inline-block mr-2" style="background-color:#ee1111"></span>
+    <a href="https://harduex.com/blog/tag/backend/" class="uppercase tracking-wide relative z-3 text-gray-500">backend</a>
+</div>
+
+        <h2 class="post-box-title text-title hover:text-primary mb-3 leading-tight text-xl">
+            <a href="/blog/how-to-install-and-setup-fish-shell-with-default-bash-styles/" class="block">How to install and setup fish shell with default bash styles (minimal setup)</a>
+        </h2>
+
+        
+
+        <div class="text-sm text-gray-500"><time class="datetime" datetime=" 2022-09-30 ">30 September 2022</time></div>
+    </div>
+</article>            <article class="post-box relative overflow-hidden ">
+    <figure class="post-box-image relative mb-4 overflow-hidden h-40 bg-gray-150 rounded">
+        <a href="/blog/dockerfile-vs-docker-compose/" class="img-hover">
+            <img class="image-inset absolute img-hover-here blur-up lazyload"
+                src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                data-srcset="https://images.unsplash.com/photo-1646627927863-19874c27316b?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDd8fGRvY2tlcnxlbnwwfHx8fDE2NzE3MDg2Njk&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;100 100w,https://images.unsplash.com/photo-1646627927863-19874c27316b?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDd8fGRvY2tlcnxlbnwwfHx8fDE2NzE3MDg2Njk&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;300 300w,https://images.unsplash.com/photo-1646627927863-19874c27316b?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDd8fGRvY2tlcnxlbnwwfHx8fDE2NzE3MDg2Njk&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;600 600w"
+                data-sizes="auto"
+                width="350"
+                height="160"
+                alt="Dockerfile vs docker-compose.yml: Understanding the Differences"/>
+        </a>
+    </figure>
+
+    <div class="post-box-body">
+        <div class="text-xs mb-3 flex items-center">
+    <span class="w-2 h-2 rounded-full bg-primary inline-block mr-2" ></span>
+    <a href="https://harduex.com/blog/tag/infrastructure/" class="uppercase tracking-wide relative z-3 text-gray-500">Infrastructure</a>
+</div>
+
+        <h2 class="post-box-title text-title hover:text-primary mb-3 leading-tight text-xl">
+            <a href="/blog/dockerfile-vs-docker-compose/" class="block">Dockerfile vs docker-compose.yml: Understanding the Differences</a>
+        </h2>
+
+        
+
+        <div class="text-sm text-gray-500"><time class="datetime" datetime=" 2022-12-22 ">22 December 2022</time></div>
+    </div>
+</article>            <article class="post-box relative overflow-hidden ">
+    <figure class="post-box-image relative mb-4 overflow-hidden h-40 bg-gray-150 rounded">
+        <a href="/blog/npm-tools-manage-nodejs-projects/" class="img-hover">
+            <img class="image-inset absolute img-hover-here blur-up lazyload"
+                src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                data-srcset="https://images.unsplash.com/photo-1543966888-7c1dc482a810?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDF8fG5wbXxlbnwwfHx8fDE2NzE0NjY0OTE&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;100 100w,https://images.unsplash.com/photo-1543966888-7c1dc482a810?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDF8fG5wbXxlbnwwfHx8fDE2NzE0NjY0OTE&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;300 300w,https://images.unsplash.com/photo-1543966888-7c1dc482a810?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDF8fG5wbXxlbnwwfHx8fDE2NzE0NjY0OTE&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;600 600w"
+                data-sizes="auto"
+                width="350"
+                height="160"
+                alt="10 Great npm and Node.js tools to manage your projects better"/>
+        </a>
+    </figure>
+
+    <div class="post-box-body">
+        <div class="text-xs mb-3 flex items-center">
+    <span class="w-2 h-2 rounded-full bg-primary inline-block mr-2" style="background-color:#ee1111"></span>
+    <a href="https://harduex.com/blog/tag/backend/" class="uppercase tracking-wide relative z-3 text-gray-500">backend</a>
+</div>
+
+        <h2 class="post-box-title text-title hover:text-primary mb-3 leading-tight text-xl">
+            <a href="/blog/npm-tools-manage-nodejs-projects/" class="block">10 Great npm and Node.js tools to manage your projects better</a>
+        </h2>
+
+        
+
+        <div class="text-sm text-gray-500"><time class="datetime" datetime=" 2022-12-19 ">19 December 2022</time></div>
+    </div>
+</article>        </div>
+    </div>
+</section>
 
 </main>
 
