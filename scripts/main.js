@@ -1,36 +1,32 @@
-// Animations
+// Initialize AOS library for animations
 AOS.init({
   anchorPlacement: "top-left",
   duration: 1000,
 });
 
+// Execute the code when the window has finished loading
 window.addEventListener("load", function () {
-  // Add your javascript here
-  function calculateAge(birthday) {
-    // birthday as a date
-    var ageDifMs = Date.now() - birthday.getTime();
-    var ageDate = new Date(ageDifMs); // miliseconds from epoch
-    var age = Math.abs(ageDate.getUTCFullYear() - 1970);
-    var el = document.getElementById("years");
-    el.innerHTML = age;
-  }
 
-  function calculateYear() {
-    var year = new Date().getFullYear();
-    var el = document.getElementById("year");
-    el.innerHTML = year;
-  }
+  const calculateAge = (birthday) => {
+    const ageDifMs = Date.now() - birthday.getTime();
+    const ageDate = new Date(ageDifMs);
+    const age = Math.abs(ageDate.getUTCFullYear() - 1970);
+    document.getElementById("years").innerHTML = age;
+  };
 
-  var birthday = new Date("1999-11-07");
+  const calculateYear = () => {
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+  };
+
+  const birthday = new Date("1999-11-07");
   calculateAge(birthday);
   calculateYear();
 
-  particlesJS.load('particles-js', 'assets/particles.json', function() {
-  });
+  particlesJS.load("particles-js", "assets/particles.json", function () {});
 
   emailjs.init("user_PrPI8a8v730dTh7Csb0Bd");
 
-  function sendEmail(e) {
+  const sendEmail = (e) => {
     e.preventDefault();
 
     const templateParams = {
@@ -55,7 +51,7 @@ window.addEventListener("load", function () {
           console.log(error.text);
         }
       );
-  }
+  };
 
   $(".close-message-toast").on("click", function () {
     $(".toast").toast("hide");
@@ -64,41 +60,40 @@ window.addEventListener("load", function () {
   const form = document.querySelector(".form");
   form.addEventListener("submit", sendEmail);
 
-  function calculateWorkPeriod() {
-    const cards = document.getElementsByClassName('timeline-card');
-    
+  const calculateWorkPeriod = () => {
+    const cards = document.getElementsByClassName("timeline-card");
+
     for (let i = 0; i < cards.length; i++) {
       const card = cards[i];
-      const dateTextElement = card.querySelector('.text-muted.text-small.mb-3');
+      const dateTextElement = card.querySelector(".text-muted.text-small.mb-3");
       const dateText = dateTextElement.textContent;
-      const dates = dateText.split(' - ');
-      const startDate = new Date(dates[0].trim());
-      const endDate = dates[1].trim() === 'Present' ? new Date() : new Date(dates[1].trim());
+      const [startDateText, endDateText] = dateText.split(" - ");
+      const startDate = new Date(startDateText.trim());
+      const endDate = endDateText.trim() === "Present" ? new Date() : new Date(endDateText.trim());
       const workPeriod = calculateDuration(startDate, endDate);
-      
-      const periodElement = document.createElement('span');
-      periodElement.classList.add('work-period');
-      periodElement.textContent = workPeriod ? ` (${workPeriod})` : '';
+
+      const periodElement = document.createElement("span");
+      periodElement.classList.add("work-period");
+      periodElement.textContent = workPeriod ? ` (${workPeriod})` : "";
       dateTextElement.appendChild(periodElement);
     }
-  }
-  
-  function calculateDuration(startDate, endDate) {
+  };
+
+  const calculateDuration = (startDate, endDate) => {
     const diff = Math.abs(endDate - startDate);
     const days = Math.ceil(diff / (1000 * 60 * 60 * 24));
     const years = Math.floor(days / 365);
     const months = Math.floor((days % 365) / 30);
-    
-    let duration = '';
+
+    let duration = "";
     if (years > 0) {
-      duration += years + (years === 1 ? ' year' : ' years');
+      duration += years + (years === 1 ? " year" : " years");
     }
     if (months > 0) {
-      duration += (years > 0 ? ' ' : '') + months + (months === 1 ? ' month' : ' months');
+      duration += (years > 0 ? " " : "") + months + (months === 1 ? " month" : " months");
     }
     return duration;
-  }
-  
+  };
+
   calculateWorkPeriod();
-  
 });
