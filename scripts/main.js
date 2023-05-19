@@ -63,4 +63,42 @@ window.addEventListener("load", function () {
 
   const form = document.querySelector(".form");
   form.addEventListener("submit", sendEmail);
+
+  function calculateWorkPeriod() {
+    const cards = document.getElementsByClassName('timeline-card');
+    
+    for (let i = 0; i < cards.length; i++) {
+      const card = cards[i];
+      const dateTextElement = card.querySelector('.text-muted.text-small.mb-3');
+      const dateText = dateTextElement.textContent;
+      const dates = dateText.split(' - ');
+      const startDate = new Date(dates[0].trim());
+      const endDate = dates[1].trim() === 'Present' ? new Date() : new Date(dates[1].trim());
+      const workPeriod = calculateDuration(startDate, endDate);
+      
+      const periodElement = document.createElement('span');
+      periodElement.classList.add('work-period');
+      periodElement.textContent = workPeriod ? ` (${workPeriod})` : '';
+      dateTextElement.appendChild(periodElement);
+    }
+  }
+  
+  function calculateDuration(startDate, endDate) {
+    const diff = Math.abs(endDate - startDate);
+    const days = Math.ceil(diff / (1000 * 60 * 60 * 24));
+    const years = Math.floor(days / 365);
+    const months = Math.floor((days % 365) / 30);
+    
+    let duration = '';
+    if (years > 0) {
+      duration += years + (years === 1 ? ' year' : ' years');
+    }
+    if (months > 0) {
+      duration += (years > 0 ? ' ' : '') + months + (months === 1 ? ' month' : ' months');
+    }
+    return duration;
+  }
+  
+  calculateWorkPeriod();
+  
 });
