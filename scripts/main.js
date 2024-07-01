@@ -22,7 +22,7 @@ window.addEventListener("load", function () {
   calculateAge(birthday);
   calculateYear();
 
-  particlesJS.load("particles-js", "assets/particles.json", function () {});
+  particlesJS.load("particles-js", "assets/particles.json", function () { });
 
   emailjs.init("user_PrPI8a8v730dTh7Csb0Bd");
 
@@ -61,22 +61,21 @@ window.addEventListener("load", function () {
   form.addEventListener("submit", sendEmail);
 
   const calculateWorkPeriod = () => {
-    const cards = document.getElementsByClassName("timeline-card");
+    const cards = Array.from(document.getElementsByClassName("timeline-card"));
 
-    for (let i = 0; i < cards.length; i++) {
-      const card = cards[i];
+    cards.forEach(card => {
       const dateTextElement = card.querySelector(".text-muted.text-small.mb-3");
       const dateText = dateTextElement.textContent;
-      const [startDateText, endDateText] = dateText.split(" - ");
-      const startDate = new Date(startDateText.trim());
-      const endDate = endDateText.trim() === "Present" ? new Date() : new Date(endDateText.trim());
+      const [startDateText, endDateText] = dateText.split(" - ").map(text => text.trim());
+      const startDate = new Date(startDateText);
+      const endDate = endDateText === "Present" ? new Date() : new Date(endDateText);
       const workPeriod = calculateDuration(startDate, endDate);
 
       const periodElement = document.createElement("span");
       periodElement.classList.add("work-period");
       periodElement.textContent = workPeriod ? ` (${workPeriod})` : "";
       dateTextElement.appendChild(periodElement);
-    }
+    });
   };
 
   const calculateDuration = (startDate, endDate) => {
