@@ -11,7 +11,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Meet ComfyUI</title>
+    <title>Write Better JavaScript Using ||&#x3D;, &amp;&amp;&#x3D;, and ??&#x3D; Operators</title>
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -34,51 +34,45 @@
         }
     </style>
 
-    <meta name="description" content="Meet ComfyUI!
-The most powerful and modular stable diffusion GUI, api and backend with a graph/nodes interface." />
-    <link rel="canonical" href="https://harduex.com/blog/meet-comfy-ui/" />
+    <meta name="description" content="Discover the hidden treasures in JavaScript with ||&#x3D;, &amp;&amp;&#x3D;, and ??&#x3D; operators. Learn how these lesser-known tools can streamline your code, making it more clean and easier to read." />
+    <link rel="canonical" href="https://harduex.com/blog/hidden-javascript-operators/" />
     <meta name="referrer" content="no-referrer-when-downgrade" />
     
     <meta property="og:site_name" content="Harduex blog" />
     <meta property="og:type" content="article" />
-    <meta property="og:title" content="Meet ComfyUI" />
-    <meta property="og:description" content="Meet ComfyUI!
-The most powerful and modular stable diffusion GUI, api and backend with a graph/nodes interface." />
-    <meta property="og:url" content="https://harduex.com/blog/meet-comfy-ui/" />
-    <meta property="og:image" content="https://harduex.com/blog/content/images/2024/05/comfyui_screenshot.png" />
-    <meta property="article:published_time" content="2024-05-19T19:53:23.000Z" />
-    <meta property="article:modified_time" content="2024-05-19T19:56:15.000Z" />
-    <meta property="article:tag" content="Stable Diffusion" />
-    <meta property="article:tag" content="AI" />
-    <meta property="article:tag" content="art" />
-    <meta property="article:tag" content="backend" />
-    <meta property="article:tag" content="creativity" />
+    <meta property="og:title" content="Write Better JavaScript Using ||&#x3D;, &amp;&amp;&#x3D;, and ??&#x3D; Operators" />
+    <meta property="og:description" content="Discover the hidden treasures in JavaScript with ||&#x3D;, &amp;&amp;&#x3D;, and ??&#x3D; operators. Learn how these lesser-known tools can streamline your code, making it more clean and easier to read." />
+    <meta property="og:url" content="https://harduex.com/blog/hidden-javascript-operators/" />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1493723843671-1d655e66ac1c?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDM2fHxtb2Rlcm4lMjBjb2RlfGVufDB8fHx8MTcyMjI3NDEzMnww&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000" />
+    <meta property="article:published_time" content="2024-07-29T17:37:05.000Z" />
+    <meta property="article:modified_time" content="2024-07-29T17:37:05.000Z" />
+    <meta property="article:tag" content="programming" />
+    <meta property="article:tag" content="JavaScript" />
+    <meta property="article:tag" content="Coding" />
+    <meta property="article:tag" content="development" />
     <meta property="article:tag" content="exploration" />
-    <meta property="article:tag" content="frontend" />
-    <meta property="article:tag" content="graphical design" />
-    <meta property="article:tag" content="how to" />
     <meta property="article:tag" content="interesting" />
-    <meta property="article:tag" content="open source" />
-    <meta property="article:tag" content="plugins" />
-    <meta property="article:tag" content="step by step" />
-    <meta property="article:tag" content="tech" />
+    <meta property="article:tag" content="Node.js" />
+    <meta property="article:tag" content="projects" />
+    <meta property="article:tag" content="scripting" />
+    <meta property="article:tag" content="techniques" />
     <meta property="article:tag" content="tips" />
     <meta property="article:tag" content="tools" />
+    <meta property="article:tag" content="tricks" />
     
     <meta property="article:publisher" content="https://www.facebook.com/Delight11" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Meet ComfyUI" />
-    <meta name="twitter:description" content="Meet ComfyUI!
-The most powerful and modular stable diffusion GUI, api and backend with a graph/nodes interface." />
-    <meta name="twitter:url" content="https://harduex.com/blog/meet-comfy-ui/" />
-    <meta name="twitter:image" content="https://harduex.com/blog/content/images/2024/05/comfyui_screenshot.png" />
+    <meta name="twitter:title" content="Write Better JavaScript Using ||&#x3D;, &amp;&amp;&#x3D;, and ??&#x3D; Operators" />
+    <meta name="twitter:description" content="Discover the hidden treasures in JavaScript with ||&#x3D;, &amp;&amp;&#x3D;, and ??&#x3D; operators. Learn how these lesser-known tools can streamline your code, making it more clean and easier to read." />
+    <meta name="twitter:url" content="https://harduex.com/blog/hidden-javascript-operators/" />
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1493723843671-1d655e66ac1c?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDM2fHxtb2Rlcm4lMjBjb2RlfGVufDB8fHx8MTcyMjI3NDEzMnww&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000" />
     <meta name="twitter:label1" content="Written by" />
     <meta name="twitter:data1" content="🌿 𝖘𝖎𝖒𝖊𝖔𝖓 🌿" />
     <meta name="twitter:label2" content="Filed under" />
-    <meta name="twitter:data2" content="Stable Diffusion, AI, art, backend, creativity, exploration, frontend, graphical design, how to, interesting, open source, plugins, step by step, tech, tips, tools" />
+    <meta name="twitter:data2" content="programming, JavaScript, Coding, development, exploration, interesting, Node.js, projects, scripting, techniques, tips, tools, tricks" />
     <meta name="twitter:site" content="@twitter.com" />
-    <meta property="og:image:width" content="1859" />
-    <meta property="og:image:height" content="705" />
+    <meta property="og:image:width" content="2000" />
+    <meta property="og:image:height" content="1333" />
     
     <script type="application/ld+json">
 {
@@ -107,18 +101,18 @@ The most powerful and modular stable diffusion GUI, api and backend with a graph
         "url": "https://harduex.com/blog/author/simeon/",
         "sameAs": []
     },
-    "headline": "Meet ComfyUI",
-    "url": "https://harduex.com/blog/meet-comfy-ui/",
-    "datePublished": "2024-05-19T19:53:23.000Z",
-    "dateModified": "2024-05-19T19:56:15.000Z",
+    "headline": "Write Better JavaScript Using ||&#x3D;, &amp;&amp;&#x3D;, and ??&#x3D; Operators",
+    "url": "https://harduex.com/blog/hidden-javascript-operators/",
+    "datePublished": "2024-07-29T17:37:05.000Z",
+    "dateModified": "2024-07-29T17:37:05.000Z",
     "image": {
         "@type": "ImageObject",
-        "url": "https://harduex.com/blog/content/images/2024/05/comfyui_screenshot.png",
-        "width": 1859,
-        "height": 705
+        "url": "https://images.unsplash.com/photo-1493723843671-1d655e66ac1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDM2fHxtb2Rlcm4lMjBjb2RlfGVufDB8fHx8MTcyMjI3NDEzMnww&ixlib=rb-4.0.3&q=80&w=2000",
+        "width": 2000,
+        "height": 1333
     },
-    "keywords": "Stable Diffusion, AI, art, backend, creativity, exploration, frontend, graphical design, how to, interesting, open source, plugins, step by step, tech, tips, tools",
-    "description": "Meet ComfyUI!\nThe most powerful and modular stable diffusion GUI, api and backend with a graph/nodes interface.",
+    "keywords": "programming, JavaScript, Coding, development, exploration, interesting, Node.js, projects, scripting, techniques, tips, tools, tricks",
+    "description": "Discover the hidden treasures in JavaScript with ||&#x3D;, &amp;&amp;&#x3D;, and ??&#x3D; operators. Learn how these lesser-known tools can streamline your code, making it more clean and easier to read.",
     "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "https://harduex.com/blog/"
@@ -232,13 +226,12 @@ The most powerful and modular stable diffusion GUI, api and backend with a graph
         <article class="post min-w-0 flex-auto">
                 <header class="post-header mb-6">
     <div class="text-xs mb-3 flex items-center">
-    <span class="w-2 h-2 rounded-full bg-primary inline-block mr-2" ></span>
-    <a href="https://harduex.com/blog/tag/stable-diffusion/" class="uppercase tracking-wide relative z-3 text-gray-500">Stable Diffusion</a>
+    <span class="w-2 h-2 rounded-full bg-primary inline-block mr-2" style="background-color:#24cc46"></span>
+    <a href="https://harduex.com/blog/tag/programming/" class="uppercase tracking-wide relative z-3 text-gray-500">programming</a>
 </div>
 
-    <h1 class="post-title text-4xl md:text-42 text text-title">Meet ComfyUI</h1>
-    <p class="post-excerpt text-xl mt-5 text-gray-500">Meet ComfyUI!
-The most powerful and modular stable diffusion GUI, api and backend with a graph/nodes interface.</p>
+    <h1 class="post-title text-4xl md:text-42 text text-title">Write Better JavaScript Using ||&#x3D;, &amp;&amp;&#x3D;, and ??&#x3D; Operators</h1>
+    <p class="post-excerpt text-xl mt-5 text-gray-500">Discover the hidden treasures in JavaScript with ||&#x3D;, &amp;&amp;&#x3D;, and ??&#x3D; operators. Learn how these lesser-known tools can streamline your code, making it more clean and easier to read.</p>
 </header>
                 <div class="hh flex items-center relative z-4 flex-auto overflow-hidden">
     <ul class="hh-author flex flex-wrap flex-none mr-3">
@@ -257,7 +250,7 @@ The most powerful and modular stable diffusion GUI, api and backend with a graph
 
     <div class="hh-right flex-auto overflow-hidden text-sm">
         <div class="noWrapWithEllipsis text-gray-500">
-            <time class="datetime capitalize" datetime="2024-05-19">Published 19 May 2024</time>
+            <time class="datetime capitalize" datetime="2024-07-29">Published 29 Jul 2024</time>
             <span class="mx-1 bull"></span>
             <span class="readingTime cursor-default" title="2 min read">2 min read</span>
         </div>
@@ -272,23 +265,57 @@ The most powerful and modular stable diffusion GUI, api and backend with a graph
 
                 <figure class="post-image mt-8 mx-auto max-w-screen-xl">
         <img class="post-img w-full max-auto"
-            srcset="/blog/content/images/size/w300/2024/05/comfyui_screenshot.png 300w,
-                    /blog/content/images/size/w600/2024/05/comfyui_screenshot.png 600w,
-                    /blog/content/images/size/w1000/2024/05/comfyui_screenshot.png 1000w,
-                    /blog/content/images/size/w2000/2024/05/comfyui_screenshot.png 2000w"
+            srcset="https://images.unsplash.com/photo-1493723843671-1d655e66ac1c?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDM2fHxtb2Rlcm4lMjBjb2RlfGVufDB8fHx8MTcyMjI3NDEzMnww&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;300 300w,
+                    https://images.unsplash.com/photo-1493723843671-1d655e66ac1c?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDM2fHxtb2Rlcm4lMjBjb2RlfGVufDB8fHx8MTcyMjI3NDEzMnww&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;600 600w,
+                    https://images.unsplash.com/photo-1493723843671-1d655e66ac1c?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDM2fHxtb2Rlcm4lMjBjb2RlfGVufDB8fHx8MTcyMjI3NDEzMnww&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;1000 1000w,
+                    https://images.unsplash.com/photo-1493723843671-1d655e66ac1c?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDM2fHxtb2Rlcm4lMjBjb2RlfGVufDB8fHx8MTcyMjI3NDEzMnww&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 2000w"
             sizes="(max-width: 400px) 300px,(max-width: 730px) 600px, (max-width: 1600px) 100vw"
-            src="/blog/content/images/size/w2000/2024/05/comfyui_screenshot.png"
-            alt="Meet ComfyUI"
+            src="https://images.unsplash.com/photo-1493723843671-1d655e66ac1c?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDM2fHxtb2Rlcm4lMjBjb2RlfGVufDB8fHx8MTcyMjI3NDEzMnww&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000"
+            alt="Write Better JavaScript Using ||&#x3D;, &amp;&amp;&#x3D;, and ??&#x3D; Operators"
         />
-        
+        <figcaption class="post-figcaption text-left italic text-base py-2 px-3 mt-0 text-black" style="background-color:#e2e2e2">Photo by <a href="https://unsplash.com/@lum3n?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit">LUM3N</a> / <a href="https://unsplash.com/?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit">Unsplash</a></figcaption>
     </figure>
 
             <div class="post-body-wrap relative lg:flex">
     <div id="post-body" class="post-body min-w-0 js-post-content font-sans text-lg">
-        <p>The most powerful and modular stable diffusion GUI, api and backend with a graph/nodes interface.</p><p>We are living in an era where AI-generated images are no longer a distant dream but a vibrant reality. Today, it's common to hear things like, "Look at this fascinating image I generated. Do you want me to create another one with your face on it?" What an incredible time to be alive. But wait—how can you generate an AI image with someone else's face, maintain the body position and vibe, and not even use Photoshop? How is this possible?</p><p>We are familiar with <a href="https://openai.com/index/dall-e-3/">DALL·E 3</a>, <a href="https://www.midjourney.com/home">Midjourney</a>, and other online tools. However, they are primarily online, not as flexible, and often come with usage limitations or costs.</p><p>For tech geeks like you and me, there should be a free and open-source alternative that offers the control and granularity we crave, along with a large community for inspiration and learning, right?</p><blockquote class="kg-blockquote-alt">Well...</blockquote><h3 id="meet-comfyui">Meet ComfyUI!</h3><p><a href="https://github.com/comfyanonymous/ComfyUI">ComfyUI</a> is the epitome of innovation in the realm of open-source AI image generation. It’s an open-source platform that provides a <strong><a href="https://en.wikipedia.org/wiki/Node_graph_architecture">graph/nodes interface</a></strong> for creating and executing complex stable diffusion workflows. This means you can design your own image generation workflows using variety of nodes, including a big collection of custom ones! It’s fully equipped to support various versions of Stable Diffusion, including SD1.x, SD2.x, and SDXL, among others.</p><h3 id="open-source-knowledge-and-inspiration">Open-Source Knowledge and Inspiration</h3><p>When it comes to expanding your horizons and getting creative with Comfy UI, the internet is a treasure trove of resources. Here are some open-source platforms where you can dive deep into the world of AI image generation:</p><ul><li><a href="https://github.com/comfyanonymous/ComfyUI"><strong><a href="https://comfyanonymous.github.io/ComfyUI_examples/">ComfyUI Examples</a></strong></a>:<strong> </strong>This <a href="https://github.com/comfyanonymous/ComfyUI_examples">repo</a> contains examples of what is achievable with ComfyUI. All the images in this repo contain metadata which means they can be loaded into ComfyUI with the Load button (or dragged onto the window) to get the full workflow that was used to create the image.</li><li><a href="https://replicate.com/guides/comfyui"><strong>ComfyUI Community Manual</strong></a>: This is the community-maintained repository of documentation related to ComfyUI.</li><li><strong><a href="https://civitai.com/">CivitAI</a></strong>: Explore thousands of high-quality Stable Diffusion models, share your AI-generated art, and engage with a vibrant community of creators.</li><li><strong><a href="https://comfyworkflows.com/">ComfyWorkflows</a></strong>: Dedicated to sharing workflows and tips for getting the most out of Comfy UI’s capabilities.</li><li><strong><a href="https://tensor.art/">Tensor.art</a></strong>: An artistic space that showcases the possibilities of AI in creating stunning visual art.</li><li><strong><a href="https://openmodeldb.info/">Open Model DB</a></strong>: OpenModelDB is a community driven database of AI Upscaling models. We aim to provide a better way to find and compare models than existing sources.</li><li><strong><a href="https://huggingface.co/">Hugging Face</a></strong>: Most of the <a href="https://en.wikipedia.org/wiki/Stable_Diffusion">stable diffusion</a> checkpoints, <a href="https://arxiv.org/abs/2310.17513">LoRA</a>, <a href="https://huggingface.co/lllyasviel/ControlNet-v1-1/tree/main">ControlNet</a> and <a href="https://huggingface.co/h94/IP-Adapter/tree/main/sdxl_models">IP Adapter</a> models and many more ineresting resources can be found here. Not only for AI image generation but in general for AI.</li></ul><h3 id="get-started">Get Started</h3><p>You can find a step-by-step installation guide for ComfyUI <a href="https://github.com/comfyanonymous/ComfyUI?tab=readme-ov-file#installing">here</a>.</p><hr><p>Remember, the key to mastering Comfy UI lies in curiosity and experimentation. Give it a try, explore these resources and let your creativity flow!</p>
+        <!--kg-card-begin: markdown--><p>JavaScript is a programming language full of hidden treasures that can make coding easier and more efficient. Among these gems are the <code>||=</code>, <code>&amp;&amp;=</code>, and <code>??=</code> operators. While they might not be so commonly used, they can be incredibly useful in specific scenarios. Let's explore how these interesting operators can clean and simplify your code.</p>
+<h4 id="the-operator">The <code>||=</code> Operator</h4>
+<p>The <code>||=</code> operator, also known as the logical OR assignment, simplifies the process of assigning a default value if a variable is falsy (i.e., <code>null</code>, <code>undefined</code>, <code>0</code>, <code>false</code>, <code>NaN</code>, or an empty string).</p>
+<p><strong>Example:</strong></p>
+<pre><code class="language-javascript">let options = {};
+options.newOption ||= 1;
+</code></pre>
+<p>This code checks if <code>options.newOption</code> is falsy. If it is, it assigns the value <code>1</code>. Otherwise, it keeps the current value of <code>options.newOption</code>.</p>
+<h4 id="the-operator">The <code>&amp;&amp;=</code> Operator</h4>
+<p>The <code>&amp;&amp;=</code> operator, or logical AND assignment, is useful when you want to assign a value only if the variable is truthy (i.e., not <code>null</code>, <code>undefined</code>, <code>0</code>, <code>false</code>, <code>NaN</code>, or an empty string).</p>
+<p><strong>Example:</strong></p>
+<pre><code class="language-javascript">let options = { newOption: 2 };
+options.newOption &amp;&amp;= 1;
+</code></pre>
+<p>Here, <code>options.newOption</code> will be set to <code>1</code> only if it already has a truthy value. If <code>newOption</code> were <code>0</code> or <code>null</code>, for instance, it would remain unchanged.</p>
+<h4 id="the-operator">The <code>??=</code> Operator</h4>
+<p>The <code>??=</code> operator, known as the nullish coalescing assignment, assigns a value to a variable only if that variable is <code>null</code> or <code>undefined</code>. This is particularly useful when you want to avoid overriding values like <code>0</code> or an empty string which are falsy but might be valid in your context.</p>
+<p><strong>Example:</strong></p>
+<pre><code class="language-javascript">let options = { newOption: 0 };
+options.newOption ??= 1;
+</code></pre>
+<p>In this case, <code>options.newOption</code> retains its value of <code>0</code> because <code>0</code> is not <code>null</code> or <code>undefined</code>. If <code>newOption</code> were <code>null</code> or <code>undefined</code>, it would be set to <code>1</code>.</p>
+<h3 id="benefits-of-using-these-operators">Benefits of Using These Operators</h3>
+<ol>
+<li><strong>Conciseness:</strong> These operators allow you to write more concise code, reducing the need for verbose conditional statements.</li>
+<li><strong>Readability:</strong> Code becomes more readable as the intent of the assignment is clearer.</li>
+<li><strong>Maintainability:</strong> With less boilerplate code, maintaining and understanding the logic becomes easier.</li>
+</ol>
+<h3 id="conclusion">Conclusion</h3>
+<h3 id="simplifying-javascript-with-and">Simplifying JavaScript with <code>||=</code>, <code>&amp;&amp;=</code>, and <code>??=</code></h3>
+<p>JavaScript is full of hidden treasures that can make coding easier and more efficient. Among these gems are the <code>||=</code>, <code>&amp;&amp;=</code>, and <code>??=</code> operators. While they might not be widely used in many projects, they can be incredibly useful in specific scenarios. Let's explore how these lesser-known operators can simplify your code.</p>
+<hr>
+<p>By incorporating <code>||=</code>, <code>&amp;&amp;=</code>, and <code>??=</code> into your JavaScript toolkit, you can elevate your coding game, making your code not only more readable but also more elegant. These operators streamline common patterns, reducing boilerplate and enhancing readability. Whether you're setting default values, managing conditional assignments, or ensuring variables are properly initialized, these tools offer a sleek, modern solution.</p>
+<p>Why not give them a try in your next project?</p>
+<!--kg-card-end: markdown-->
 
         <div class="post-tags my-8 buttons justify-center lg:justify-start">
-            <a href="/blog/tag/stable-diffusion/" title="Stable Diffusion" class="button is-black is-outlined is-small uppercase">Stable Diffusion</a><a href="/blog/tag/ai/" title="AI" class="button is-black is-outlined is-small uppercase">AI</a><a href="/blog/tag/art/" title="art" class="button is-black is-outlined is-small uppercase">art</a><a href="/blog/tag/backend/" title="backend" class="button is-black is-outlined is-small uppercase">backend</a><a href="/blog/tag/creativity/" title="creativity" class="button is-black is-outlined is-small uppercase">creativity</a><a href="/blog/tag/exploration/" title="exploration" class="button is-black is-outlined is-small uppercase">exploration</a><a href="/blog/tag/frontend/" title="frontend" class="button is-black is-outlined is-small uppercase">frontend</a><a href="/blog/tag/graphical-design/" title="graphical design" class="button is-black is-outlined is-small uppercase">graphical design</a><a href="/blog/tag/how-to/" title="how to" class="button is-black is-outlined is-small uppercase">how to</a><a href="/blog/tag/interesting/" title="interesting" class="button is-black is-outlined is-small uppercase">interesting</a><a href="/blog/tag/open-source/" title="open source" class="button is-black is-outlined is-small uppercase">open source</a><a href="/blog/tag/plugins/" title="plugins" class="button is-black is-outlined is-small uppercase">plugins</a><a href="/blog/tag/step-by-step/" title="step by step" class="button is-black is-outlined is-small uppercase">step by step</a><a href="/blog/tag/tech/" title="tech" class="button is-black is-outlined is-small uppercase">tech</a><a href="/blog/tag/tips/" title="tips" class="button is-black is-outlined is-small uppercase">tips</a><a href="/blog/tag/tools/" title="tools" class="button is-black is-outlined is-small uppercase">tools</a>
+            <a href="/blog/tag/programming/" title="programming" class="button is-black is-outlined is-small uppercase">programming</a><a href="/blog/tag/javascript/" title="JavaScript" class="button is-black is-outlined is-small uppercase">JavaScript</a><a href="/blog/tag/coding/" title="Coding" class="button is-black is-outlined is-small uppercase">Coding</a><a href="/blog/tag/development/" title="development" class="button is-black is-outlined is-small uppercase">development</a><a href="/blog/tag/exploration/" title="exploration" class="button is-black is-outlined is-small uppercase">exploration</a><a href="/blog/tag/interesting/" title="interesting" class="button is-black is-outlined is-small uppercase">interesting</a><a href="/blog/tag/node-js/" title="Node.js" class="button is-black is-outlined is-small uppercase">Node.js</a><a href="/blog/tag/projects/" title="projects" class="button is-black is-outlined is-small uppercase">projects</a><a href="/blog/tag/scripting/" title="scripting" class="button is-black is-outlined is-small uppercase">scripting</a><a href="/blog/tag/techniques/" title="techniques" class="button is-black is-outlined is-small uppercase">techniques</a><a href="/blog/tag/tips/" title="tips" class="button is-black is-outlined is-small uppercase">tips</a><a href="/blog/tag/tools/" title="tools" class="button is-black is-outlined is-small uppercase">tools</a><a href="/blog/tag/tricks/" title="tricks" class="button is-black is-outlined is-small uppercase">tricks</a>
         </div>
 
     </div>
@@ -297,42 +324,42 @@ The most powerful and modular stable diffusion GUI, api and backend with a graph
     <div class="js-share post-share-inner pt-9 sticky top-16 text-center">
         <span class="uppercase text-xs tracking-wider mb-3 inline-block lg:hidden">Share this article:</span>
         <div class="buttons items-start justify-center lg:flex-col lg:justify-start">
-            <a href="https://www.facebook.com/sharer/sharer.php?u=https://harduex.com/blog/meet-comfy-ui/"
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://harduex.com/blog/hidden-javascript-operators/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Share on Facebook"
                 class="button is-circle text-xs is-black opacity-20 hover:opacity-40">
                 <svg class="icon"><use xlink:href="#icon-facebook"></use></svg>
             </a>
-            <a href="https://twitter.com/share?text=Meet%20ComfyUI&amp;url=https://harduex.com/blog/meet-comfy-ui/"
+            <a href="https://twitter.com/share?text=Write%20Better%20JavaScript%20Using%20%7C%7C%3D%2C%20%26%26%3D%2C%20and%20%3F%3F%3D%20Operators&amp;url=https://harduex.com/blog/hidden-javascript-operators/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Share on Twitter"
                 class="button is-circle text-xs is-black opacity-20 hover:opacity-40">
                 <svg class="icon"><use xlink:href="#icon-twitter"></use></svg>
             </a>
-            <a href="https://www.reddit.com/submit?url=https://harduex.com/blog/meet-comfy-ui/&amp;title=Meet%20ComfyUI"
+            <a href="https://www.reddit.com/submit?url=https://harduex.com/blog/hidden-javascript-operators/&amp;title=Write%20Better%20JavaScript%20Using%20%7C%7C%3D%2C%20%26%26%3D%2C%20and%20%3F%3F%3D%20Operators"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Share on Reddit"
                 class="button is-circle text-xs is-black opacity-20 hover:opacity-40">
                 <svg class="icon"><use xlink:href="#icon-reddit"></use></svg>
             </a>
-            <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://harduex.com/blog/meet-comfy-ui/&amp;title=Meet%20ComfyUI"
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://harduex.com/blog/hidden-javascript-operators/&amp;title=Write%20Better%20JavaScript%20Using%20%7C%7C%3D%2C%20%26%26%3D%2C%20and%20%3F%3F%3D%20Operators"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Share on Linkedin"
                 class="button is-circle text-xs is-black opacity-20 hover:opacity-40">
                 <svg class="icon"><use xlink:href="#icon-linkedin"></use></svg>
             </a>
-            <a href="https://pinterest.com/pin/create/button/?url=http%3A%2F%2Flocalhost%3A2368%2Fblog%2Fmeet-comfy-ui%2F"
+            <a href="https://pinterest.com/pin/create/button/?url=http%3A%2F%2Flocalhost%3A2368%2Fblog%2Fhidden-javascript-operators%2F"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Share on Pinterest"
                 class="button is-circle text-xs is-black opacity-20 hover:opacity-40">
                 <svg class="icon"><use xlink:href="#icon-pinterest"></use></svg>
             </a>
-            <a href="whatsapp://send?text=https://harduex.com/blog/meet-comfy-ui/"
+            <a href="whatsapp://send?text=https://harduex.com/blog/hidden-javascript-operators/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Share on WhatSapp"
@@ -366,35 +393,22 @@ The most powerful and modular stable diffusion GUI, api and backend with a graph
 </div>
     <div class="flex prev-next mb-8">
     <div class="w-1/2 pr-4">
-        <a href="/blog/exploring-sdxl-turbo/" class="prev-next-link flex items-center">
+        <a href="/blog/10-super-random-ways-to-generate-a-password-from-the-linux-terminal/" class="prev-next-link flex items-center">
             <img class="hidden h-16 w-16 flex-none object-cover rounded-full blur-up lazyload mr-4 md:block"
                 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                data-src="https://images.unsplash.com/photo-1591879742348-13012c2963bf?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDJ8fHR1cmJvfGVufDB8fHx8MTcxNjE0MzIyNXww&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;300"
+                data-src="https://images.unsplash.com/photo-1547190027-9156686aa2f0?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDE3fHxoYWNrZXJ8ZW58MHx8fHwxNzIxMTU5NjU1fDA&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;300"
                 height="64"
                 width="64"
-                alt="Unlocking Creativity: Exploring the SDXL Turbo Model for Real-Time Image Generation">
+                alt="10 Super Random Ways to Generate a Password from the Linux Terminal">
 
             <div class="prev-next-span">
                 <span class="block text-sm mb-1 text-gray-500">Prev article</span>
-                <h3 class="prev-next-title text-title text-base hover:text-primary leading-tight lineClamp-2 md:text-lg">Unlocking Creativity: Exploring the SDXL Turbo Model for Real-Time Image Generation</h3>
+                <h3 class="prev-next-title text-title text-base hover:text-primary leading-tight lineClamp-2 md:text-lg">10 Super Random Ways to Generate a Password from the Linux Terminal</h3>
             </div>
         </a>
     </div>
 
     <div class="w-1/2 pl-4">
-        <a href="/blog/why-heart-rate-is-a-better-indicator-for-rest-between-workout-sets-than-time/" class="prev-next-right flex items-center justify-end">
-            <div class="text-right">
-                <span class="block text-sm mb-1 text-gray-500">Next article</span>
-                <h3 class="prev-next-title text-title text-base hover:text-primary leading-tight lineClamp-2 flex-grow md:text-lg">Why Heart Rate is a Better Indicator for Rest Between Workout Sets than Time</h3>
-            </div>
-
-            <img class="hidden h-16 w-16 flex-none object-cover rounded-full blur-up lazyload ml-4 md:block"
-                src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                data-src="https://images.unsplash.com/photo-1609096458733-95b38583ac4e?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDN8fHdvcmtvdXQlMjB3YXRjaHxlbnwwfHx8fDE3MjAxODkxMTl8MA&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;300"
-                height="64"
-                width="64"
-                alt="Why Heart Rate is a Better Indicator for Rest Between Workout Sets than Time">
-        </a>
     </div>
 </div>
     </div>        </article>
@@ -403,24 +417,6 @@ The most powerful and modular stable diffusion GUI, api and backend with a graph
             <div class="mb-10">
     <h3 class="uppercase mb-5 border-b pb-2 font-bold text-sm">Latest Posts</h3>
 
-    <div class="sidebar-post mb-4">
-        <a href="https://harduex.com/blog/hidden-javascript-operators/" class="flex items-center">
-            <figure class="h-20 w-28 relative mr-4 flex-none bg-gray-100 rounded overflow-hidden img-hover">
-                <img class="image-inset absolute img-hover-here blur-up lazyload"
-                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                    data-src="https://images.unsplash.com/photo-1493723843671-1d655e66ac1c?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDM2fHxtb2Rlcm4lMjBjb2RlfGVufDB8fHx8MTcyMjI3NDEzMnww&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;300"
-                    width="112"
-                    height="80"
-                    alt="Write Better JavaScript Using ||&#x3D;, &amp;&amp;&#x3D;, and ??&#x3D; Operators"
-                />
-            </figure>
-
-            <div class="py-2">
-                <h3 class="text-base text-title lineClamp-2 leading-tight hover:text-primary">Write Better JavaScript Using ||&#x3D;, &amp;&amp;&#x3D;, and ??&#x3D; Operators</h3>
-                <div class="text-sm text-gray-500 mt-1"><time class="datetime" datetime=" 2024-07-29 ">29 July 2024</time></div>
-            </div>
-        </a>
-    </div>
     <div class="sidebar-post mb-4">
         <a href="https://harduex.com/blog/10-super-random-ways-to-generate-a-password-from-the-linux-terminal/" class="flex items-center">
             <figure class="h-20 w-28 relative mr-4 flex-none bg-gray-100 rounded overflow-hidden img-hover">
@@ -454,6 +450,24 @@ The most powerful and modular stable diffusion GUI, api and backend with a graph
             <div class="py-2">
                 <h3 class="text-base text-title lineClamp-2 leading-tight hover:text-primary">Why Heart Rate is a Better Indicator for Rest Between Workout Sets than Time</h3>
                 <div class="text-sm text-gray-500 mt-1"><time class="datetime" datetime=" 2024-07-05 ">5 July 2024</time></div>
+            </div>
+        </a>
+    </div>
+    <div class="sidebar-post mb-4">
+        <a href="https://harduex.com/blog/meet-comfy-ui/" class="flex items-center">
+            <figure class="h-20 w-28 relative mr-4 flex-none bg-gray-100 rounded overflow-hidden img-hover">
+                <img class="image-inset absolute img-hover-here blur-up lazyload"
+                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="/blog/content/images/size/w300/2024/05/comfyui_screenshot.png"
+                    width="112"
+                    height="80"
+                    alt="Meet ComfyUI"
+                />
+            </figure>
+
+            <div class="py-2">
+                <h3 class="text-base text-title lineClamp-2 leading-tight hover:text-primary">Meet ComfyUI</h3>
+                <div class="text-sm text-gray-500 mt-1"><time class="datetime" datetime=" 2024-05-19 ">19 May 2024</time></div>
             </div>
         </a>
     </div>
