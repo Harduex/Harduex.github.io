@@ -61,10 +61,8 @@ window.addEventListener("load", function () {
   form.addEventListener("submit", sendEmail);
 
   const calculateWorkPeriod = () => {
-    const cards = Array.from(document.getElementsByClassName("timeline-card"));
-
-    cards.forEach(card => {
-      const dateTextElement = card.querySelector(".text-muted.text-small.mb-3");
+    const dateTextElements = Array.from(this.document.querySelectorAll(".time-period"));
+    dateTextElements.forEach(dateTextElement => {
       const dateText = dateTextElement.textContent;
       const [startDateText, endDateText] = dateText.split(" - ").map(text => text.trim());
       const startDate = new Date(startDateText);
@@ -82,7 +80,7 @@ window.addEventListener("load", function () {
     const diff = Math.abs(endDate - startDate);
     const days = Math.ceil(diff / (1000 * 60 * 60 * 24));
     const years = Math.floor(days / 365);
-    const months = Math.floor((days % 365) / 30);
+    const months = Math.floor((days % 365) / 30) + 1;
 
     let duration = "";
     if (years > 0) {
