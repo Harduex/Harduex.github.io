@@ -7,6 +7,12 @@
     <loc>https://harduex.com/blog/</loc>
   </url>
   <url>
+    <loc>https://harduex.com/blog/the-forgotten-natural-remedy-how-exercise-can-unblock-your-stuffy-nose/</loc>
+  </url>
+  <url>
+    <loc>https://harduex.com/blog/tag/breathing/</loc>
+  </url>
+  <url>
     <loc>https://harduex.com/blog/the-speed-of-light-fast-of-slow/</loc>
   </url>
   <url>
@@ -64,10 +70,10 @@
     <loc>https://harduex.com/blog/how-to-become-a-better-programmer-5-tips-for-productivity/</loc>
   </url>
   <url>
-    <loc>https://harduex.com/blog/the-6-stages-of-fasting-and-their-amazing-benefits/</loc>
+    <loc>https://harduex.com/blog/author/simeon/</loc>
   </url>
   <url>
-    <loc>https://harduex.com/blog/author/simeon/</loc>
+    <loc>https://harduex.com/blog/the-6-stages-of-fasting-and-their-amazing-benefits/</loc>
   </url>
   <url>
     <loc>https://harduex.com/blog/how-to-use-typescript-aliases-to-clean-up-your-import-statements/</loc>
@@ -76,19 +82,16 @@
     <loc>https://harduex.com/blog/how-to-create-music-with-artificial-intelligence-using-midi/</loc>
   </url>
   <url>
-    <loc>https://harduex.com/blog/tag/music-production/</loc>
-  </url>
-  <url>
-    <loc>https://harduex.com/blog/chromaticism-in-modern-music-how-to-create-unique-and-mysterious-sounds/</loc>
-  </url>
-  <url>
     <loc>https://harduex.com/blog/page/2/</loc>
   </url>
   <url>
-    <loc>https://harduex.com/blog/welcome/</loc>
+    <loc>https://harduex.com/blog/tag/music-production/</loc>
   </url>
   <url>
     <loc>https://harduex.com/blog/tag/tips/</loc>
+  </url>
+  <url>
+    <loc>https://harduex.com/blog/welcome/</loc>
   </url>
   <url>
     <loc>https://harduex.com/blog/tag/tech/</loc>
@@ -115,7 +118,22 @@
     <loc>https://harduex.com/blog/tag/web/</loc>
   </url>
   <url>
+    <loc>https://harduex.com/blog/tag/calmness/</loc>
+  </url>
+  <url>
+    <loc>https://harduex.com/blog/tag/cardio/</loc>
+  </url>
+  <url>
     <loc>https://harduex.com/blog/tag/nature/</loc>
+  </url>
+  <url>
+    <loc>https://harduex.com/blog/the-power-of-cold-showers/</loc>
+  </url>
+  <url>
+    <loc>https://harduex.com/blog/favorite-stretching-exercises/</loc>
+  </url>
+  <url>
+    <loc>https://harduex.com/blog/breathe-your-way-to-better-health-the-wonders-of-the-wim-hof-method-2/</loc>
   </url>
   <url>
     <loc>https://harduex.com/blog/tag/astronomy/</loc>
@@ -131,6 +149,9 @@
   </url>
   <url>
     <loc>https://harduex.com/blog/effortlessly-backup-and-restore-your-ubuntu-debian-systems-with-apt-clone-tool/</loc>
+  </url>
+  <url>
+    <loc>https://harduex.com/blog/chromaticism-in-modern-music-how-to-create-unique-and-mysterious-sounds/</loc>
   </url>
   <url>
     <loc>https://harduex.com/blog/uploading-our-consciousness-to-a-computer-but-should-we/</loc>
@@ -170,15 +191,6 @@
   </url>
   <url>
     <loc>https://harduex.com/blog/tag/network/</loc>
-  </url>
-  <url>
-    <loc>https://harduex.com/blog/breathe-your-way-to-better-health-the-wonders-of-the-wim-hof-method-2/</loc>
-  </url>
-  <url>
-    <loc>https://harduex.com/blog/the-power-of-cold-showers/</loc>
-  </url>
-  <url>
-    <loc>https://harduex.com/blog/favorite-stretching-exercises/</loc>
   </url>
   <url>
     <loc>https://harduex.com/blog/minimalist-workout-plan/</loc>
@@ -280,25 +292,22 @@
     <loc>https://harduex.com/blog/tag/programming/page/2/</loc>
   </url>
   <url>
-    <loc>https://harduex.com/blog/tag/cardio/</loc>
+    <loc>https://harduex.com/blog/tag/power/</loc>
   </url>
   <url>
     <loc>https://harduex.com/blog/tag/mood/</loc>
   </url>
   <url>
-    <loc>https://harduex.com/blog/tag/power/</loc>
+    <loc>https://harduex.com/blog/tag/javascript/</loc>
   </url>
   <url>
     <loc>https://harduex.com/blog/tag/training/</loc>
   </url>
   <url>
-    <loc>https://harduex.com/blog/tag/javascript/</loc>
+    <loc>https://harduex.com/blog/tag/privacy/</loc>
   </url>
   <url>
     <loc>https://harduex.com/blog/tag/node-js/</loc>
-  </url>
-  <url>
-    <loc>https://harduex.com/blog/tag/privacy/</loc>
   </url>
   <url>
     <loc>https://harduex.com/blog/tag/shell/</loc>
@@ -337,22 +346,19 @@
     <loc>https://harduex.com/blog/tag/news/</loc>
   </url>
   <url>
-    <loc>https://harduex.com/blog/tag/calmness/</loc>
-  </url>
-  <url>
     <loc>https://harduex.com/blog/author/simeon/rss/</loc>
-  </url>
-  <url>
-    <loc>https://harduex.com/blog/author/simeon/page/2/</loc>
   </url>
   <url>
     <loc>https://harduex.com/blog/tag/npm/</loc>
   </url>
   <url>
-    <loc>https://harduex.com/blog/tag/music/</loc>
+    <loc>https://harduex.com/blog/author/simeon/page/2/</loc>
   </url>
   <url>
     <loc>https://harduex.com/blog/tag/vst/</loc>
+  </url>
+  <url>
+    <loc>https://harduex.com/blog/tag/music/</loc>
   </url>
   <url>
     <loc>https://harduex.com/blog/tag/daw/</loc>
@@ -373,16 +379,19 @@
     <loc>https://harduex.com/blog/page/3/</loc>
   </url>
   <url>
+    <loc>https://harduex.com/blog/tag/tech/page/2/</loc>
+  </url>
+  <url>
     <loc>https://harduex.com/blog/personal-top-gnome-extensions/</loc>
   </url>
   <url>
     <loc>https://harduex.com/blog/tag/tips/page/2/</loc>
   </url>
   <url>
-    <loc>https://harduex.com/blog/tag/tech/page/2/</loc>
+    <loc>https://harduex.com/blog/interesting-projects-and-tools-discovered-on-github-part-1/</loc>
   </url>
   <url>
-    <loc>https://harduex.com/blog/interesting-projects-and-tools-discovered-on-github-part-1/</loc>
+    <loc>https://harduex.com/blog/tag/meditation/</loc>
   </url>
   <url>
     <loc>https://harduex.com/blog/15-must-have-visual-studio-code-extensions/</loc>
@@ -395,12 +404,6 @@
   </url>
   <url>
     <loc>https://harduex.com/blog/tag/deployment/</loc>
-  </url>
-  <url>
-    <loc>https://harduex.com/blog/tag/breathing/</loc>
-  </url>
-  <url>
-    <loc>https://harduex.com/blog/tag/meditation/</loc>
   </url>
   <url>
     <loc>https://harduex.com/blog/tag/engines/</loc>
