@@ -45,7 +45,7 @@
     <meta property="og:url" content="https://harduex.com/blog/building-type-safe-react-context-a-practical-tutorial/" />
     <meta property="og:image" content="https://harduex.com/blog/content/images/2025/02/passing_data_context_far.webp" />
     <meta property="article:published_time" content="2025-02-05T20:40:06.000Z" />
-    <meta property="article:modified_time" content="2025-02-05T20:40:06.000Z" />
+    <meta property="article:modified_time" content="2025-02-05T20:43:24.000Z" />
     <meta property="article:tag" content="Coding" />
     <meta property="article:tag" content="concepts" />
     <meta property="article:tag" content="configuration" />
@@ -111,7 +111,7 @@
     "headline": "Building Type-Safe React Context: A Practical Tutorial",
     "url": "https://harduex.com/blog/building-type-safe-react-context-a-practical-tutorial/",
     "datePublished": "2025-02-05T20:40:06.000Z",
-    "dateModified": "2025-02-05T20:40:06.000Z",
+    "dateModified": "2025-02-05T20:43:24.000Z",
     "image": {
         "@type": "ImageObject",
         "url": "https://harduex.com/blog/content/images/2025/02/passing_data_context_far.webp",
@@ -365,7 +365,8 @@ export function useUserPreferences() {
     }
 
     return context;
-}</code></pre><h3 id="breaking-it-down">Breaking It Down</h3><p><strong>Creating the Context:</strong><br>We initialize the context with a <code>null</code> default. This forces consumers to use our provider so they always get the correct data.</p><p><strong>Provider Component:</strong><br><code>UserPreferencesProvider</code> wraps your components and supplies them with our state. The custom hook <code>useCreateUserPreferences</code> sets up the initial state and returns the state along with the updater functions.</p><p><strong>Custom Hook (<code>useUserPreferences</code>):</strong><br>This hook lets any component access the context. It also provides a helpful error if you forget to wrap your component tree in the provider.</p><h2 id="step-3-using-the-context-in-a-component">Step 3: Using the Context in a Component</h2><p>Let’s create a simple component that toggles the theme. Create <code>src/components/ThemeToggle.tsx</code>:</p><pre><code class="language-tsx">import { useCallback } from 'react';
+}</code></pre><h3 id="breaking-it-down">Breaking It Down</h3><p><strong>Creating the Context:</strong><br>We initialize the context with a <code>null</code> default. This forces consumers to use our provider so they always get the correct data.</p><p><strong>Provider Component:</strong><br><code>UserPreferencesProvider</code> wraps your components and supplies them with our state. The custom hook <code>useCreateUserPreferences</code> sets up the initial state and returns the state along with the updater functions.</p><p><strong>Custom Hook (<code>useUserPreferences</code>):</strong><br>This hook lets any component access the context. It also provides a helpful error if you forget to wrap your component tree in the provider.</p><h2 id="step-3-using-the-context-in-a-component">Step 3: Using the Context in a Component</h2><p>Let’s create a simple component that toggles the theme. Create <code>src/components/ThemeToggle.tsx</code>:</p><pre><code class="language-tsx">// src/contexts/ThemeToggle.tsx
+import { useCallback } from 'react';
 
 import { useUserPreferences } from '../contexts/UserPreferences';
 
