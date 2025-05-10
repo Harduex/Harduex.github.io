@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://harduex.com/</loc>
@@ -19,7 +19,8 @@
     <loc>https://harduex.com/blog/tag/coding/</loc>
   </url>
   <url>
-    <loc>https://harduex.com/blog/the-forgotten-natural-remedy-how-exercise-can-unblock-your-stuffy-nose/</loc>
+    <loc>
+      https://harduex.com/blog/the-forgotten-natural-remedy-how-exercise-can-unblock-your-stuffy-nose/</loc>
   </url>
   <url>
     <loc>https://harduex.com/blog/tag/breathing/</loc>
@@ -58,13 +59,15 @@
     <loc>https://harduex.com/blog/hidden-javascript-operators/</loc>
   </url>
   <url>
-    <loc>https://harduex.com/blog/10-super-random-ways-to-generate-a-password-from-the-linux-terminal/</loc>
+    <loc>
+      https://harduex.com/blog/10-super-random-ways-to-generate-a-password-from-the-linux-terminal/</loc>
   </url>
   <url>
     <loc>https://harduex.com/blog/tag/cyber-security/</loc>
   </url>
   <url>
-    <loc>https://harduex.com/blog/why-heart-rate-is-a-better-indicator-for-rest-between-workout-sets-than-time/</loc>
+    <loc>
+      https://harduex.com/blog/why-heart-rate-is-a-better-indicator-for-rest-between-workout-sets-than-time/</loc>
   </url>
   <url>
     <loc>https://harduex.com/blog/tag/calisthenics/</loc>
@@ -151,7 +154,8 @@
     <loc>https://harduex.com/blog/how-to-create-music-with-artificial-intelligence-using-midi/</loc>
   </url>
   <url>
-    <loc>https://harduex.com/blog/chromaticism-in-modern-music-how-to-create-unique-and-mysterious-sounds/</loc>
+    <loc>
+      https://harduex.com/blog/chromaticism-in-modern-music-how-to-create-unique-and-mysterious-sounds/</loc>
   </url>
   <url>
     <loc>https://harduex.com/blog/tag/concepts/</loc>
@@ -190,7 +194,8 @@
     <loc>https://harduex.com/blog/tag/react/</loc>
   </url>
   <url>
-    <loc>https://harduex.com/blog/effortlessly-backup-and-restore-your-ubuntu-debian-systems-with-apt-clone-tool/</loc>
+    <loc>
+      https://harduex.com/blog/effortlessly-backup-and-restore-your-ubuntu-debian-systems-with-apt-clone-tool/</loc>
   </url>
   <url>
     <loc>https://harduex.com/blog/tag/calmness/</loc>
@@ -208,7 +213,8 @@
     <loc>https://harduex.com/blog/favorite-stretching-exercises/</loc>
   </url>
   <url>
-    <loc>https://harduex.com/blog/breathe-your-way-to-better-health-the-wonders-of-the-wim-hof-method-2/</loc>
+    <loc>
+      https://harduex.com/blog/breathe-your-way-to-better-health-the-wonders-of-the-wim-hof-method-2/</loc>
   </url>
   <url>
     <loc>https://harduex.com/blog/tag/astronomy/</loc>
@@ -352,7 +358,8 @@
     <loc>https://harduex.com/blog/become-a-google-search-expert-with-these-advanced-techniques/</loc>
   </url>
   <url>
-    <loc>https://harduex.com/blog/how-big-companies-creates-and-uses-shadow-profiles-to-know-everything-about-you/</loc>
+    <loc>
+      https://harduex.com/blog/how-big-companies-creates-and-uses-shadow-profiles-to-know-everything-about-you/</loc>
   </url>
   <url>
     <loc>https://harduex.com/blog/privacy-respecting-hackable-metasearch-engine-searx/</loc>
