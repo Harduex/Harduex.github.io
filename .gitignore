@@ -1,1 +1,14 @@
+# OS / editor artifacts
 .fuse_hidden*
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Secrets — never commit these
+.env
+.env.*
+*.pem
+*.key
+*.p12
+secrets.json

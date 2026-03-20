@@ -29,6 +29,14 @@ window.addEventListener("load", function () {
   const sendEmail = (e) => {
     e.preventDefault();
 
+    const submitButton = e.target.querySelector("button[type='submit']");
+    const originalButtonText = submitButton ? submitButton.textContent : "Send";
+
+    if (submitButton) {
+      submitButton.disabled = true;
+      submitButton.textContent = "Sending...";
+    }
+
     const templateParams = {
       name: e.target.name.value,
       email: e.target.email.value,
@@ -48,9 +56,16 @@ window.addEventListener("load", function () {
           $(".form").trigger("reset");
         },
         (error) => {
-          console.log(error.text);
+          console.error("Email send error:", error);
+          // Optional: display an error toast in future
         }
-      );
+      )
+      .finally(() => {
+        if (submitButton) {
+          submitButton.disabled = false;
+          submitButton.textContent = originalButtonText;
+        }
+      });
   };
 
   $(".close-message-toast").on("click", function () {
