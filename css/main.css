@@ -158,11 +158,6 @@ footer a:not(.nav-link) {
 }
 
 @media (max-width: 767px) {
-  /* disable animations on mobile */
-  [data-aos] {
-    opacity: 1 !important;
-    transform: translate(0) scale(1) !important;
-  }
   .p-5 {
     padding: 2.5rem 2rem !important;
   }
