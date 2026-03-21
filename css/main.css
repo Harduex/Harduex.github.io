@@ -293,3 +293,31 @@ footer a:not(.nav-link) {
     background-position: 0% 50%;
   }
 }
+
+/* Fix browser autofill forcing white background in contact inputs */
+input.form-control:-webkit-autofill,
+textarea.form-control:-webkit-autofill,
+select.form-control:-webkit-autofill {
+  -webkit-text-fill-color: #f8f9fa !important;
+  -webkit-box-shadow: 0 0 0 1000px #1f2428 inset !important;
+  box-shadow: 0 0 0 1000px #1f2428 inset !important;
+  background-color: #1f2428 !important;
+  color: #f8f9fa !important;
+  background-clip: padding-box !important;
+}
+input.form-control:-webkit-autofill:focus,
+textarea.form-control:-webkit-autofill:focus,
+select.form-control:-webkit-autofill:focus {
+  -webkit-text-fill-color: #f8f9fa !important;
+  -webkit-box-shadow: 0 0 0 1000px #1f2428 inset !important;
+  box-shadow: 0 0 0 1000px #1f2428 inset !important;
+  background-color: #1f2428 !important;
+  color: #f8f9fa !important;
+}
+
+input.form-control:-moz-autofill,
+textarea.form-control:-moz-autofill,
+select.form-control:-moz-autofill {
+  background-color: #1f2428 !important;
+  color: #f8f9fa !important;
+}
