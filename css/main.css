@@ -82,7 +82,36 @@ html {
 }
 
 .cover {
-  height: 500px;
+  min-height: 500px;
+  height: auto;
+}
+
+#intro .cover.bg-image {
+  overflow: visible;
+}
+
+#intro .cover > .mask {
+  position: relative;
+  height: auto;
+  overflow: visible;
+  background-attachment: scroll;
+}
+
+#intro .header-bio [data-aos="zoom-in"] {
+  max-width: 32rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#intro .header-bio h1,
+#intro .header-bio p {
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
+#intro .d-print-none .btn {
+  max-width: 100%;
+  white-space: normal;
 }
 
 .cover > img {
