@@ -692,13 +692,14 @@
           <div class="contant-section">
 
             <div class="toast-container">
-              <div class="toast fade">
-                <div class="toast-header text-light bg-success">
-                  <strong class="me-auto"><i class="bi-globe"></i>Success!</strong>
+              <div class="toast fade" id="contact-toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header text-light bg-success" id="contact-toast-header">
+                  <strong class="me-auto"><i class="bi-globe"></i><span
+                      id="contact-toast-title">Success!</span></strong>
                   <small>just now</small>
                   <button type="button" class="btn-close close-message-toast" data-bs-dismiss="toast"></button>
                 </div>
-                <div class="toast-body text-light bg-success">
+                <div class="toast-body text-light bg-success" id="contact-toast-message">
                   Your message was sent!
                 </div>
               </div>
@@ -715,7 +716,12 @@
                   </div>
                 </div>
                 <div class="mt-5 d-print-none">
-                  <form class='form'>
+                  <form class='form' action="https://formsubmit.co/f926c0aad2384059bef85713536cf65f" method="POST"
+                    data-ajax-action="https://formsubmit.co/ajax/f926c0aad2384059bef85713536cf65f">
+                    <input type="hidden" name="_subject" value="New portfolio contact message" />
+                    <input type="hidden" name="_template" value="table" />
+                    <input type="hidden" name="_captcha" value="false" />
+                    <input type="text" name="_honey" class="d-none" tabindex="-1" autocomplete="off" />
                     <div class="form-outline mb-4">
                       <input type="text" id="name" name="name" class="form-control" required />
                       <label class="form-label" for="name">Name</label>
@@ -789,7 +795,6 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
   <script src="scripts/mdb.min.js?ver=1.2.1"></script>
   <script src="scripts/aos.js?ver=1.2.1"></script>
   <script src="scripts/particles.min.js"></script>

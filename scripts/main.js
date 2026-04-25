@@ -24,9 +24,30 @@ window.addEventListener("load", function () {
 
   particlesJS.load("particles-js", "assets/particles.json", function () { });
 
-  emailjs.init("user_PrPI8a8v730dTh7Csb0Bd");
+  const toastElement = document.getElementById("contact-toast");
+  const toastHeader = document.getElementById("contact-toast-header");
+  const toastTitle = document.getElementById("contact-toast-title");
+  const toastMessage = document.getElementById("contact-toast-message");
+  const form = document.querySelector(".form");
 
-  const sendEmail = (e) => {
+  const showContactToast = ({ title, message, theme = "success" }) => {
+    if (!toastElement || !toastHeader || !toastTitle || !toastMessage) {
+      return;
+    }
+
+    const nextTheme = theme === "danger" ? "danger" : "success";
+
+    toastHeader.classList.remove("bg-success", "bg-danger");
+    toastMessage.classList.remove("bg-success", "bg-danger");
+    toastHeader.classList.add(`bg-${nextTheme}`);
+    toastMessage.classList.add(`bg-${nextTheme}`);
+
+    toastTitle.textContent = title;
+    toastMessage.textContent = message;
+    $(toastElement).toast("show");
+  };
+
+  const sendEmail = async (e) => {
     e.preventDefault();
 
     const submitButton = e.target.querySelector("button[type='submit']");
@@ -37,43 +58,54 @@ window.addEventListener("load", function () {
       submitButton.textContent = "Sending...";
     }
 
-    const templateParams = {
-      name: e.target.name.value,
-      email: e.target.email.value,
-      message: e.target.message.value,
-    };
+    const payload = Object.fromEntries(new FormData(e.target).entries());
+    const requestUrl = e.target.dataset.ajaxAction || e.target.action;
 
-    emailjs
-      .send(
-        "service_m7y2lg4",
-        "template_n615z9g",
-        templateParams,
-        "user_PrPI8a8v730dTh7Csb0Bd"
-      )
-      .then(
-        (result) => {
-          $(".toast").toast("show");
-          $(".form").trigger("reset");
+    try {
+      const response = await fetch(requestUrl, {
+        method: e.target.method || "POST",
+        headers: {
+          "Accept": "application/json",
+          "Content-Type": "application/json",
         },
-        (error) => {
-          console.error("Email send error:", error);
-          // Optional: display an error toast in future
-        }
-      )
-      .finally(() => {
-        if (submitButton) {
-          submitButton.disabled = false;
-          submitButton.textContent = originalButtonText;
-        }
+        body: JSON.stringify(payload),
       });
+
+      const result = await response.json().catch(() => ({}));
+
+      if (!response.ok || result.success === false || result.success === "false" || result.error) {
+        throw new Error(result.message || result.error || "Request failed.");
+      }
+
+      showContactToast({
+        title: "Success!",
+        message: "Your message was sent!",
+      });
+      e.target.reset();
+    } catch (error) {
+      console.error("FormSubmit error:", error);
+      showContactToast({
+        title: "Error",
+        message: "Message failed. Please email me directly.",
+        theme: "danger",
+      });
+    } finally {
+      if (submitButton) {
+        submitButton.disabled = false;
+        submitButton.textContent = originalButtonText;
+      }
+    }
   };
 
   $(".close-message-toast").on("click", function () {
-    $(".toast").toast("hide");
+    if (toastElement) {
+      $(toastElement).toast("hide");
+    }
   });
 
-  const form = document.querySelector(".form");
-  form.addEventListener("submit", sendEmail);
+  if (form) {
+    form.addEventListener("submit", sendEmail);
+  }
 
   const calculateWorkPeriod = () => {
     const dateTextElements = Array.from(this.document.querySelectorAll(".time-period"));
